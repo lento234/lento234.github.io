@@ -1,0 +1,107 @@
+html {
+    background: #34495e;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    background: #2c3e50;   
+    border-radius: 0.25rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin: 0;
+}
+
+.leaf {
+    height: 2.9rem;
+    width: 2.9rem;
+    margin: 0.1rem 1.1rem;
+}
+
+#top * {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3rem;
+}
+
+#bop {
+    margin-top: 0.8rem;
+    font-size: 0.85rem;
+}
+
+#cop img {
+    margin-top: 0.0rem;
+    margin-top: 0.0rem;
+    font-size: 0.85rem;
+    height: 6rem;
+    width: 6rem;
+}
+
+#fop {
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    padding-bottom: 1rem;
+    padding-top: 3rem;
+}
+
+#fop img {
+    height: 2rem;
+    margin: 0 0.6rem;
+}
+
+#fop img#twitter {
+    height: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.dot:before {
+    content: " / ";
+    color: #2c3e50;
+}
+
+@media (max-width: 321px) {
+    #fop {
+        position: static;
+        margin-top: 5rem;
+    }
+    #fop img {
+        height: 3rem;
+        margin: 0 1rem;
+    }
+    #fop img#twitter {
+        height: 2.5rem;
+        margin-bottom: 0.25rem;
+    }
+}
+
+@media (min-width: 320px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 320px) and (orientation: landscape) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 589px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 733px) {
+    html {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 870px) {
+    html {
+        font-size: 30px;
+    }
+}
