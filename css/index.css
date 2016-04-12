@@ -1,27 +1,17 @@
 html {
-    background: #34495e;
-    color: white;
+    background: #ffffff;
+    color: black;
+    margin: 0;
     font-family: 'Raleway', sans-serif;
 }
 
 h1 {
-    background: #2c3e50;   
-    border-radius: 0.25rem;
-    padding: 0.3rem 0.5rem;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
+    background: #ffffff;
+    color: black;
     margin: 0;
 }
 
-.leaf {
-    height: 2.9rem;
-    width: 2.9rem;
-    margin: 0.1rem 1.1rem;
-}
-
 #top * {
-    display: inline-block;
-    vertical-align: top;
     margin-top: 3rem;
 }
 
@@ -30,38 +20,53 @@ h1 {
     font-size: 0.85rem;
 }
 
-#cop img {
-    margin-top: 0.0rem;
-    margin-top: 0.0rem;
-    font-size: 0.85rem;
-    height: 6rem;
-    width: 6rem;
+#p {
+    margin: 5rem 0;
+    line-height: 1.6;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    -webkit-filter: brightness(50%);
+    font-size: 0.5rem;
+}
+
+a:hover {
+  -webkit-filter: grayscale(100%);
+  -webkit-filter: brightness(30%);
 }
 
 #fop {
-    bottom: 0;
+    /*bottom: 0;*/
     width: 100%;
-    height: 4rem;
-    padding-bottom: 1rem;
-    padding-top: 3rem;
+    /*height: 1rem;*/
+    padding-bottom: 5rem;
 }
 
 #fop img {
-    height: 2rem;
-    margin: 0 0.6rem;
+    height: 1rem;
+    margin: 1rem;
+    /*-webkit-filter: brightness(50%);*/
 }
 
-#fop img#twitter {
-    height: 1.5rem;
-    margin-bottom: 0.25rem;
+#fop img:hover {
+  -webkit-filter: brightness(30%);
 }
 
-.dot:before {
+.slash:before {
     content: " / ";
-    color: #2c3e50;
+    color: black;
 }
 
-@media (max-width: 321px) {
+.dot:before{
+    content: "•";
+    color: black;
+    font-size: 0.5rem;
+}
+
+
+/*@media (max-width: 321px) {
     #fop {
         position: static;
         margin-top: 5rem;
@@ -74,13 +79,14 @@ h1 {
         height: 2.5rem;
         margin-bottom: 0.25rem;
     }
-}
+}*/
 
 @media (min-width: 320px) {
     html {
         font-size: 10px;
     }
 }
+
 
 @media (min-width: 320px) and (orientation: landscape) {
     html {
@@ -94,6 +100,7 @@ h1 {
     }
 }
 
+
 @media (min-width: 733px) {
     html {
         font-size: 25px;
@@ -104,4 +111,6 @@ h1 {
     html {
         font-size: 30px;
     }
+}
+
 }
