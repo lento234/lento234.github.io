@@ -1,57 +1,5 @@
 html {
-    background: #ffffff;
-    color: black;
-    margin: 0;
     font-family: 'Raleway', sans-serif;
-}
-
-h1 {
-    background: #ffffff;
-    color: black;
-    margin: 0;
-}
-
-#top * {
-    margin-top: 3rem;
-}
-
-#bop {
-    margin-top: 0.8rem;
-    font-size: 0.85rem;
-}
-
-#p {
-    margin: 5rem 0;
-    line-height: 1.6;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-    -webkit-filter: brightness(50%);
-    font-size: 0.5rem;
-}
-
-a:hover {
-  -webkit-filter: grayscale(100%);
-  -webkit-filter: brightness(30%);
-}
-
-#fop {
-    /*bottom: 0;*/
-    width: 100%;
-    /*height: 1rem;*/
-    padding-bottom: 5rem;
-}
-
-#fop img {
-    height: 1rem;
-    margin: 1rem;
-    /*-webkit-filter: brightness(50%);*/
-}
-
-#fop img:hover {
-  -webkit-filter: brightness(30%);
 }
 
 .slash:before {
@@ -65,28 +13,65 @@ a:hover {
     font-size: 0.5rem;
 }
 
+a.linkPages {
+    color: white;
+    text-decoration: none;
+    -webkit-filter: brightness(50%);
+    font-size: 0.5rem;
+}
 
-/*@media (max-width: 321px) {
-    #fop {
-        position: static;
-        margin-top: 5rem;
-    }
-    #fop img {
-        height: 3rem;
-        margin: 0 1rem;
-    }
-    #fop img#twitter {
-        height: 2.5rem;
-        margin-bottom: 0.25rem;
-    }
-}*/
+a.linkPages:hover {
+    -webkit-filter: brightness(30%);
+}
+
+a.linkSocial {
+    color: black;
+    -webkit-filter: brightness(50%);
+    font-size: 0.5rem;
+}
+
+a.linkSocial img {
+    height: 0.8rem;
+    margin: 0.5rem;
+}
+
+a.linkSocial:hover {
+    -webkit-filter: brightness(30%);
+}
+
+#top {
+    margin-top: 3rem;
+}
+
+#bop {
+    font-size: 0.85rem;
+}
+
+/*nav {*/
+    /*line-height:30px;*/
+    /*height:300px;*/
+    /*width:100px;*/
+    /*float: right;*/
+    /*margin: 0rem 3rem;*/
+    /*padding: -2rem 2rem;*/
+    /*text-align: right;*/
+/*}*/
+
+section {
+    margin: 4rem;
+    line-height: 1.6;
+    text-align:center;
+}
+
+footer {
+    text-align:center;
+}
 
 @media (min-width: 320px) {
     html {
         font-size: 10px;
     }
 }
-
 
 @media (min-width: 320px) and (orientation: landscape) {
     html {
@@ -99,7 +84,6 @@ a:hover {
         font-size: 20px;
     }
 }
-
 
 @media (min-width: 733px) {
     html {

@@ -48,7 +48,7 @@ a {
     color: white;
     text-decoration: none;
     -webkit-filter: brightness(50%);
-    /*font-size: 1rem;*/
+    font-size: 0.7rem;
 }
 
 a:hover {
@@ -56,6 +56,12 @@ a:hover {
   -webkit-filter: brightness(30%);
 }
 
+a.currentPage {
+    color: white;
+    text-decoration: none;
+    font-size: 0.7rem;
+    -webkit-filter: brightness(80%);
+}
 
 @media (min-width: 320px) {
     html {
