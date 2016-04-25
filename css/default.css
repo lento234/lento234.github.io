@@ -12,18 +12,11 @@ body {
 }
 
 h1 {
-    /*width: 800px;*/
-    /*position: relative;*/
-    /*left: -100px;*/
     letter-spacing: 0.5rem;
-    /*line-height: 60px;*/
-    /*font-size: 1rem;*/
-    /*font-weight: 100;*/
     margin: 0px 0 3rem 0;
 }
 
 p {
-    /*margin: 20px 0;*/
     line-height: 1.5;
     font-size: 0.8rem;
 }
@@ -31,36 +24,24 @@ p {
 .dot:before{
     content: "•";
     color: black;
-    /*font-size: 1rem;*/
 }
-
-/*a {
-    color: #2980b9;
-    font-weight: Bolder;
-    text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}*/
-
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
-    -webkit-filter: brightness(50%);
+    opacity: 0.5;
     font-size: 0.7rem;
 }
 
 a:hover {
-  -webkit-filter: grayscale(100%);
-  -webkit-filter: brightness(30%);
+    opacity: 1;
 }
 
 a.currentPage {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 0.7rem;
-    -webkit-filter: brightness(80%);
+    opacity: 1;
 }
 
 @media (min-width: 320px) {

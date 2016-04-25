@@ -10,23 +10,24 @@ html {
 .dot:before{
     content: "•";
     color: black;
+    opacity: 0.5;
     font-size: 0.5rem;
 }
 
 a.linkPages {
-    color: white;
+    color: black;
     text-decoration: none;
-    -webkit-filter: brightness(50%);
+    opacity: 0.5;
     font-size: 0.5rem;
 }
 
 a.linkPages:hover {
-    -webkit-filter: brightness(30%);
+    opacity: 1.0;
 }
 
 a.linkSocial {
     color: black;
-    -webkit-filter: brightness(50%);
+    opacity: 0.5;
     font-size: 0.5rem;
 }
 
@@ -36,7 +37,7 @@ a.linkSocial img {
 }
 
 a.linkSocial:hover {
-    -webkit-filter: brightness(30%);
+    opacity: 1.0;
 }
 
 #top {
