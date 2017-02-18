@@ -2,70 +2,16 @@ html {
     font-family: 'Raleway', sans-serif;
 }
 
-.slash:before {
-    content: " / ";
-    color: black;
-}
-
-.dot:before{
-    content: "•";
-    color: black;
-    opacity: 0.5;
-    font-size: 0.5rem;
-}
-
-a.linkPages {
+a {
     color: black;
     text-decoration: none;
     opacity: 0.5;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
 }
 
-a.linkPages:hover {
-    opacity: 1.0;
-}
-
-a.linkSocial {
-    color: black;
-    opacity: 0.5;
-    font-size: 0.5rem;
-}
-
-a.linkSocial img {
-    height: 0.8rem;
-    margin: 0.5rem;
-}
-
-a.linkSocial:hover {
-    opacity: 1.0;
-}
-
-#top {
-    margin-top: 3rem;
-}
-
-#bop {
-    font-size: 0.85rem;
-}
-
-/*nav {*/
-    /*line-height:30px;*/
-    /*height:300px;*/
-    /*width:100px;*/
-    /*float: right;*/
-    /*margin: 0rem 3rem;*/
-    /*padding: -2rem 2rem;*/
-    /*text-align: right;*/
-/*}*/
-
-section {
-    margin: 4rem;
-    line-height: 1.6;
-    text-align:center;
-}
-
-footer {
-    text-align:center;
+a:hover {
+    opacity: 1;
+    text-decoration: underline;
 }
 
 @media (min-width: 320px) {
