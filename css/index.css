@@ -1,23 +1,28 @@
 html {
     font-family: 'Raleway', sans-serif;
+    background-color: white;
+    color: #2ecc71;
 }
 
 h2 {
     color: black;
-    text-decoration: none;
-    font-size: 0.6rem;
-}
+    font-size: 0.9em;
 
+}
 
 a {
     color: black;
     text-decoration: none;
-    opacity: 0.5;
+    font-size: 0.6rem;
+}
+
+a1 {
+    color: black;
+    text-decoration: none;
     font-size: 0.6rem;
 }
 
 a:hover {
-    opacity: 1;
     text-decoration: underline;
 }
 
