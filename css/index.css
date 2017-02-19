@@ -26,32 +26,21 @@ a:hover {
     text-decoration: underline;
 }
 
+
 @media (min-width: 320px) {
     html {
-        font-size: 10px;
-    }
-}
-
-@media (min-width: 320px) and (orientation: landscape) {
-    html {
-        font-size: 15px;
+        font-size: 2em;
     }
 }
 
 @media (min-width: 589px) {
     html {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 733px) {
-    html {
-        font-size: 25px;
+        font-size: 2em;
     }
 }
 
 @media (min-width: 870px) {
     html {
-        font-size: 30px;
+        font-size: 2em;
     }
 }
