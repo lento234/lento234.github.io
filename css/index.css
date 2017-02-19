@@ -4,10 +4,17 @@ html {
     color: #2ecc71;
 }
 
+h1 {
+    font-family: 'Amatic SC';
+    font-size: 400%;
+    margin-bottom: 0em;
+}
+
 h2 {
+    margin-top: 0em;
     color: black;
     font-size: 0.9em;
-
+    margin-bottom: 2em;
 }
 
 a {
