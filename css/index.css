@@ -5,7 +5,14 @@ html {
 }
 
 h1 {
-    font-family: 'Amatic SC';
+    font-family: 'Roboto', sans-serif;
+    font-size: 400%;
+    margin-bottom: 0em;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
     font-size: 400%;
     margin-bottom: 0em;
 }
