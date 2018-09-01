@@ -1,17 +1,31 @@
 html {
     font-family: 'Raleway', sans-serif;
+    background-color: white;
+    color: #2ecc71;
+}
+
+h1 {
+    /*font-family: 'Amatic SC';*/
+    font-size: 100%;
+    margin-bottom: 0em;
 }
 
 h2 {
+    margin-top: 0em;
     color: black;
-    text-decoration: none;
-    font-size: 0.6rem;
+    font-size: 0.9em;
+    margin-bottom: 2em;
 }
 
 a {
     color: black;
     text-decoration: none;
-    opacity: 0.5;
+    font-size: 0.6rem;
+}
+
+a1 {
+    color: black;
+    text-decoration: none;
     font-size: 0.6rem;
 }
 
@@ -23,36 +37,24 @@ b {
 }
 
 a:hover {
-    opacity: 1;
     text-decoration: underline;
 }
 
+
 @media (min-width: 320px) {
     html {
-        font-size: 10px;
-    }
-}
-
-@media (min-width: 320px) and (orientation: landscape) {
-    html {
-        font-size: 15px;
+        font-size: 2em;
     }
 }
 
 @media (min-width: 589px) {
     html {
-        font-size: 20px;
-    }
-}
-
-@media (min-width: 733px) {
-    html {
-        font-size: 25px;
+        font-size: 2em;
     }
 }
 
 @media (min-width: 870px) {
     html {
-        font-size: 30px;
+        font-size: 2em;
     }
 }
