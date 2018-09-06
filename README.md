@@ -1,3 +1,1 @@
-greenurbs.ch
-============
-
+Unoffical personal website design playground.
