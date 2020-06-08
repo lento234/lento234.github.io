@@ -54,7 +54,6 @@ Setup a default c++ directory with CMake build:
 └── src
 
 -h              print this help message and exit
--c              clean all
 "
 
 if which getopt > /dev/null 2>&1; then
@@ -98,7 +97,7 @@ else
 fi
 
 # Make src
-mkdir src
+mkdir -p src
 
 # Make main.cpp
 cat > src/main.cpp <<EOF
@@ -112,11 +111,13 @@ EOF
 
 # Make CMakeLists.txt
 cat > CMakeLists.txt <<EOF
-cmake_minimum_required (VERSION 3.15)
+cmake_minimum_required (VERSION 3.10)
 
 project ($1)
 
 file (GLOB SOURCES "src/*.cpp")
+
+set(CMAKE_CXX_FLAGS "\${CMAKE_CXX_FLAGS} -std=c++14 -O3 -march=native -Wall -Wextra")
 
 add_executable ($1 \${SOURCES})
 EOF
