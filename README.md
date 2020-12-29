@@ -1,3 +1,10 @@
-Unoffical personal website design playground.
+<div align="center">    
 
-Official website: https://manickathan.ch/
+# lento234.github.io
+
+</div>
+
+## Description
+
+- [https://lento234.github.io/](https://lento234.github.io/)
+- [https://manickathan.ch/](https://manickathan.ch/)
