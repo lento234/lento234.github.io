@@ -1,10 +1,3 @@
-<div align="center">    
+# [lento234.github.io](https://lento234.github.io/)
 
-# lento234.github.io
-
-</div>
-
-## Description
-
-- [https://lento234.github.io/](https://lento234.github.io/)
-- [https://manickathan.ch/](https://manickathan.ch/)
+[![GitHub license](https://img.shields.io/github/license/lento234/lento234.github.io?color=blue)](https://github.com/lento234/lento234.github.io/blob/main/LICENSE)
