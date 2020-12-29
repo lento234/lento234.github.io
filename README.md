@@ -1,3 +1,10 @@
 # [lento234.github.io](https://lento234.github.io/)
 
-[![GitHub license](https://img.shields.io/github/license/lento234/lento234.github.io?color=blue)](https://github.com/lento234/lento234.github.io/blob/main/LICENSE)
+[![CC BY 4.0][cc-by-image]][cc-by]
+
+## Description
+
+Personal website hosted at github. 
+
+[cc-by]: http://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
