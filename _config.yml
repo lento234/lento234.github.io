@@ -30,6 +30,7 @@ github_username:  lento234
 
 # Build settings
 theme: minima
+#theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
 
