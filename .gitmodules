@@ -1,0 +1,9 @@
+[submodule "themes/hermit"]
+	path = themes/hermit
+	url = https://github.com/Track3/hermit.git
+[submodule "themes/minimal"]
+	path = themes/minimal
+    url = https://github.com/calintat/minimal.git
+[submodule "themes/hugo-whisper-theme"]
+    path = themes/hugo-whisper-theme
+    url = https://github.com/jugglerx/hugo-whisper-theme.git
