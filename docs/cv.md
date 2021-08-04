@@ -37,18 +37,30 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 
 ## Academic & professional experience
 
-**(June 2019 - Present), Zurich, Switzerland**
-
-*Postdoctoral researcher at `Empa`*: 
+<div style="width: 100%; overflow: hidden;">
+  <div style="width: 30%; float: left;">
+    <b>June 2019 - Present</b>
+  </div>
+  <div style="width: 70%; float: right;">
+    Postdoctoral researcher at <b>Empa</b>
+  </div>
+</div>
   
   * Application of machine learning in quantitative flow visualization.
-  * Supervised and unsupervised optical flow algorithms for PIV.
+  * Supervised optical flow algorithms for PIV.
   * Convolutional Neural Networks (CNN) in PyTorch.
   * Additional responsibilities: Deputy Laser safety officer (LSO), deputy data management, Lab HPC support, and fluid tunnel support.
 
-**(May 2015 - May 2019), Zurich, Switzerland**
-
-*Scientific Assistant at `ETH Zurich`*
+<div style="width: 100%; overflow: hidden;">
+  <div style="width: 30%; float: left;">
+    <b>
+      May 2015 - May 2019
+    </b>
+  </div>
+  <div style="width: 70%; float: right;">
+    Scientific Assistant at <b>ETH Zurich</b>
+  </div>
+</div>
   
   * Numerical and experimental research at Empa.
   * Neutron radiography at Paul Scherrer Institut (PSI).
@@ -56,3 +68,46 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
   * Supervision of master thesis project: Praharsh Pai Raikar
   
 ## Education
+
+<div style="width: 100%; overflow: hidden;">
+  <div style="width: 30%; float: left;">
+    <b>
+      2015 - 2019 
+    </b>
+  </div>
+  <div style="width: 70%; float: right;">
+      <b>Doctor of Sciences</b> (Dr. sc.)
+  </div>
+</div>
+
+* Mechanical Engineering
+* ETH Zurich, Switzerland
+
+<div style="width: 100%; overflow: hidden;">
+  <div style="width: 30%; float: left;">
+    <b>
+      2011 - 2014 
+    </b>
+  </div>
+  <div style="width: 70%; float: right;">
+      <b>Master of Science</b> (ir.)
+  </div>
+</div>
+
+* Aerospace Engineering. Major: Aerodynamics
+* Delft University of Technology, The Netherlands
+
+<div style="width: 100%; overflow: hidden;">
+  <div style="width: 30%; float: left;">
+    <b>
+      2008 - 2011
+    </b>
+  </div>
+  <div style="width: 70%; float: right;">
+      <b>Bachelor of Science</b>
+  </div>
+</div>
+
+* Aerospace Engineering
+* Delft University of Technology, The Netherlands
+* Minor: Wind energy and Sustainability
