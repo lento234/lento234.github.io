@@ -1,0 +1,6 @@
+name: website
+dependencies:
+  - pip
+  - python=3
+  - pip:
+      - -r file:requirements.txt

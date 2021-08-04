@@ -1,0 +1,53 @@
+site_name: Lento Manickathan
+site_url: https://lento234.github.io/
+copyright: Copyright &copy 2021 Lento Manickathan
+site_url: https://lent234.github.io
+
+nav:
+  - Home: index.md
+  - CV: cv.md
+
+theme:
+  name: material
+  palette:
+    primary: black
+  features:
+    - navigation.tabs
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: timeago
+  - macros
+  - mkdocs-jupyter:
+      include_source: True
+
+markdown_extensions:
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/lento234
+
+extra_javascript:
+  - js/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js

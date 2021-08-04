@@ -1,0 +1,8 @@
+# Documentation static site generator & deployment tool
+mkdocs
+
+# Custom themes and plugins
+mkdocs-material
+mkdocs-git-revision-date-localized-plugin
+mkdocs-macros-plugin
+mkdocs-jupyter
