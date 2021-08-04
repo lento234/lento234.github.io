@@ -7,6 +7,11 @@ site_dir: public
 nav:
   - Home: index.md
   - CV: cv.md
+  - Blogs:
+    - blogs/arch-linux.md
+    - blogs/gateway.md
+    - blogs/h5py_parallel.md
+    - blogs/linear_regression.ipynb
 
 theme:
   name: material
