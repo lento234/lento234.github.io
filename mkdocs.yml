@@ -2,6 +2,7 @@ site_name: Lento Manickathan
 site_url: https://lento234.github.io/
 copyright: Copyright &copy; 2021 - Lento Manickathan
 site_url: https://lent234.github.io
+site_dir: public
 
 nav:
   - Home: index.md
