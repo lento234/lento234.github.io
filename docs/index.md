@@ -4,7 +4,7 @@
     <img src="images/profile.jpg" alt="Profile">
   </center>
 </div>
-<div style="width: 70%;">
+<div style="width: 50%; float: left;">
   <h1>
     <center>
       <span style="font-size:2em;font-weight:bold">
@@ -12,14 +12,12 @@
       </span>
     </center>  
   </h1>
-  <h2>
+  <h3>
     <em>
       <center>
-        Aerospace Engineer
-          <br>
-        Postdoctoral researcher
+        Aerospace Engineer // Postdoctoral researcher
       </center>
     </em>
-  </h2>
+  </h3>
 </div>
 </div>

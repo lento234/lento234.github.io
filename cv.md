@@ -1,11 +1,6 @@
----
-name: Lento Manickathan
----
-
 # Profile
 
 Aerospace Engineer and PhD in mechanical engineering with expertise in high-performance computing and machine learning. A brief summary of skills:
-
 
  * CFD simulation with `OpenFOAM`
  * PIV experimental skills
@@ -13,7 +8,6 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
  * Cloud computing, GPU computing
  * Programming in `Python`
  * Administration of HPC system
-
 
 # Technical skills 
 
