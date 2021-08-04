@@ -1,6 +1,6 @@
 site_name: Lento Manickathan
 site_url: https://lento234.github.io/
-copyright: Copyright &copy 2021 Lento Manickathan
+copyright: Copyright &copy; 2021 - Lento Manickathan
 site_url: https://lent234.github.io
 
 nav:
@@ -9,6 +9,8 @@ nav:
 
 theme:
   name: material
+  logo: assets/logo.png
+  favicon: images/favicon.svg
   palette:
     primary: black
   features:
@@ -46,6 +48,10 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/lento234
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/MrLento234
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/lento-manickathan/
 
 extra_javascript:
   - js/config.js
