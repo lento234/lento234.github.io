@@ -1,4 +1,4 @@
-# [lento234.github.io](https://lento234.github.io/)
+# [manickathan.ch](https://manickathan.ch/)
 
 [![CC BY 4.0][cc-by-image]][cc-by]
 
