@@ -68,6 +68,9 @@ extra:
       link: https://twitter.com/MrLento234
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/lento-manickathan/
+  analytics:
+    provider: google
+    property: G-SDQ15H0726
 
 extra_javascript:
   - js/config.js
