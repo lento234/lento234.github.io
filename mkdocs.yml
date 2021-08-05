@@ -3,6 +3,8 @@ site_url: https://manickathan.ch/
 copyright: Copyright &copy; 2021 - Lento Manickathan
 site_url: https://lent234.github.io
 site_dir: public
+repo_url: https://github.com/lento234/lento234.github.io
+repo_name: src
 
 nav:
   - Home: index.md
@@ -68,6 +70,8 @@ extra:
       link: https://twitter.com/MrLento234
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/lento-manickathan/
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/mrlento234
   analytics:
     provider: google
     property: G-SDQ15H0726
