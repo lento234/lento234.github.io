@@ -5,6 +5,7 @@ site_url: https://lent234.github.io
 site_dir: public
 repo_url: https://github.com/lento234/lento234.github.io
 repo_name: src
+edit_uri: edit/main/docs/
 
 nav:
   - Home: index.md
