@@ -1,4 +1,4 @@
-# Using another computer as a gateway
+# 2021-07: Using another computer as a gateway
 
 - `eth0`: WAN (public) (e.g., `enp0s25`)
 - `eth1`: LAN (private) (e.g., `bond0`)

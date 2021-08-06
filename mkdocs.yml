@@ -10,11 +10,7 @@ edit_uri: edit/main/docs/
 nav:
   - Home: index.md
   - CV: cv.md
-  - Blog:
-    - blog/arch-linux.md
-    - blog/gateway.md
-    - blog/h5py_parallel.md
-    - blog/linear_regression.ipynb
+  - ... | blog/*
 
 theme:
   name: material
@@ -44,6 +40,7 @@ plugins:
   - macros
   - mkdocs-jupyter:
       include_source: True
+  - awesome-pages
 
 markdown_extensions:
   - admonition
