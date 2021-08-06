@@ -1,5 +1,13 @@
 # 2021-07: Using another computer as a gateway
 
+<center>
+```mermaid
+graph LR
+WAN[WAN] -->|eth0| A[Node A]
+A -->|eth1| B[Node B]
+```
+</center>
+
 - `eth0`: WAN (public) (e.g., `enp0s25`)
 - `eth1`: LAN (private) (e.g., `bond0`)
 

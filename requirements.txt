@@ -7,3 +7,4 @@ mkdocs-git-revision-date-localized-plugin
 mkdocs-macros-plugin
 mkdocs-jupyter
 mkdocs-awesome-pages-plugin
+mkdocs-mermaid2-plugin
