@@ -112,7 +112,7 @@ May 2015 — May 2019<br>
 
 1. **Manickathan, L.**, Mucignat, C., Lunati, I.: Random displacement training for fluid flow motion estimation. 2021. *<small>(in preparation)</small>*
 2. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J. (2018). Parametric study of the influence of environmental factors and tree properties on the transpirative cooling effect of trees. *Agricultural and Forest Meteorology 248*, 259-274. [:fontawesome-regular-file-pdf:](https://doi.org/10.1016/j.agrformet.2017.10.014) [:material-tag:](assets/manickathan2018a.bib)
-2. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J. (2018). Comparative study of flow field and drag coefficient of model and small natural trees in a wind tun-nel. *Urban Forestry & Urban Greening, 35*(December 2017), 230–239. [:fontawesome-regular-file-pdf:](https://doi.org/10.1016/j.ufug.2018.09.011) [:material-tag:](assets/manickathan2018b.bib)
+2. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J. (2018). Comparative study of flow field and drag coefficient of model and small natural trees in a wind tunnel. *Urban Forestry & Urban Greening, 35*(December 2017), 230–239. [:fontawesome-regular-file-pdf:](https://doi.org/10.1016/j.ufug.2018.09.011) [:material-tag:](assets/manickathan2018b.bib)
 
 ### Preprints
 
