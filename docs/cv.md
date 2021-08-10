@@ -116,7 +116,7 @@ May 2015 — May 2019<br>
 ### Manuscripts
 
 - **PhD thesis**: Manickathan, L. (2019). Impact of vegetation on urban microclimate. *ETH Zurich*. [:fontawesome-regular-file-pdf:](https://doi.org/10.3929/ethz-b-000379379) [:material-tag:](assets/phdthesis.bib) [:material-github:](https://github.com/lento234/phdthesis)
-- **Master thesis**: Manickathan, L. (2014). Hybrid Eulerian-Lagrangian Vortex Particle Method. *In Msc, Technical University of Delft*. [:fontawesome-regular-file-pdf:](https://repository.tudelft.nl/islandora/object/uuid%3Afc21b131-b758-44e3-842d-b854a935f5c6) [:material-tag:](assets/masterthesis.bib) [:material-github:](https://github.com/lento234/masterthesis)
+- **Master thesis**: Manickathan, L. (2014). Hybrid Eulerian-Lagrangian Vortex Particle Method. *In Msc, Technical University of Delft*. [:fontawesome-regular-file-pdf:](http://resolver.tudelft.nl/uuid:fc21b131-b758-44e3-842d-b854a935f5c6) [:material-tag:](assets/masterthesis.bib) [:material-github:](https://github.com/lento234/masterthesis)
 ### Selected conferences
 
 1. **Manickathan, L.**, Kubilay, A., Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J.: Integrated CFD vegetation model with soil-plant-air water dynamics for studying the cooling potential of vegetation in an urban street canyon. *10th International Conference on Urban Climate/14th Symposium on the Urban Environment*, New York, NY, USA, 6 - 10 August 2018.
