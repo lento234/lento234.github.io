@@ -102,12 +102,6 @@ May 2015 — May 2019<br>
 
 ## Publications & Presentations
 
-### Selected conferences
-
-1. **Manickathan, L.**, Kubilay, A., Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J.: Integrated CFD vegetation model with soil-plant-air water dynamics for studying the cooling potential of vegetation in an urban street canyon. *10th International Conference on Urban Climate/14th Symposium on the Urban Environment*, New York, NY, USA, 6 - 10 August 2018.
-2. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome D., & Carmeliet, J.: Conjugate Vegetation Model for Evaluating Evapotranspirative Cooling in Urban Environment. 97th AMS Annual Meeting, Seattle, WA, USA, 2017.
-3. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J.: Aerodynamic characterization of model vegetation by wind tunnel experiments. 4th International Conference on Countermeasures to Urban Heat Island, Singapore, 2016.
-
 ### Journals
 
 1. **Manickathan, L.**, Mucignat, C., Lunati, I.: Random displacement training for fluid flow motion estimation. 2021. *<small>(in preparation)</small>*
@@ -118,3 +112,15 @@ May 2015 — May 2019<br>
 
 1. **Manickathan, L.**, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., & Carmeliet, J. (2019). *Unveiling dynamic changes in the diurnal microclimate of a Buxus sempervirens with non-intrusive imaging of flow field, leaf temperature, and plant microstructure.* [:fontawesome-regular-file-pdf:](http://arxiv.org/abs/1903.02283) [:material-tag:](assets/manickathan2019.bib)
 2. Palha, A., **Manickathan, L.**, Ferreira, C. S., & van Bussel, G. (2015). *A hybrid Eulerian-Lagrangian flow solver* [Numerical Analysis; Fluid Dynamics]. 27. [:fontawesome-regular-file-pdf:](http://arxiv.org/abs/1505.03368) [:material-tag:](assets/palha2015.bib)
+
+### Manuscripts
+
+- **PhD thesis**: Manickathan, L. (2019). Impact of vegetation on urban microclimate. *ETH Zurich*. [:fontawesome-regular-file-pdf:](https://doi.org/10.3929/ethz-b-000379379) [:material-tag:](assets/phdthesis.bib) [:material-github:](https://github.com/lento234/phdthesis)
+- **Master thesis**: Manickathan, L. (2014). Hybrid Eulerian-Lagrangian Vortex Particle Method. *In Msc, Technical University of Delft*. [:fontawesome-regular-file-pdf:](https://repository.tudelft.nl/islandora/object/uuid%3Afc21b131-b758-44e3-842d-b854a935f5c6) [:material-tag:](assets/masterthesis.bib) [:material-github:](https://github.com/lento234/masterthesis)
+### Selected conferences
+
+1. **Manickathan, L.**, Kubilay, A., Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J.: Integrated CFD vegetation model with soil-plant-air water dynamics for studying the cooling potential of vegetation in an urban street canyon. *10th International Conference on Urban Climate/14th Symposium on the Urban Environment*, New York, NY, USA, 6 - 10 August 2018.
+2. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome D., & Carmeliet, J.: Conjugate Vegetation Model for Evaluating Evapotranspirative Cooling in Urban Environment. 97th AMS Annual Meeting, Seattle, WA, USA, 2017.
+3. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J.: Aerodynamic characterization of model vegetation by wind tunnel experiments. 4th International Conference on Countermeasures to Urban Heat Island, Singapore, 2016.
+
+
