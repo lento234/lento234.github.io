@@ -123,4 +123,3 @@ May 2015 — May 2019<br>
 2. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome D., & Carmeliet, J.: Conjugate Vegetation Model for Evaluating Evapotranspirative Cooling in Urban Environment. 97th AMS Annual Meeting, Seattle, WA, USA, 2017.
 3. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J.: Aerodynamic characterization of model vegetation by wind tunnel experiments. 4th International Conference on Countermeasures to Urban Heat Island, Singapore, 2016.
 
-
