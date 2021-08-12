@@ -87,7 +87,7 @@
 10. Change root to `/mnt`
 
     ```bash
-    $ arch-root /mnt
+    $ arch-chroot /mnt
     ```
 
 11. Set correct time zone
@@ -117,7 +117,7 @@
     1. Add your hostname `yourhostname`
     
         ```bash
-        $ cat "yourhostname" >> /etc/hostname
+        $ echo "yourhostname" >> /etc/hostname
         ```
 
     2. Append the following to `/etc/hosts`
@@ -210,7 +210,7 @@
     2. Development tools: `git`, `htop`
 
         ```bash
-        $ pacmac -S git htop
+        $ pacman -S git htop
         ```
 
     3. (Optional) Install virtualbox utils
@@ -228,7 +228,7 @@
     4. Install window, desktop manager `xfce4`, greeter `lightdm`
 
         ```bash
-        $ pacman -S xorg lightdm lightdm-gtk-greeter xfce4
+        $ pacman -S xorg lightdm lightdm-gtk-greeter xfce4 xfce4-goodies
         ```
 
     5. Start display manager
