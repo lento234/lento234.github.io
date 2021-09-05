@@ -1,5 +1,9 @@
 # 2021-05: Arch Linux installation
 
+The installation guide below is a summarized version of the official [Installation Guide](https://wiki.archlinux.org/title/Installation_guide).
+
+## Installing basic system
+
 1. Choose correct keyboard keymaps
 
     ```bash
@@ -78,19 +82,21 @@
     $ pacstrap /mnt base base-devel linux linux-firmware vim nano man zsh
     ```
 
-9. Write filesystem table
+## Configuring system    
+
+1. Write filesystem table
 
     ```bash
     $ genfstab -U /mnt >> /mnt/etc/fstab
     ```
 
-10. Change root to `/mnt`
+2. Change root to `/mnt`
 
     ```bash
     $ arch-chroot /mnt
     ```
 
-11. Set correct time zone
+3. Set correct time zone
 
     ```bash
     $ ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime
@@ -98,7 +104,7 @@
     $ hwclock --systohc
     ```
 
-12. Set locale
+4. Set locale
 
     1. Uncomment the correct locale
 
@@ -112,7 +118,7 @@
         $ locale-gen
         ```
 
-13. Set hostname and hosts
+5. Set hostname and hosts
 
     1. Add your hostname `yourhostname`
     
@@ -128,13 +134,13 @@
         127.0.1.1   yourhostname.localdomain    yourhostname
         ```
 
-14. Setup root password using `passwd`
+6. Setup root password using `passwd`
 
     ```bash
     $ passwd
     ```
 
-15. Add default users
+7. Add default users
 
     1. Add new user
 
@@ -166,7 +172,7 @@
         $ visudo
         ```
 
-16. Setup grub
+8. Setup grub
 
     1. Install grub and efi-tools
 
@@ -198,58 +204,56 @@
         $ grub-mkconfig -o /boot/grub/grub.cfg
         ```
 
-17. Install additional requirements
+9. Network manager for internet connectivity
 
-    1. Network manager
+    ```bash
+    $ pacman -S networkmanager
+    $ systectl enable NetworkManager # enable network manager
+    ```
 
-        ```bash
-        $ pacman -S networkmanager
-        $ systectl enable NetworkManager # enable network manager
-        ```
+10. `Optional`: Reboot to conclude with bare system setup.
 
-    2. Development tools: `git`, `htop`
+    ```bash
+    $ exit # now back to iso image
+    $ umount -R /mnt
+    $ shutdown now # or reboot
+    ```
 
-        ```bash
-        $ pacman -S git htop
-        ```
+## Additional setup for a complete system
 
-    3. (Optional) Install virtualbox utils
+1. Install audio
 
-        ```bash
-        $ pacman -S virtualbox-guest-utils
-        ```
- 
-    3. Install audio
+    ```bash
+    $ pacman -S pulseaudio pulseaudio-alsa
+    ```
 
-        ```bash
-        $ pacman -S pulseaudio pulseaudio-alsa
-        ```
+2. Install a Graphical user interface; Display server (`xorg`), display driver (`nvidia`), desktop environment (`gnome`), window manager, display manager (`gdm`).
 
-    4. Install window, desktop manager `xfce4`, greeter `lightdm`
+    1. Install packages
 
         ```bash
-        $ pacman -S xorg lightdm lightdm-gtk-greeter xfce4 xfce4-goodies
+        $ pacman -S gnome nvidia # gnome-extra for further applications
         ```
 
-    5. Start display manager
+    2. Enable display manager for next reboot
 
         ```bash
-        $ systemctl enable lightdm
+        systemctl enable gdm.service
         ```
 
-    6. Browser
+3. Additional network tools
 
-        ```bash
-        $ pacman -S firefox
-        ```
+    ```bash
+    $ pacman -S openssh rsync
+    ```
 
-    7. Additional network tools
+4. Development tools: `git`, `htop`
 
-        ```bash
-        $ pacman -S openssh rsync
-        ```
+    ```bash
+    $ pacman -S git htop
+    ```
 
-18. Exit, unmount and reboot
+5. Reboot
 
     ```bash
     $ exit # now back to iso image
