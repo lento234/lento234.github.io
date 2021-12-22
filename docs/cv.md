@@ -21,12 +21,13 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
   * **CFD**: OpenFOAM, FEniCS, Fluent
   * **HPC libraries**: h5py, dask, cython, numba, cupy, mpi4py
   * **ML libraries**: PyTorch, scikit-learn
-  * **Programming**: Python, C/C++, MATLAB
+  * **Programming**: Python, C/C++, MATLAB, R
   * **Scientific libraries**: NumPy, SciPy, matplotlib, pandas, scikit-image
 
 #### Software development
 : 
   * **Automation**: Ansible
+  * **Database**: MariaDB, InfluxDB
   * **Cloud**: Amazon AWS (EC2)
   * **Container**: Docker, Sarus
   * **CI/CD**: Git (Github, Gitlab), Travis CI
