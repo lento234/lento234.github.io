@@ -19,8 +19,8 @@ Personal website hosted at github. Written with [mkdocs](https://www.mkdocs.org/
 
 1. Install [dependencies](requirements.txt) inside conda environment:
 
-    conda env create -f environment.yml
-  
-2. Run the builtin development server (`http://localhost:8000`)
+        conda env create -f environment.yml
+    
+2. Run the builtin development server ([`http://localhost:8000/`](http://localhost:8000/)):
 
-    mkdocs serve
+        mkdocs serve
