@@ -1,21 +1,25 @@
 site_name: Lento Manickathan
 site_url: https://manickathan.ch/
-copyright: Copyright &copy; 2021 - Lento Manickathan
-site_url: https://lent234.github.io
+copyright: Copyright &copy; 2022 - Lento Manickathan
+site_url: https://manickathan.ch
 site_dir: public
 repo_url: https://github.com/lento234/lento234.github.io
 repo_name: src
 edit_uri: edit/main/docs/
 
 nav:
-  - Home: index.md
+  - Home: home.md
   - CV: cv.md
   - ... | blog/*
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/logo.png
   favicon: images/favicon.svg
+  font:
+    text: Noto Sans
+    code: Fira code
   palette:
   - scheme: default
     primary: black
@@ -66,6 +70,7 @@ markdown_extensions:
   - pymdownx.tilde
   - def_list
   - attr_list
+  - meta
 
 extra:
   social:
@@ -82,6 +87,9 @@ extra:
     property: G-SDQ15H0726
 
 extra_javascript:
-  - js/config.js
+  # - js/config.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - assets/extra.css
