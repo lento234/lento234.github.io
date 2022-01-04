@@ -1,5 +1,4 @@
 ---
-template: cv_ext.html
 hide:
   - navigation
 ---

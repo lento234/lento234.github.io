@@ -1,5 +1,5 @@
 ---
-template: home_ext.html
+template: home.html
 title: Lento Manickathan
 hide:
   - navigation

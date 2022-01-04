@@ -14,3 +14,13 @@ Personal website hosted at github. Written with [mkdocs](https://www.mkdocs.org/
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/80x15.png
+
+## Development
+
+1. Install [dependencies](requirements.txt) inside conda environment:
+
+    conda env create -f environment.yml
+  
+2. Run the builtin development server (`http://localhost:8000`)
+
+    mkdocs serve

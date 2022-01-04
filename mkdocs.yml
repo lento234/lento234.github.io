@@ -8,7 +8,7 @@ repo_name: src
 edit_uri: edit/main/docs/
 
 nav:
-  - Home: home.md
+  - Home: index.md
   - CV: cv.md
   - ... | blog/*
 
