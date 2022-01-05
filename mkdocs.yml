@@ -40,8 +40,8 @@ theme:
 plugins:
   - search
   - mermaid2
-  - git-revision-date-localized:
-      type: timeago
+  # - git-revision-date-localized:
+  #     type: timeago
   - macros
   - mkdocs-jupyter:
       include_source: True
