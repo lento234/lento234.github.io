@@ -2,6 +2,14 @@
   --md-hue: 220;
 }
 
+[data-md-color-scheme="slate"][data-md-color-primary="black"], [data-md-color-scheme="slate"][data-md-color-primary="white"] {
+  --md-typeset-a-color: var(--md-accent-fg-color);
+}
+
+.md-typeset pre {
+  background-color: var(--md-code-bg-color);
+}
+
 .home {
   display: flex;
   align-items: stretch;

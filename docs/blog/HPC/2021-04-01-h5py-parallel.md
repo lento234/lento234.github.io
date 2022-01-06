@@ -1,4 +1,6 @@
-# 2021-04: Installing h5py with Parallel HDF5
+# Installing h5py with Parallel HDF5
+
+**Last updated: 2021-04-01**
 
 The following guide is if you want to install h5py with parallel (mpi) IO features. Therefore, h5py also requires a system-mpi linked `mpi4py` installation as well.
 

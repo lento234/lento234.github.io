@@ -1,16 +1,15 @@
+copyright: Copyright &copy; 2021 - 2022 Lento Manickathan
+edit_uri: edit/main/docs/
+repo_name: src
+repo_url: https://github.com/lento234/lento234.github.io
+site_dir: public
 site_name: Lento Manickathan
 site_url: https://manickathan.ch/
-copyright: Copyright &copy; 2022 - Lento Manickathan
-site_url: https://manickathan.ch
-site_dir: public
-repo_url: https://github.com/lento234/lento234.github.io
-repo_name: src
-edit_uri: edit/main/docs/
 
 nav:
   - Home: index.md
   - CV: cv.md
-  - ... | blog/*
+  - ... | blog/*/*
 
 theme:
   name: material
@@ -21,18 +20,20 @@ theme:
     text: Noto Sans
     code: Fira code
   palette:
-  - scheme: default
-    primary: black
-    toggle:
-      icon: material/toggle-switch-off-outline
-      name: Switch to dark mode
-  - scheme: slate
-    primary: black
-    toggle:
-      icon: material/toggle-switch
-      name: Switch to light mode
+    - scheme: default
+      primary: black
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: black
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   features:
     - navigation.tabs
+    - navigation.sections
     - search.suggest
     - search.highlight
     - navigation.top
@@ -40,8 +41,7 @@ theme:
 plugins:
   - search
   - mermaid2
-  # - git-revision-date-localized:
-  #     type: timeago
+  - git-revision-date
   - macros
   - mkdocs-jupyter:
       include_source: True
