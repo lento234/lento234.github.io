@@ -4,7 +4,7 @@ mkdocs
 # Custom themes and plugins
 mkdocs-awesome-pages-plugin
 #mkdocs-git-revision-date-localized-plugin
-mkdocs-git-revision-date-plugin
+# mkdocs-git-revision-date-plugin
 mkdocs-jupyter
 mkdocs-material
 mkdocs-macros-plugin

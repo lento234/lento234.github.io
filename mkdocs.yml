@@ -22,6 +22,7 @@ theme:
   palette:
     - scheme: default
       primary: black
+      accent: light blue
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -41,7 +42,7 @@ theme:
 plugins:
   - search
   - mermaid2
-  - git-revision-date
+  # - git-revision-date
   - macros
   - mkdocs-jupyter:
       include_source: True
