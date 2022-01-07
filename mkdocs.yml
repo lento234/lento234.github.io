@@ -1,7 +1,12 @@
 copyright: Copyright &copy; 2021 - 2022 Lento Manickathan
+
 edit_uri: edit/main/docs/
-repo_name: src
+
+repo_name: lento234/lento234.github.io
 repo_url: https://github.com/lento234/lento234.github.io
+
+site_author: Lento Manickathan
+site_description: Lento Manickathan's personal website
 site_dir: public
 site_name: Lento Manickathan
 site_url: https://manickathan.ch/
@@ -83,6 +88,8 @@ extra:
       link: https://www.linkedin.com/in/lento-manickathan/
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/u/mrlento234
+    - icon: fontawesome/solid/graduation-cap
+      link: https://scholar.google.ch/citations?user=wS-b8RcAAAAJ
   analytics:
     provider: google
     property: G-SDQ15H0726
