@@ -117,7 +117,7 @@ May 2015 — May 2019<br>
 
 ### Preprints
 
-1. **Manickathan, L.**, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., & Carmeliet, J. (2019). *Unveiling dynamic changes in the diurnal microclimate of a Buxus sempervirens with non-intrusive imaging of flow field, leaf temperature, and plant microstructure.* [:fontawesome-regular-file-pdf:](http://arxiv.org/abs/1903.02283) [:material-tag:](assets/manickathan2019.bib)
+1. **Manickathan, L.**, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., & Carmeliet, J. (2019). *Unveiling dynamic changes in the diurnal microclimate of a Buxus sempervirens with non-intrusive imaging of flow field, leaf temperature, and plant microstructure.* [:fontawesome-regular-file-pdf:](http://arxiv.org/abs/1903.02283) [:material-tag:](assets/manickathan2019.bib) [:fontawesome-home-solid:](https://manickathan.ch/phdthesis)
 2. Palha, A., **Manickathan, L.**, Ferreira, C. S., & van Bussel, G. (2015). *A hybrid Eulerian-Lagrangian flow solver* [Numerical Analysis; Fluid Dynamics]. 27. [:fontawesome-regular-file-pdf:](http://arxiv.org/abs/1505.03368) [:material-tag:](assets/palha2015.bib)
 
 ### Manuscripts
