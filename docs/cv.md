@@ -117,12 +117,12 @@ May 2015 — May 2019<br>
 
 ### Preprints
 
-1. **Manickathan, L.**, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., & Carmeliet, J. (2019). *Unveiling dynamic changes in the diurnal microclimate of a Buxus sempervirens with non-intrusive imaging of flow field, leaf temperature, and plant microstructure.* [:fontawesome-regular-file-pdf:](http://arxiv.org/abs/1903.02283) [:material-tag:](assets/manickathan2019.bib) [:fontawesome-home-solid:](https://manickathan.ch/phdthesis)
+1. **Manickathan, L.**, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., & Carmeliet, J. (2019). *Unveiling dynamic changes in the diurnal microclimate of a Buxus sempervirens with non-intrusive imaging of flow field, leaf temperature, and plant microstructure.* [:fontawesome-regular-file-pdf:](http://arxiv.org/abs/1903.02283) [:material-tag:](assets/manickathan2019.bib)
 2. Palha, A., **Manickathan, L.**, Ferreira, C. S., & van Bussel, G. (2015). *A hybrid Eulerian-Lagrangian flow solver* [Numerical Analysis; Fluid Dynamics]. 27. [:fontawesome-regular-file-pdf:](http://arxiv.org/abs/1505.03368) [:material-tag:](assets/palha2015.bib)
 
 ### Manuscripts
 
-- **PhD thesis**: Manickathan, L. (2019). Impact of vegetation on urban microclimate. *ETH Zurich*. [:fontawesome-regular-file-pdf:](https://doi.org/10.3929/ethz-b-000379379) [:material-tag:](assets/phdthesis.bib) [:material-github:](https://github.com/lento234/phdthesis)
+- **PhD thesis**: Manickathan, L. (2019). Impact of vegetation on urban microclimate. *ETH Zurich*. [:fontawesome-regular-file-pdf:](https://doi.org/10.3929/ethz-b-000379379) [:material-tag:](assets/phdthesis.bib) [:material-github:](https://github.com/lento234/phdthesis) [:fontawesome-home:](https://manickathan.ch/phdthesis)
 - **Master thesis**: Manickathan, L. (2014). Hybrid Eulerian-Lagrangian Vortex Particle Method. *In Msc, Technical University of Delft*. [:fontawesome-regular-file-pdf:](http://resolver.tudelft.nl/uuid:fc21b131-b758-44e3-842d-b854a935f5c6) [:material-tag:](assets/masterthesis.bib) [:material-github:](https://github.com/lento234/masterthesis)
 ### Selected conferences
 
