@@ -11,7 +11,7 @@
 
 ## Description
 
-Made with :heart: [mkdocs](https://www.mkdocs.org/) and [materials for mkdocs](https://squidfunk.github.io/mkdocs-material/) theme.
+Made with :heart: using [mkdocs](https://www.mkdocs.org/) and [materials for mkdocs](https://squidfunk.github.io/mkdocs-material/) theme.
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/80x15.png
