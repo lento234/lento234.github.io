@@ -8,8 +8,7 @@ hide:
 
 Aerospace Engineer and PhD in mechanical engineering with expertise in high-performance computing and machine learning. A brief summary of skills:
 
-:
-  * CFD simulation with `OpenFOAM`
+: * CFD simulation with `OpenFOAM`
   * PIV experimental skills
   * Machine learning with `PyTorch`
   * Cloud computing, GPU computing
@@ -20,8 +19,8 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 ## Technical skills
 
 #### Scientific programming
-:
-  * **CAD**: CATIA
+
+: * **CAD**: CATIA
   * **CFD**: OpenFOAM, FEniCS, Fluent
   * **HPC libraries**: h5py, dask, cython, numba, cupy, mpi4py
   * **ML libraries**: PyTorch, scikit-learn
@@ -29,8 +28,8 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
   * **Scientific libraries**: NumPy, SciPy, matplotlib, pandas, scikit-image
 
 #### Software development
-:
-  * **Automation**: Ansible
+
+: * **Automation**: Ansible
   * **Database**: MariaDB, InfluxDB
   * **Cloud**: Amazon AWS (EC2)
   * **Container**: Docker, Sarus
@@ -47,8 +46,7 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 **Postdoctoral researcher** — Empa&emsp;<small>*(Z&uuml;rich, Switzerland)*</small><br>
 June 2019 — *Present*
 
-:
-  * Application of machine learning in quantitative flow visualization.
+: * Application of machine learning in quantitative flow visualization.
   * Supervised optical flow algorithms for PIV.
   * Convolutional Neural Networks (CNN) in PyTorch.
   * Additional responsibilities: Deputy Laser safety officer (LSO), deputy data management, Lab HPC support, and fluid tunnel support.
@@ -56,8 +54,7 @@ June 2019 — *Present*
 **Scientific Assistant** — ETH Z&uuml;rich&emsp;<small>(Z&uuml;rich, Switzerland)</small><br>
 May 2015 — May 2019<br>
 
-:
-  * Numerical and experimental research at Empa.
+: * Numerical and experimental research at Empa.
   * Neutron radiography at Paul Scherrer Institut (PSI).
   * Teaching assistant for Application of CFD in buildings.
   * Supervision of master thesis project: *Praharsh Pai Raikar*
@@ -97,35 +94,35 @@ May 2015 — May 2019<br>
 
 ## Languages
 
-* **English** (*Native*)
-* **German** (*Conversational*)
-* **Malayalam** (*Fluent*)
+  * **English** (*Native*)
+  * **German** (*Conversational*)
+  * **Malayalam** (*Fluent*)
 
 ## Awards
 
-1. **Outstanding Oral Presentation** at 13th Symposium on Urban Environment, Jan 2017, Seattle, USA
-2. **Young Researcher Best Research Award** at 4th International Conference on Countermeasures to Urban Heat Island, May 2016, Singapore.
+  1. **Outstanding Oral Presentation** at 13th Symposium on Urban Environment, Jan 2017, Seattle, USA
+  2. **Young Researcher Best Research Award** at 4th International Conference on Countermeasures to Urban Heat Island, May 2016, Singapore.
 
 ## Publications & Presentations
 
 ### Journals
 
-1. **Manickathan, L.**, Mucignat, C., Lunati, I.: Random displacement training for fluid flow motion estimation. 2021. *<small>(in preparation)</small>*
-2. **Manickathan, L.**, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., & Carmeliet, J. (2022). A study on diurnal microclimate hysteresis and plant morphology of a Buxus sempervirens using PIV, infrared thermography, and X-ray imaging. *Agricultural and Forest Meteorology 313*, 108722. [:fontawesome-regular-file-pdf:](https://doi.org/10.1016/j.agrformet.2021.108722) [:material-tag:](assets/manickathan2022.bib)
-3. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J. (2018). Parametric study of the influence of environmental factors and tree properties on the transpirative cooling effect of trees. *Agricultural and Forest Meteorology 248*, 259-274. [:fontawesome-regular-file-pdf:](https://doi.org/10.1016/j.agrformet.2017.10.014) [:material-tag:](assets/manickathan2018a.bib)
-4. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J. (2018). Comparative study of flow field and drag coefficient of model and small natural trees in a wind tunnel. *Urban Forestry & Urban Greening, 35*(December 2017), 230–239. [:fontawesome-regular-file-pdf:](https://doi.org/10.1016/j.ufug.2018.09.011) [:material-tag:](assets/manickathan2018b.bib)
+  1. **Manickathan, L.**, Mucignat, C., Lunati, I.: Random displacement training for fluid flow motion estimation. 2021. *<small>(in preparation)</small>*
+  2. **Manickathan, L.**, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., & Carmeliet, J. (2022). A study on diurnal microclimate hysteresis and plant morphology of a Buxus sempervirens using PIV, infrared thermography, and X-ray imaging. *Agricultural and Forest Meteorology 313*, 108722. [:fontawesome-regular-file-pdf:](https://doi.org/10.1016/j.agrformet.2021.108722) [:material-tag:](assets/manickathan2022.bib)
+  3. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J. (2018). Parametric study of the influence of environmental factors and tree properties on the transpirative cooling effect of trees. *Agricultural and Forest Meteorology 248*, 259-274. [:fontawesome-regular-file-pdf:](https://doi.org/10.1016/j.agrformet.2017.10.014) [:material-tag:](assets/manickathan2018a.bib)
+  4. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J. (2018). Comparative study of flow field and drag coefficient of model and small natural trees in a wind tunnel. *Urban Forestry & Urban Greening, 35*(December 2017), 230–239. [:fontawesome-regular-file-pdf:](https://doi.org/10.1016/j.ufug.2018.09.011) [:material-tag:](assets/manickathan2018b.bib)
 
 ### Preprints
 
-1. **Manickathan, L.**, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., & Carmeliet, J. (2019). *Unveiling dynamic changes in the diurnal microclimate of a Buxus sempervirens with non-intrusive imaging of flow field, leaf temperature, and plant microstructure.* [:fontawesome-regular-file-pdf:](http://arxiv.org/abs/1903.02283) [:material-tag:](assets/manickathan2019.bib)
-2. Palha, A., **Manickathan, L.**, Ferreira, C. S., & van Bussel, G. (2015). *A hybrid Eulerian-Lagrangian flow solver* [Numerical Analysis; Fluid Dynamics]. 27. [:fontawesome-regular-file-pdf:](http://arxiv.org/abs/1505.03368) [:material-tag:](assets/palha2015.bib)
+  1. **Manickathan, L.**, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., & Carmeliet, J. (2019). *Unveiling dynamic changes in the diurnal microclimate of a Buxus sempervirens with non-intrusive imaging of flow field, leaf temperature, and plant microstructure.* [:fontawesome-regular-file-pdf:](http://arxiv.org/abs/1903.02283) [:material-tag:](assets/manickathan2019.bib)
+  2. Palha, A., **Manickathan, L.**, Ferreira, C. S., & van Bussel, G. (2015). *A hybrid Eulerian-Lagrangian flow solver* [Numerical Analysis; Fluid Dynamics]. 27. [:fontawesome-regular-file-pdf:](http://arxiv.org/abs/1505.03368) [:material-tag:](assets/palha2015.bib)
 
 ### Manuscripts
 
-- **PhD thesis**: Manickathan, L. (2019). Impact of vegetation on urban microclimate. *ETH Zurich*. [:fontawesome-regular-file-pdf:](https://doi.org/10.3929/ethz-b-000379379) [:material-tag:](assets/phdthesis.bib) [:material-github:](https://github.com/lento234/phdthesis) [:fontawesome-solid-home:](https://manickathan.ch/phdthesis)
-- **Master thesis**: Manickathan, L. (2014). Hybrid Eulerian-Lagrangian Vortex Particle Method. *In Msc, Technical University of Delft*. [:fontawesome-regular-file-pdf:](http://resolver.tudelft.nl/uuid:fc21b131-b758-44e3-842d-b854a935f5c6) [:material-tag:](assets/masterthesis.bib) [:material-github:](https://github.com/lento234/masterthesis)
+  * **PhD thesis**: Manickathan, L. (2019). Impact of vegetation on urban microclimate. *ETH Zurich*. [:fontawesome-regular-file-pdf:](https://doi.org/10.3929/ethz-b-000379379) [:material-tag:](assets/phdthesis.bib) [:material-github:](https://github.com/lento234/phdthesis) [:fontawesome-solid-home:](https://manickathan.ch/phdthesis)
+  * **Master thesis**: Manickathan, L. (2014). Hybrid Eulerian-Lagrangian Vortex Particle Method. *In Msc, Technical University of Delft*. [:fontawesome-regular-file-pdf:](http://resolver.tudelft.nl/uuid:fc21b131-b758-44e3-842d-b854a935f5c6) [:material-tag:](assets/masterthesis.bib) [:material-github:](https://github.com/lento234/masterthesis)
 ### Selected conferences
 
-1. **Manickathan, L.**, Kubilay, A., Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J.: Integrated CFD vegetation model with soil-plant-air water dynamics for studying the cooling potential of vegetation in an urban street canyon. *10th International Conference on Urban Climate/14th Symposium on the Urban Environment*, New York, NY, USA, 6 - 10 August 2018.
-2. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome D., & Carmeliet, J.: Conjugate Vegetation Model for Evaluating Evapotranspirative Cooling in Urban Environment. 97th AMS Annual Meeting, Seattle, WA, USA, 2017.
-3. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J.: Aerodynamic characterization of model vegetation by wind tunnel experiments. 4th International Conference on Countermeasures to Urban Heat Island, Singapore, 2016.
+  1. **Manickathan, L.**, Kubilay, A., Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J.: Integrated CFD vegetation model with soil-plant-air water dynamics for studying the cooling potential of vegetation in an urban street canyon. *10th International Conference on Urban Climate/14th Symposium on the Urban Environment*, New York, NY, USA, 6 - 10 August 2018.
+  2. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome D., & Carmeliet, J.: Conjugate Vegetation Model for Evaluating Evapotranspirative Cooling in Urban Environment. 97th AMS Annual Meeting, Seattle, WA, USA, 2017.
+  3. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J.: Aerodynamic characterization of model vegetation by wind tunnel experiments. 4th International Conference on Countermeasures to Urban Heat Island, Singapore, 2016.
