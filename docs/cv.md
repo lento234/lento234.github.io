@@ -8,7 +8,7 @@ hide:
 
 Aerospace Engineer and PhD in mechanical engineering with expertise in high-performance computing and machine learning. A brief summary of skills:
 
-: 
+:
   * CFD simulation with `OpenFOAM`
   * PIV experimental skills
   * Machine learning with `PyTorch`
@@ -20,7 +20,7 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 ## Technical skills
 
 #### Scientific programming
-: 
+:
   * **CAD**: CATIA
   * **CFD**: OpenFOAM, FEniCS, Fluent
   * **HPC libraries**: h5py, dask, cython, numba, cupy, mpi4py
@@ -29,7 +29,7 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
   * **Scientific libraries**: NumPy, SciPy, matplotlib, pandas, scikit-image
 
 #### Software development
-: 
+:
   * **Automation**: Ansible
   * **Database**: MariaDB, InfluxDB
   * **Cloud**: Amazon AWS (EC2)
@@ -45,9 +45,9 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
 ## Academic & professional experience
 
 **Postdoctoral researcher** — Empa&emsp;<small>*(Z&uuml;rich, Switzerland)*</small><br>
-June 2019 — *Present* 
+June 2019 — *Present*
 
-: 
+:
   * Application of machine learning in quantitative flow visualization.
   * Supervised optical flow algorithms for PIV.
   * Convolutional Neural Networks (CNN) in PyTorch.
@@ -56,12 +56,12 @@ June 2019 — *Present*
 **Scientific Assistant** — ETH Z&uuml;rich&emsp;<small>(Z&uuml;rich, Switzerland)</small><br>
 May 2015 — May 2019<br>
 
-: 
+:
   * Numerical and experimental research at Empa.
   * Neutron radiography at Paul Scherrer Institut (PSI).
   * Teaching assistant for Application of CFD in buildings.
   * Supervision of master thesis project: *Praharsh Pai Raikar*
-  
+
 ## Education
 
 **Doctor of Sciences** (Dr. sc.) — **Mechanical Engineering**<br>
@@ -129,4 +129,3 @@ May 2015 — May 2019<br>
 1. **Manickathan, L.**, Kubilay, A., Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J.: Integrated CFD vegetation model with soil-plant-air water dynamics for studying the cooling potential of vegetation in an urban street canyon. *10th International Conference on Urban Climate/14th Symposium on the Urban Environment*, New York, NY, USA, 6 - 10 August 2018.
 2. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome D., & Carmeliet, J.: Conjugate Vegetation Model for Evaluating Evapotranspirative Cooling in Urban Environment. 97th AMS Annual Meeting, Seattle, WA, USA, 2017.
 3. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J.: Aerodynamic characterization of model vegetation by wind tunnel experiments. 4th International Conference on Countermeasures to Urban Heat Island, Singapore, 2016.
-

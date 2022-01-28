@@ -6,7 +6,7 @@ The following guide is if you want to install h5py with parallel (mpi) IO featur
 
 **Installation:**
 
-1. Load the current latest parallel `HDF5` module (e.g. `HDF5/1.10.6-CrayGNU-20.11-parallel`). 
+1. Load the current latest parallel `HDF5` module (e.g. `HDF5/1.10.6-CrayGNU-20.11-parallel`).
 
     ```bash
     module load HDF5/1.10.6-CrayGNU-20.11-parallel
@@ -25,15 +25,15 @@ The following guide is if you want to install h5py with parallel (mpi) IO featur
     export HDF5_MPI="ON"
     export HDF5_DIR=/apps/daint/UES/jenkins/7.0.UP02-20.11/gpu/easybuild/software/HDF5/1.10.6-CrayGNU-20.11-parallel
     ```
-    
+
 3. Install h5py from [source](https://github.com/h5py/h5py).
 
-    a. Clone repo locally: 
+    a. Clone repo locally:
 
     ```bash
     git clone https://github.com/h5py/h5py
     ```
-    
+
     b. Update the `setup_build.py` file with the additional following `include_dirs`:
 
     ```python

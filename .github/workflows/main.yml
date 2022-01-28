@@ -28,4 +28,3 @@ jobs:
         run: |
           git pull
           mkdocs gh-deploy
-

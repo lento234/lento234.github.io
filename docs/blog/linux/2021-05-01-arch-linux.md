@@ -25,7 +25,7 @@ The installation guide below is a summarized version of the official [Installati
     ```
 
 4. Set correct system time
-    
+
     ```bash
     timedatectl set-ntp true
     ```
@@ -33,13 +33,13 @@ The installation guide below is a summarized version of the official [Installati
 5. Partition the disks
 
     1. List disks using `fdisk`
-    
+
         ```bash
         fdisk -l
         ```
 
     2. If UEFI is present, use `GPT` and make `EFI` partition, `swap`, and root `/`
-    
+
         ```bash
         cfdisk /dev/sdX # or /dev/nvme0nX
         ```
@@ -49,7 +49,7 @@ The installation guide below is a summarized version of the official [Installati
 6. Format the disks
 
     1. Make `EFI` partition
-    
+
         ```bash
         mkfs.fat -F32 /dev/sdXA # A is EFI partition
         ```
@@ -61,13 +61,13 @@ The installation guide below is a summarized version of the official [Installati
         ```
 
     3. Turn swap on
-    
+
         ```bash
         swapon /dev/sdXB
         ```
 
     4. Make root fs
-    
+
         ```bash
         mkfs.ext4 /dev/sdaXC # C is root partition
         ```
@@ -122,7 +122,7 @@ The installation guide below is a summarized version of the official [Installati
 5. Set hostname and hosts
 
     1. Add your hostname `yourhostname`
-    
+
         ```bash
         echo "yourhostname" >> /etc/hostname
         ```
@@ -150,7 +150,7 @@ The installation guide below is a summarized version of the official [Installati
         ```
 
     2. Give new user a password with `passwd`
-        
+
         ```bash
         passwd newuser
         ```
