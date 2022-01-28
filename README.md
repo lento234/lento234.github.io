@@ -5,17 +5,18 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/lento234/lento234.github.io/Build)
 ![CC BY 4.0](https://img.shields.io/github/license/lento234/lento234.github.io?color=blue)
 
+***Personal website hosted at `github`***
 
 </div>
 
 ## Description
 
-Personal website hosted at github. Written with [mkdocs](https://www.mkdocs.org/)  and [materials for mkdocs](https://squidfunk.github.io/mkdocs-material/) theme.
+Made with :heart: [mkdocs](https://www.mkdocs.org/) and [materials for mkdocs](https://squidfunk.github.io/mkdocs-material/) theme.
 
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/80x15.png
 
-## Development
+## Development guide
 
 1. Install [dependencies](requirements.txt) inside conda environment:
 
