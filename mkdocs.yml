@@ -15,6 +15,8 @@ nav:
   - Home: index.md
   - CV: cv.md
   - ... | blog/*/*
+  - Links:
+    - Resources: resources.md
 
 theme:
   name: material
