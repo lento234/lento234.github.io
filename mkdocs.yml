@@ -17,6 +17,7 @@ nav:
   - ... | blog/*/*
   - Links:
     - Resources: resources.md
+    - Awesome-Fluid-Dynamics: https://manickathan.ch/awesome-fluid-dynamics/
 
 theme:
   name: material
