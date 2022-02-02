@@ -18,6 +18,7 @@ nav:
   - Links:
     - Resources: resources.md
     - Awesome-Fluid-Dynamics: https://manickathan.ch/awesome-fluid-dynamics/
+    - SensAI: https://sensai.manickathan.ch/
 
 theme:
   name: material
