@@ -9,7 +9,7 @@
 - [UFW Essentials: Common Firewall Rules and Commands](https://www.digitalocean.com/community/tutorials/ufw-essentials-common-firewall-rules-and-commands)
 
 
-## Status 
+## Status
 
 - [SWITCH Traffic Weather Map](https://traffic.lan.switch.ch/vip/swiss-map/)
 - [ipconfig](http://ifconfig.co/)
@@ -24,5 +24,3 @@
 - [Linux as a gateway](https://unix.stackexchange.com/questions/222054/how-can-i-use-linux-as-a-gateway)
 - [sssd: Identity management](https://sssd.io/index.html)
 - [FreeIPA](https://www.freeipa.org/page/Main_Page)
-
-
