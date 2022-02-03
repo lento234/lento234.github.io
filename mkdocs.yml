@@ -16,9 +16,10 @@ nav:
   - CV: cv.md
   - ... | blog/*/*
   - Links:
-    - Resources: resources.md
-    - Awesome-Fluid-Dynamics &#128279;: https://manickathan.ch/awesome-fluid-dynamics/
-    - SensAI &#128279;: https://sensai.manickathan.ch/
+    - GitHub: github.md
+    - Useful resources: resources.md
+    # - Awesome-Fluid-Dynamics &#128279;: https://manickathan.ch/awesome-fluid-dynamics/
+    # - SensAI &#128279;: https://sensai.manickathan.ch/
 
 theme:
   name: material
@@ -80,6 +81,7 @@ markdown_extensions:
   - pymdownx.tilde
   - def_list
   - attr_list
+  - md_in_html
   - meta
 
 extra:
