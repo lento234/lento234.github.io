@@ -1,4 +1,8 @@
-# Resources
+---
+icon: material/format-font
+---
+
+# Useful resources
 
 ## Tutorials
 
