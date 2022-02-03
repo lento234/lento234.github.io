@@ -15,13 +15,13 @@
     ![License](https://img.shields.io/github/license/lento234/awesome-fluid-dynamics?style=flat-square&color=blue&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/awesome-fluid-dynamics?style=flat-square&labelColor=000000)
 
-
 * [lento234.github.io](https://github.com/lento234/lento234.github.io) - Personal website hosted at github
 
     [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://manickathan.ch/)
     ![Build](https://img.shields.io/github/workflow/status/lento234/lento234.github.io/Build?style=flat-square&labelColor=000000)
     ![License](https://img.shields.io/github/license/lento234/lento234.github.io?style=flat-square&color=blue&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/lento234.github.io?style=flat-square&labelColor=000000)
+
 
 ## Devops
 
@@ -41,6 +41,12 @@
 
     ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/dotfiles?style=flat-square&labelColor=000000)
+
+* [motd](https://github.com/lento234/motd) - Collection of my motd scripts
+
+    ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&labelColor=000000)
+    ![Last commit](https://img.shields.io/github/last-commit/lento234/motd?style=flat-square&labelColor=000000)
+
 
 ## Web apps
 
