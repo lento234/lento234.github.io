@@ -7,7 +7,7 @@
 
 ## Docs
 
-* [Awesome-Fluid-Dynamics](https://github.com/lento234/awesome-fluid-dynamics) - A curated list of repositories related to fluid dynamics.
+* [Awesome Fluid Dynamics](https://github.com/lento234/awesome-fluid-dynamics) - A curated list of repositories related to fluid dynamics.
 
     [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://manickathan.ch/awesome-fluid-dynamics/)
     ![Awesome](https://raw.githubusercontent.com/lento234/awesome-fluid-dynamics/main/logo/awesome.svg)
@@ -22,27 +22,31 @@
     ![License](https://img.shields.io/github/license/lento234/lento234.github.io?style=flat-square&color=blue&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/lento234.github.io?style=flat-square&labelColor=000000)
 
+* [ML Tutorials](https://github.com/lento234/ml-tutorials) - Machine learning tutorials (PyTorch)
+
+    ![License](https://img.shields.io/github/license/lento234/ml-tutorials?style=flat-square&color=blue&labelColor=000000)
+    ![Last commit](https://img.shields.io/github/last-commit/lento234/ml-tutorials?style=flat-square&labelColor=000000)
 
 ## Devops
 
-* [homelab](https://github.com/lento234/homelab) - Personal homelab setup
+* [Homelab](https://github.com/lento234/homelab) - Personal homelab setup
 
     ![Build](https://img.shields.io/github/workflow/status/lento234/homelab/CI?style=flat-square&labelColor=000000)
     ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/homelab?style=flat-square&labelColor=000000)
 
-* [dockerfiles](https://github.com/lento234/dockerfiles) - Repository of private dockerfiles
+* [Dockerfiles](https://github.com/lento234/dockerfiles) - Repository of private dockerfiles
 
     [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://hub.docker.com/u/mrlento234)
     ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/dockerfiles?style=flat-square&labelColor=000000)
 
-* [dotfiles](https://github.com/lento234/dotfiles) - My personal dotfiles for bash/zsh, vim, tmux, apt, brew.
+* [Dotfiles](https://github.com/lento234/dotfiles) - My personal dotfiles for bash/zsh, vim, tmux, apt, brew.
 
     ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/dotfiles?style=flat-square&labelColor=000000)
 
-* [motd](https://github.com/lento234/motd) - Collection of my motd scripts
+* [MOTD](https://github.com/lento234/motd) - Collection of my motd scripts
 
     ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/motd?style=flat-square&labelColor=000000)
