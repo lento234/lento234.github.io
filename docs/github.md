@@ -27,6 +27,11 @@
     ![License](https://img.shields.io/github/license/lento234/ml-tutorials?style=flat-square&color=blue&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/ml-tutorials?style=flat-square&labelColor=000000)
 
+* [Python Tutorials](https://github.com/lento234/python-tutorial) - A brief collection of python tutorial
+
+    ![License](https://img.shields.io/github/license/lento234/python-tutorial?style=flat-square&color=blue&labelColor=000000)
+    ![Last commit](https://img.shields.io/github/last-commit/lento234/python-tutorial?style=flat-square&labelColor=000000)
+
 ## Devops
 
 * [Homelab](https://github.com/lento234/homelab) - Personal homelab setup
