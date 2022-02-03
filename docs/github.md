@@ -31,6 +31,11 @@
     ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/homelab?style=flat-square&labelColor=000000)
 
+* [dockerfiles](https://github.com/lento234/dockerfiles) - Repository of private dockerfiles
+
+    [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://hub.docker.com/u/mrlento234)
+    ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&labelColor=000000)
+    ![Last commit](https://img.shields.io/github/last-commit/lento234/homelab?style=flat-square&labelColor=000000)
 
 ## Web apps
 
@@ -49,7 +54,7 @@
     [![PyPi Python versions](https://img.shields.io/pypi/pyversions/wordlebee.svg?style=flat-square&labelColor=000000)](https://pypi.org/project/wordlebee/)
     ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&labelColor=000000)
     ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)
-    [![Downloads](https://pepy.tech/badge/wordlebee?style=flat-square&labelColor=000000)](https://pepy.tech/project/wordlebee)
+    ![Downloads](https://pepy.tech/badge/wordlebee?style=flat-square&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/wordlebee?style=flat-square&labelColor=000000)
 
 
