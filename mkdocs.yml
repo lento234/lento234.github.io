@@ -15,11 +15,10 @@ nav:
   - Home: index.md
   - CV: cv.md
   - ... | blog/*/*
+  - Projects: projects.md
   - Links:
-    - GitHub: github.md
-    - Useful resources: resources.md
-    # - Awesome-Fluid-Dynamics &#128279;: https://manickathan.ch/awesome-fluid-dynamics/
-    # - SensAI &#128279;: https://sensai.manickathan.ch/
+    - Resources: resources.md
+
 
 theme:
   name: material

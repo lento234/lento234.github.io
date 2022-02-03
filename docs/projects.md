@@ -1,8 +1,13 @@
-# GitHub
+---
+hide:
+  - navigation
+---
+
+# Projects
 
 <figure markdown>
   ![Stats](https://raw.githubusercontent.com/lento234/lento234/master/github-metrics-plugins.svg){ width="500px" }
-  <figcaption>GitHub stats summary</figcaption>
+  <figcaption><a href="https://github.com/lento234/">GitHub stats summary</a></figcaption>
 </figure>
 
 ## Docs
