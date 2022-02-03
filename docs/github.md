@@ -35,7 +35,12 @@
 
     [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://hub.docker.com/u/mrlento234)
     ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&labelColor=000000)
-    ![Last commit](https://img.shields.io/github/last-commit/lento234/homelab?style=flat-square&labelColor=000000)
+    ![Last commit](https://img.shields.io/github/last-commit/lento234/dockerfiles?style=flat-square&labelColor=000000)
+
+* [dotfiles](https://github.com/lento234/dotfiles) - My personal dotfiles for bash/zsh, vim, tmux, apt, brew.
+
+    ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&labelColor=000000)
+    ![Last commit](https://img.shields.io/github/last-commit/lento234/dotfiles?style=flat-square&labelColor=000000)
 
 ## Web apps
 
