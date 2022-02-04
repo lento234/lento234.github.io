@@ -5,11 +5,10 @@ hide:
 
 # Projects
 
-<figure markdown>
-  ![Stats](https://raw.githubusercontent.com/lento234/lento234/master/github-metrics-plugins.svg){ width="500px" }
-  <figcaption><a href="https://github.com/lento234/">GitHub stats summary</a></figcaption>
-</figure>
+**Stats:**
 
+![GitHub Summary](https://raw.githubusercontent.com/lento234/lento234/master/github-metrics-summary.svg){ width=400}
+![GitHub Contributations](https://raw.githubusercontent.com/lento234/lento234/master/github-metrics-plugins.svg){width=400}
 ## Docs
 
 * [Awesome Fluid Dynamics](https://github.com/lento234/awesome-fluid-dynamics) - A curated list of repositories related to fluid dynamics.
