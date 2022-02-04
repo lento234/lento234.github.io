@@ -7,8 +7,8 @@ hide:
 
 **Stats:**
 
-![GitHub Summary](https://raw.githubusercontent.com/lento234/lento234/master/github-metrics-summary.svg){ width=400}
-![GitHub Contributations](https://raw.githubusercontent.com/lento234/lento234/master/github-metrics-plugins.svg){width=400}
+[![GitHub Summary](https://raw.githubusercontent.com/lento234/lento234/master/github-metrics-summary.svg){ width=400}](https://github.com/lento234)
+[![GitHub Contributations](https://raw.githubusercontent.com/lento234/lento234/master/github-metrics-plugins.svg){width=400}](https://github.com/lento234)
 ## Docs
 
 * [Awesome Fluid Dynamics](https://github.com/lento234/awesome-fluid-dynamics) - A curated list of repositories related to fluid dynamics.
