@@ -37,6 +37,7 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
   * **Embedded**: Arduino, Raspberry Pi, NVIDIA Jetson Nano
   * **Graphics**: Blender, Photoshop
   * **HPC**: slurm
+  * **Monitoring**: grafana
   * **Remote**: ssh, nginx
   * **OS**: Linux (Ubuntu, Debian, Arch, CentOS), MacOS, Windows
   * **Web**: HTML, CSS
