@@ -26,5 +26,4 @@ jobs:
 
       - name: Build test
         run: |
-          git pull
           mkdocs build --strict --verbose
