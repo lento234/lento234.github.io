@@ -33,3 +33,4 @@
 ## Writing
 
 * [Scientific writing with markdown](https://jaantollander.com/post/scientific-writing-with-markdown/)
+* [Pandoc-crossref guide](https://lierdakil.github.io/pandoc-crossref/)
