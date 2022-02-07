@@ -16,3 +16,8 @@
 ## Entertainment
 
 * [tunefind: Find the tune you are looking for](https://www.tunefind.com/)
+
+
+## Maps
+
+* [Light pollution map](https://www.lightpollutionmap.info/)
