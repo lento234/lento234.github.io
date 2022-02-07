@@ -21,3 +21,4 @@
 ## Maps
 
 * [Light pollution map](https://www.lightpollutionmap.info/)
+* [Kanton Zurich - Abfluss & Wasserstand](https://www.zh.ch/de/umwelt-tiere/wasser-gewaesser/messdaten/abfluss-wasserstand.html)
