@@ -9,6 +9,11 @@
 * [Rocky Linux Documentation](https://docs.rockylinux.org/)
 
 
+## Embedded systems
+
+* [Jetson Nano wiki](https://elinux.org/Jetson_Nano)
+
+
 ## Programming
 
 * [TheAlternative Course Materials](https://gitlab.ethz.ch/thealternative/courses)
