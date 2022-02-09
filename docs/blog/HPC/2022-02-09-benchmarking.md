@@ -16,7 +16,7 @@
     dd if=/dev/zero of=file_1GB bs=1024 count=1000000
     ```
 
-* Benchmark with `IOzone` filesystem benchmarking tool and export to `xls`
+* Benchmark with [IOzone](http://www.iozone.org/) filesystem benchmarking tool and export to `xls`
 
     ```bash
     iozone -a /dev/sdb1 -b results.xls
