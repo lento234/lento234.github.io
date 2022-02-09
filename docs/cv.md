@@ -39,7 +39,7 @@ Aerospace Engineer and PhD in mechanical engineering with expertise in high-perf
   * **HPC**: slurm
   * **Monitoring**: grafana
   * **Remote**: ssh, nginx
-  * **OS**: Linux (Ubuntu, Debian, Arch, CentOS), MacOS, Windows
+  * **OS**: Linux (Ubuntu, Debian, Arch, CentOS, Rocky Linux), MacOS, Windows
   * **Web**: HTML, CSS
 
 ## Academic & professional experience
