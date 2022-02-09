@@ -34,10 +34,12 @@
 
     * Server-side (default port: `5001`:
 
-    ```bash
-    iperf -s
+        ```bash
+        iperf -s
+        ```
 
     * Client-side:
-    ```
-    iperf -c server_ip
-    ```
+
+        ```bash
+        iperf -c server_ip
+        ```
