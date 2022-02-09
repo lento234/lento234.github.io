@@ -4,14 +4,20 @@
 
 ## Storage
 
-1. Perform timings of device/cache reads on device (`sda`):
+* Perform timings of device/cache reads on device (`sda`):
 
     ```bash
     hparm -tT /dev/sda
     ```
 
-2. Measure the write performance of a disk
+* Measure the write performance of a disk
 
     ```bash
     dd if=/dev/zero of=file_1GB bs=1024 count=1000000
+    ```
+
+* Benchmark with `IOzone` filesystem benchmarking tool and export to `xls`
+
+    ```bash
+    iozone -a /dev/sdb1 -b results.xls
     ```
