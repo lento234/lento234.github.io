@@ -32,7 +32,7 @@
 
 * Measuring bandwidth *between* two computer:
 
-    * Server-side (default port: `5001`:
+    * Server-side (default port: `5001`):
 
         ```bash
         iperf -s
