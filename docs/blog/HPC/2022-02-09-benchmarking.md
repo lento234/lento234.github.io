@@ -13,11 +13,31 @@
 * Measure the write performance of a disk
 
     ```bash
-    dd if=/dev/zero of=file_1GB bs=1024 count=1000000
+    dd if=/dev/zero of=file_1GB bs=1024 count=1000000 conv=fdatasync
     ```
 
 * Benchmark with [IOzone](http://www.iozone.org/) filesystem benchmarking tool and export to `xls`
 
     ```bash
     iozone -a /dev/sdb1 -b results.xls
+    ```
+
+## Network
+
+* Testing internet bandwidth
+
+    ```bash
+    speedtest-cli
+    ```
+
+* Measuring bandwidth *between* two computer:
+
+    * Server-side (default port: `5001`:
+
+    ```bash
+    iperf -s
+
+    * Client-side:
+    ```
+    iperf -c server_ip
     ```
