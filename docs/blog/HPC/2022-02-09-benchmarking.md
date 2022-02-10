@@ -1,6 +1,6 @@
 # A guide on basic benchmarking
 
-**Last updated**: 9th Feb, 2022
+**Last updated**: 9 February 2022
 
 ## Storage
 

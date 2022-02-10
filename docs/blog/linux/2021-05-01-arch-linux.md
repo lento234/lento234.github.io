@@ -1,6 +1,6 @@
 # Arch Linux installation guide
 
-**Last updated: 2021-05-01**
+**Last updated**: 1 May 2021
 
 The installation guide below is a summarized version of the official [Installation Guide](https://wiki.archlinux.org/title/Installation_guide).
 
