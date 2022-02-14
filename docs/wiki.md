@@ -12,7 +12,9 @@
 ## Embedded systems
 
 * [Jetson Nano wiki](https://elinux.org/Jetson_Nano)
-
+* [PyTorch Container for Jetson and JetPack](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/l4t-pytorch)
+* [Nvidia Docker](https://github.com/NVIDIA/nvidia-docker)
+* [PyTorch for Jetson](https://forums.developer.nvidia.com/t/pytorch-for-jetson-version-1-10-now-available/72048)
 
 ## Programming
 
