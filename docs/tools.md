@@ -12,7 +12,7 @@
 * [URL Decoder/Encoder](https://meyerweb.com/eric/tools/dencoder/)
 * [Online base64 file encoder](https://b64.io/)
 * [Markdown badges](https://ileriayo.github.io/markdown-badges/)
-
+* [Chmod calculator](https://chmod-calculator.com/)
 
 ## Entertainment
 
