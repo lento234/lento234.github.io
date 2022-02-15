@@ -120,7 +120,7 @@ May 2015 — May 2019<br>
 
 ### Manuscripts
 
-  * **PhD thesis**: Manickathan, L. (2019). Impact of vegetation on urban microclimate. *ETH Zurich*. [:fontawesome-regular-file-pdf:](https://doi.org/10.3929/ethz-b-000379379) [:material-tag:](assets/phdthesis.bib) [:material-github:](https://github.com/lento234/phdthesis) [:fontawesome-solid-home:](https://manickathan.ch/phdthesis)
+  * **PhD thesis**: Manickathan, L. (2019). Impact of vegetation on urban microclimate. *ETH Zurich*. [:fontawesome-regular-file-pdf:](https://doi.org/10.3929/ethz-b-000379379) [:material-tag:](assets/phdthesis.bib) [:material-github:](https://github.com/lento234/phdthesis) [:fontawesome-solid-house:](https://manickathan.ch/phdthesis)
   * **Master thesis**: Manickathan, L. (2014). Hybrid Eulerian-Lagrangian Vortex Particle Method. *In Msc, Technical University of Delft*. [:fontawesome-regular-file-pdf:](http://resolver.tudelft.nl/uuid:fc21b131-b758-44e3-842d-b854a935f5c6) [:material-tag:](assets/masterthesis.bib) [:material-github:](https://github.com/lento234/masterthesis)
 ### Selected conferences
 
