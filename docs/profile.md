@@ -11,12 +11,12 @@ hide:
 Aerospace Engineer and PhD in mechanical engineering with expertise in high-performance computing and machine learning. Keen
 at developing skills in computer vision techniques. A brief summary of expertise:
 
-* Programming in `Python`
-* Machine learning with `PyTorch`
-* CFD simulation with `OpenFOAM`
-* PIV experimental skills
-* Cloud computing, GPU computing
-* Administration of HPC system
+* HPC programming in `Python`.
+* Machine learning with `PyTorch`.
+* CFD simulation with `OpenFOAM`.
+* PIV experimental skills.
+* Cloud computing, GPU computing.
+* Administration of HPC system.
 
 
 ## Technical skills
