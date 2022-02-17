@@ -2,8 +2,7 @@
 hide:
   - navigation
 ---
-
-# Projects
+#
 
 **Stats:**
 

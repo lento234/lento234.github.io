@@ -13,9 +13,9 @@ site_url: https://manickathan.ch/
 
 nav:
   - Home: index.md
-  - CV: cv.md
-  - ... | blog/*/*
+  - Profile: profile.md
   - Projects: projects.md
+  - ... | blog/*/*
   - Links:
     - tools.md
     - wiki.md

@@ -2,52 +2,54 @@
 hide:
   - navigation
 ---
-# Curriculum Vitae
+#
 
-## Profile
+[PDF :fontawesome-solid-file-pdf:](https://raw.githubusercontent.com/lento234/cv/main/cv.pdf){ .md-button .md-button--primary }
 
-Aerospace Engineer and PhD in mechanical engineering with expertise in high-performance computing and machine learning. A brief summary of skills:
+## Summary
 
-: * CFD simulation with `OpenFOAM`
-  * PIV experimental skills
-  * Machine learning with `PyTorch`
-  * Cloud computing, GPU computing
-  * Programming in `Python`
-  * Administration of HPC system
+Aerospace Engineer and PhD in mechanical engineering with expertise in high-performance computing and machine learning. Keen
+at developing skills in computer vision techniques. A brief summary of expertise:
+
+* Programming in `Python`
+* Machine learning with `PyTorch`
+* CFD simulation with `OpenFOAM`
+* PIV experimental skills
+* Cloud computing, GPU computing
+* Administration of HPC system
 
 
 ## Technical skills
 
 #### Scientific programming
 
-: * **CAD**: CATIA
-  * **CFD**: OpenFOAM, FEniCS, Fluent
-  * **HPC libraries**: h5py, dask, cython, numba, cupy, mpi4py
-  * **ML libraries**: PyTorch, scikit-learn
-  * **Programming**: Python, C/C++, MATLAB, R
-  * **Scientific libraries**: NumPy, SciPy, matplotlib, pandas, scikit-image
+* **CAD**: Blender \(\cdot\) CATIA
+* **CFD**: FEniCS \(\cdot\) Fluent \(\cdot\) OpenFOAM
+* **Programming**: C++ \(\cdot\) MATLAB \(\cdot\) Python \(\cdot\) R \(\cdot\) Shell
+* **Python Libraries (HPC)**: CuPy \(\cdot\) Cython \(\cdot\) Dask \(\cdot\) H5py \(\cdot\) MPI4py \(\cdot\) Numba \(\cdot\) NumPy \($\cdot\) Pandas \(\cdot\) SciPy
+* **Python Libraries (ML)**: PyTorch \(\cdot\) Scikit-learn
+* **Python Libraries (Plotting)**: Dash \(\cdot\) Matplotlib \(\cdot\) Scikit-image
 
 #### Software development
 
-: * **Automation**: Ansible
-  * **Database**: MariaDB, InfluxDB
-  * **Cloud**: Amazon AWS (EC2)
-  * **Container**: Docker, Sarus
-  * **CI/CD**: Git (Github, Gitlab), Travis CI
-  * **Embedded**: Arduino, Raspberry Pi, NVIDIA Jetson Nano
-  * **Graphics**: Blender, Photoshop
-  * **HPC**: slurm
-  * **Monitoring**: grafana
-  * **Remote**: ssh, nginx
-  * **OS**: Linux (Ubuntu, Debian, Arch, CentOS, Rocky Linux), MacOS, Windows
-  * **Web**: HTML, CSS
+* **Automation**: Ansible
+* **CI/CD**: Git (Github, Gitlab) \(\cdot\) Travis CI
+* **Cloud**: Amazon AWS (EC2)
+* **Container**: Docker \(\cdot\) Kubernetes \(\cdot\) Sarus \(\cdot\) Vagrant
+* **Database**: InfluxDB \(\cdot\) MariaDB
+* **Embedded**: Arduino \(\cdot\) Raspberry Pi \(\cdot\) NVIDIA Jetson Nano
+* **HPC**: SLURM
+* **Markup / Typesetting**: Jinja \(\cdot\) LaTeX \(\cdot\) Markdown \(\cdot\) MkDocs \(\cdot\) Pandoc \(\cdot\) Vim
+* **Monitoring**: Grafana
+* **OS**: Linux (Arch, Fedora, Ubuntu, Rocky Linux) \(\cdot\) MacOS \(\cdot\) Windows
+* **Web**: CSS \(\cdot\) HTML5 \(\cdot\) Nginx
 
 ## Academic & professional experience
 
-**Postdoctoral researcher** — Empa&emsp;<small>*(Z&uuml;rich, Switzerland)*</small><br>
+**Postdoctoral researcher** — Empa&emsp;<small>(Z&uuml;rich, Switzerland)</small><br>
 June 2019 — *Present*
 
-: * Application of machine learning in quantitative flow visualization.
+  * Application of machine learning in quantitative flow visualization.
   * Supervised optical flow algorithms for PIV.
   * Convolutional Neural Networks (CNN) in PyTorch.
   * Additional responsibilities: Deputy Laser safety officer (LSO), deputy data management, Lab HPC support, and fluid tunnel support.
@@ -55,7 +57,7 @@ June 2019 — *Present*
 **Scientific Assistant** — ETH Z&uuml;rich&emsp;<small>(Z&uuml;rich, Switzerland)</small><br>
 May 2015 — May 2019<br>
 
-: * Numerical and experimental research at Empa.
+  * Numerical and experimental research at Empa.
   * Neutron radiography at Paul Scherrer Institut (PSI).
   * Teaching assistant for Application of CFD in buildings.
   * Supervision of master thesis project: *Praharsh Pai Raikar*
@@ -95,14 +97,15 @@ May 2015 — May 2019<br>
 
 ## Languages
 
-  * **English** (*Native*)
-  * **German** (*Conversational*)
-  * **Malayalam** (*Fluent*)
+* **English** (*Native*)
+* **German** (*Conversational*)
+* **Malayalam** (*Fluent*)
+* **Dutch** (*Basic*)
 
 ## Awards
 
   1. **Outstanding Oral Presentation** at 13th Symposium on Urban Environment, Jan 2017, Seattle, USA
-  2. **Young Researcher Best Research Award** at 4th International Conference on Countermeasures to Urban Heat Island, May 2016, Singapore.
+  2. **Young Best Research Award** at 4th International Conference on Countermeasures to Urban Heat Island, May 2016, Singapore.
 
 ## Publications & Presentations
 
