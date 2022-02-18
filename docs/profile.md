@@ -4,7 +4,7 @@ hide:
 ---
 #
 
-[PDF :fontawesome-solid-file-pdf:](https://raw.githubusercontent.com/lento234/cv/main/cv.pdf){ .md-button .md-button--primary }
+[PDF :fontawesome-solid-file-pdf:](https://media.githubusercontent.com/media/lento234/cv/main/cv.pdf){ .md-button .md-button--primary }
 
 ## Summary
 
