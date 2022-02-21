@@ -4,7 +4,7 @@ hide:
 ---
 #
 
-**Stats:**
+**:fontawesome-brands-github: GitHub Stats:**
 
 [![GitHub Summary](https://raw.githubusercontent.com/lento234/lento234/master/github-metrics-summary.svg){ width=400}](https://github.com/lento234)
 [![GitHub Contributations](https://raw.githubusercontent.com/lento234/lento234/master/github-metrics-plugins.svg){width=400}](https://github.com/lento234)
