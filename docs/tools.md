@@ -1,5 +1,9 @@
 # Tools
 
+## References
+* [Cheatsheet collection](https://devhints.io) - Devhints — TL;DR for developer documentation
+
+
 ## Networking
 
 * [SWITCH Traffic Weather Map](https://traffic.lan.switch.ch/vip/swiss-map/)
@@ -13,6 +17,7 @@
 * [Online base64 file encoder](https://b64.io/)
 * [Markdown badges](https://ileriayo.github.io/markdown-badges/)
 * [Chmod calculator](https://chmod-calculator.com/)
+
 
 ## Entertainment
 
