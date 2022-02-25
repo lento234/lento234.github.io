@@ -19,7 +19,7 @@
 ## Programming
 
 * [TheAlternative Course Materials](https://gitlab.ethz.ch/thealternative/courses)
-
+* [Rstudio Cheat sheets](https://github.com/rstudio/cheatsheets)
 
 ## Networking
 
