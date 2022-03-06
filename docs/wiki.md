@@ -20,6 +20,7 @@
 
 * [TheAlternative Course Materials](https://gitlab.ethz.ch/thealternative/courses) - ETHZ gitlab repo of `TheAlternative` courses.
 * [Rstudio Cheat sheets](https://github.com/rstudio/cheatsheets) - Rstudio cheat sheet at GitHub.
+* [hackingcpp](https://hackingcpp.com/index.html) - Learn Contemporary C++ | Concise & Visual Examples | hacking C++
 
 ## Networking
 
