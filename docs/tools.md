@@ -2,6 +2,7 @@
 
 ## References
 * [devhints.io](https://devhints.io) - Devhints — TL;DR for developer documentation
+* [cpp Cheat Sheets](https://hackingcpp.com/cpp/cheat_sheets.html] - hackingcpp C++ cheat sheet
 
 
 ## Networking
