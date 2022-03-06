@@ -27,6 +27,7 @@
 - [Linux as a gateway](https://unix.stackexchange.com/questions/222054/how-can-i-use-linux-as-a-gateway)
 - [sssd: Identity management](https://sssd.io/index.html) - Open Source Client for Enterprise Identity Management 
 - [FreeIPA](https://www.freeipa.org/page/Main_Page) - Open Source Identity Management Solution
+- [ctrl.blog](https://www.ctrl.blog/entry/how-to-alternate-ssh-port-fedora.html) - How to alternate ssh port in Fedora
 
 
 ## Clustering
