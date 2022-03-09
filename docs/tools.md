@@ -32,3 +32,4 @@
 * [lightpollutionmap.info](https://www.lightpollutionmap.info/) - Light pollution map
 * [Kanton Zurich - Abfluss & Wasserstand](https://www.zh.ch/de/umwelt-tiere/wasser-gewaesser/messdaten/abfluss-wasserstand.html) - Abfluss & Wasserstand | Kanton Zürich
 * [Live ATC](https://www.liveatc.net/) - Live Air Traffic - From their headsets to you
+* [Starlink Satellite Map](https://satellitemap.space/?constellation=starlink) - Find location of all starlink satellites
