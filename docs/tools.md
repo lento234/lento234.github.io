@@ -21,6 +21,10 @@
 * [Markdown badges](https://ileriayo.github.io/markdown-badges/) - 😀 Markdown Badges | markdown-badges
 * [chmod-calculator.com](https://chmod-calculator.com/) - Chmod calculator
 
+## Design
+
+* [Simple Icons](https://simpleicons.org/) - Repository of Free SVG icons for popular brands
+
 
 ## Entertainment
 
