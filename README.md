@@ -2,8 +2,8 @@
 
 # [https://manickathan.ch](https://manickathan.ch)
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/lento234/lento234.github.io/Build?style=flat-square)
-![CC BY 4.0](https://img.shields.io/github/license/lento234/lento234.github.io?style=flat-square&color=blue)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/lento234/lento234.github.io/Build?style=flat-square&labelColor=black)
+![CC BY 4.0](https://img.shields.io/github/license/lento234/lento234.github.io?style=flat-square&color=blue&labelColor=black)
 
 ***Personal website hosted at `github`***
 
