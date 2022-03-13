@@ -2,6 +2,7 @@
 
 ## Alternative Front-Ends
 * [nitter](https://nitter.net/) - Twitter front-end
+* [invidious](https://invidious.io/) - YouTube front-end
 
 ## References
 * [devhints.io](https://devhints.io) - Devhints — TL;DR for developer documentation
