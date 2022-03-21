@@ -29,7 +29,7 @@
 - [sssd: Identity management](https://sssd.io/index.html) - Open Source Client for Enterprise Identity Management
 - [FreeIPA](https://www.freeipa.org/page/Main_Page) - Open Source Identity Management Solution
 - [ctrl.blog](https://www.ctrl.blog/entry/how-to-alternate-ssh-port-fedora.html) - How to alternate ssh port in Fedora
-
+- [Tailscale: How NAT traversal works](https://tailscale.com/blog/how-nat-traversal-works/) - A very detailed look at how Tailscale works.
 
 ## Clustering
 
