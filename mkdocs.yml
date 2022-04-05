@@ -57,6 +57,9 @@ plugins:
   - mkdocs-jupyter:
       include_source: True
   - awesome-pages
+  - redirects:
+      redirect_maps:
+        'cv.md': 'https://media.githubusercontent.com/media/lento234/cv/main/cv.pdf'
 
 markdown_extensions:
   - admonition
