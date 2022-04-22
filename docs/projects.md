@@ -92,6 +92,15 @@ hide:
 
 ## Library
 
+* [pivuq](https://github.com/lento234/pivuq) - PIV Uncertainty Quantification.
+
+  [![Docs](https://img.shields.io/readthedocs/pivuq?style=flat-square&labelColor=000000)](https://pivuq.readthedocs.io/)
+  [![PyPi Version](https://img.shields.io/pypi/v/pivuq.svg?style=flat-square&labelColor=000000)](https://pypi.org/project/pivuq/)
+  [![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square&labelColor=000000)](#license)
+  [![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.6458153-blue?style=flat-square&labelColor=000000)](https://doi.org/10.5281/zenodo.6458153)
+  [![Downloads](https://static.pepy.tech/personalized-badge/pivuq?period=total&units=international_system&left_color=black&right_color=blue&left_text=Downloads)](https://pepy.tech/project/pivuq)
+  ![Last commit](https://img.shields.io/github/last-commit/lento234/pivuq?style=flat-square&labelColor=000000)
+
 * [Ragnarok](https://github.com/lento234/ragnarok) - Ragnarok is a library for solving lattice boltzmann
 
     ![GitHub Workflow Status](https://img.shields.io/travis/com/lento234/ragnarok?style=flat-square&labelColor=000000)
