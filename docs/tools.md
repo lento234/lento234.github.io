@@ -33,7 +33,7 @@
 ## Entertainment
 
 * [tunefind.com](https://www.tunefind.com/) - tunefind: Find the tune you are looking for
-* [ffmpeg command generator](https://evanhahn.github.io/ffmpeg-buddy/) - A friend to help you build ffmpeg commands 
+* [ffmpeg command generator](https://evanhahn.github.io/ffmpeg-buddy/) - A friend to help you build ffmpeg commands
 
 ## Maps
 
