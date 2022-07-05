@@ -24,6 +24,7 @@
 * [b64.io](https://b64.io/) - Online base64 file encoder
 * [Markdown badges](https://ileriayo.github.io/markdown-badges/) - 😀 Markdown Badges | markdown-badges
 * [chmod-calculator.com](https://chmod-calculator.com/) - Chmod calculator
+* [godbolt.org](https://godbolt.org/) - Compiler explorer
 
 ## Design
 
