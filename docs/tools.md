@@ -41,6 +41,7 @@
 * [lightpollutionmap.info](https://www.lightpollutionmap.info/) - Light pollution map
 * [Kanton Zurich - Abfluss & Wasserstand](https://www.zh.ch/de/umwelt-tiere/wasser-gewaesser/messdaten/abfluss-wasserstand.html) - Abfluss & Wasserstand | Kanton Zürich
 * [RS StationView](https://stationview.raspberryshake.org/) - Earthquake & Earth Monitoring Solutions | Raspberry Shake Map
+* [Isochrone train map](https://chronotrains-eu.vercel.app/) - How far can you go by train in 5h?
 
 ## Aviation, Aerospace, Astronomy
 
