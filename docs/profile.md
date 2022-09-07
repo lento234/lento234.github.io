@@ -23,26 +23,26 @@ at developing skills in computer vision techniques. A brief summary of expertise
 
 #### Scientific programming
 
-* **CAD**: Blender \(\cdot\) CATIA
-* **CFD**: FEniCS \(\cdot\) Fluent \(\cdot\) OpenFOAM
-* **Programming**: C++ \(\cdot\) MATLAB \(\cdot\) Python \(\cdot\) R \(\cdot\) Shell
-* **Python Libraries (HPC)**: CuPy \(\cdot\) Cython \(\cdot\) Dask \(\cdot\) H5py \(\cdot\) MPI4py \(\cdot\) Numba \(\cdot\) NumPy \($\cdot\) Pandas \(\cdot\) SciPy
-* **Python Libraries (ML)**: PyTorch \(\cdot\) Scikit-learn
-* **Python Libraries (Plotting)**: Dash \(\cdot\) Matplotlib \(\cdot\) Scikit-image
+* **CAD**: Blender · CATIA
+* **CFD**: FEniCS · Fluent · OpenFOAM
+* **Programming**: C++ · MATLAB · Python · R · Shell
+* **Python Libraries (HPC)**: CuPy · Cython · Dask · H5py · MPI4py · Numba · NumPy · Pandas · SciPy
+* **Python Libraries (ML)**: PyTorch · Scikit-learn
+* **Python Libraries (Plotting)**: Dash · Matplotlib · Scikit-image
 
 #### Software development
 
 * **Automation**: Ansible
-* **CI/CD**: Git (Github, Gitlab) \(\cdot\) Travis CI
+* **CI/CD**: Git (Github, Gitlab) · Travis CI
 * **Cloud**: Amazon AWS (EC2)
-* **Container**: Docker \(\cdot\) Kubernetes \(\cdot\) Sarus \(\cdot\) Vagrant
-* **Database**: InfluxDB \(\cdot\) MariaDB
-* **Embedded**: Arduino \(\cdot\) Raspberry Pi \(\cdot\) NVIDIA Jetson Nano
+* **Container**: Docker · Kubernetes · Sarus · Vagrant
+* **Database**: InfluxDB · MariaDB
+* **Embedded**: Arduino · Raspberry Pi · NVIDIA Jetson Nano
 * **HPC**: SLURM
-* **Markup / Typesetting**: Jinja \(\cdot\) LaTeX \(\cdot\) Markdown \(\cdot\) MkDocs \(\cdot\) Pandoc \(\cdot\) Vim
+* **Markup / Typesetting**: Jinja · LaTeX · Markdown · MkDocs · Pandoc · Vim
 * **Monitoring**: Grafana
-* **OS**: Linux (Arch, Fedora, Ubuntu, Rocky Linux) \(\cdot\) MacOS \(\cdot\) Windows
-* **Web**: CSS \(\cdot\) HTML5 \(\cdot\) Nginx
+* **OS**: Linux (Arch, Fedora, Ubuntu, Rocky Linux) · MacOS · Windows
+* **Web**: CSS · HTML5 · Nginx
 
 ## Academic & professional experience
 
@@ -111,7 +111,7 @@ May 2015 — May 2019<br>
 
 ### Journals
 
-  1. **Manickathan, L.**, Mucignat, C., Lunati, I.: Random displacement training for fluid flow motion estimation. 2021. *<small>(in preparation)</small>*
+  1. **Manickathan, L.**, Mucignat, C., Lunati, I. (2022). Kinematic training of convolutional neural networks for particle image velocimetry. *Measurement Science and Technology* [:fontawesome-regular-file-pdf:](https://doi.org/10.1088/1361-6501/ac8fae)
   2. **Manickathan, L.**, Defraeye, T., Carl, S., Richter, H., Allegrini, J., Derome, D., & Carmeliet, J. (2022). A study on diurnal microclimate hysteresis and plant morphology of a Buxus sempervirens using PIV, infrared thermography, and X-ray imaging. *Agricultural and Forest Meteorology 313*, 108722. [:fontawesome-regular-file-pdf:](https://doi.org/10.1016/j.agrformet.2021.108722) [:material-tag:](assets/manickathan2022.bib)
   3. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J. (2018). Parametric study of the influence of environmental factors and tree properties on the transpirative cooling effect of trees. *Agricultural and Forest Meteorology 248*, 259-274. [:fontawesome-regular-file-pdf:](https://doi.org/10.1016/j.agrformet.2017.10.014) [:material-tag:](assets/manickathan2018a.bib)
   4. **Manickathan, L.**, Defraeye, T., Allegrini, J., Derome, D., & Carmeliet, J. (2018). Comparative study of flow field and drag coefficient of model and small natural trees in a wind tunnel. *Urban Forestry & Urban Greening, 35*(December 2017), 230–239. [:fontawesome-regular-file-pdf:](https://doi.org/10.1016/j.ufug.2018.09.011) [:material-tag:](assets/manickathan2018b.bib)

@@ -24,6 +24,7 @@
 * [b64.io](https://b64.io/) - Online base64 file encoder
 * [Markdown badges](https://ileriayo.github.io/markdown-badges/) - 😀 Markdown Badges | markdown-badges
 * [chmod-calculator.com](https://chmod-calculator.com/) - Chmod calculator
+* [godbolt.org](https://godbolt.org/) - Compiler explorer
 
 ## Design
 
@@ -33,13 +34,14 @@
 ## Entertainment
 
 * [tunefind.com](https://www.tunefind.com/) - tunefind: Find the tune you are looking for
-
+* [ffmpeg command generator](https://evanhahn.github.io/ffmpeg-buddy/) - A friend to help you build ffmpeg commands
 
 ## Maps
 
 * [lightpollutionmap.info](https://www.lightpollutionmap.info/) - Light pollution map
 * [Kanton Zurich - Abfluss & Wasserstand](https://www.zh.ch/de/umwelt-tiere/wasser-gewaesser/messdaten/abfluss-wasserstand.html) - Abfluss & Wasserstand | Kanton Zürich
 * [RS StationView](https://stationview.raspberryshake.org/) - Earthquake & Earth Monitoring Solutions | Raspberry Shake Map
+* [Isochrone train map](https://chronotrains-eu.vercel.app/) - How far can you go by train in 5h?
 
 ## Aviation, Aerospace, Astronomy
 
