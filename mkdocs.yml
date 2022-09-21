@@ -19,7 +19,7 @@ nav:
   - Links:
     - tools.md
     - wiki.md
-
+  - Art: art/index.md
 
 theme:
   name: material
