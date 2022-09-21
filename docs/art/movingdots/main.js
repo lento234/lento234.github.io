@@ -3,7 +3,7 @@
 let max_distance = 0;
 
 function setup() {
-    let canvas = createCanvas(1000, 1000);
+    let canvas = createCanvas(windowWidth, windowHeight);
     canvas.parent("frame");
     noStroke();
     max_distance = dist(0, 0, width, height);
