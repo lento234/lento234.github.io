@@ -109,5 +109,4 @@ hide:
 
 * [OpenFoam 2.3.x](https://github.com/lento234/OF-2.3.x) - Custom OpenFOAM Application and src
 
-    ![License](https://img.shields.io/github/license/openfoam/openfoam-2.3.x?style=flat-square&color=blue&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/OF-2.3.x?style=flat-square&labelColor=000000)
