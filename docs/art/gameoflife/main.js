@@ -37,10 +37,10 @@ function setup() {
 
   alive = color(0);
   dead = color(255);
-  
+
   // This stroke will draw the background grid
   init();
-  
+
 }
 
 function init() {
@@ -89,7 +89,7 @@ function draw() {
       lastRecordedTime = millis();
       fps = frameRate();
   }
-  
+
   // FPS
   textSize(10);
   fill(0);
@@ -99,7 +99,7 @@ function draw() {
 }
 
 function iteration() { // When the clock ticks
-  
+
 
   // Save cells to buffer (so we opeate with one array keeping the other intact)
   let cellsBuffer = new Array(ncols);
@@ -139,7 +139,7 @@ function iteration() { // When the clock ticks
       }
     }
   }
-} 
+}
 
 function keyPressed() {
   console.log(key);
