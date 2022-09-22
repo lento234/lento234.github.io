@@ -25,7 +25,7 @@ function setup() {
 function draw() {
   clear();
   N += 5*Math.sin(frameCount/100, 0.2);
-  
+
   for (var i=0; i < N; i++) {
     let z = 1/N-1 + i/N;
     let theta = GA * i - N/1000;

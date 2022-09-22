@@ -16,7 +16,7 @@ let p = [];
 function setup() {
   let canvas = createCanvas(width, height);
   canvas.parent("canvas");
-  
+
   for (let i = 0; i < n_particles; i++) {
     let x = random(width);
     let y = random(height);
