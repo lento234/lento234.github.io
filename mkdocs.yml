@@ -30,18 +30,18 @@ theme:
     text: Noto Sans
     code: Fira code
   palette:
-    - scheme: default
-      primary: black
-      accent: light blue
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
     - scheme: slate
       primary: black
       accent: red
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+    - scheme: default
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
   features:
     - navigation.tabs
     - navigation.sections
