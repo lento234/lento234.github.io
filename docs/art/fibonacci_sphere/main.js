@@ -15,7 +15,7 @@ let factor = 1;
 function setup() {
   width = Math.min(windowWidth, windowHeight);
   height = width;
-  xmid = windowWidth/2; 
+  xmid = windowWidth/2;
   ymid = windowHeight/2;
   multiplier = width / 2 - 10;
 
