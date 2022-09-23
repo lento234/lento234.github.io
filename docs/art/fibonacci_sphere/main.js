@@ -3,11 +3,7 @@
 // Based on Game of Life by Joan Soler-Adillon.
 
 // Global variables
-const width = 600;
-const height = width;
-
-const xmid = width / 2;
-const ymid = height / 2;
+let width, height, xmid, ymid, multiplier;
 
 const size = 3;
 const PI = Math.PI;
@@ -15,10 +11,15 @@ const GA = (3 - Math.sqrt(5)) * PI;
 
 let N = 100;
 let factor = 1;
-let multiplier = width / 2 - 10;
 
 function setup() {
-  let canvas = createCanvas(width, height);
+  width = Math.min(windowWidth, windowHeight);
+  height = width;
+  xmid = windowWidth/2;
+  ymid = windowHeight/2;
+  multiplier = width / 2 - 10;
+
+  let canvas = createCanvas(windowWidth, windowHeight);
   canvas.parent("canvas");
 }
 
