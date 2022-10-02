@@ -15,7 +15,7 @@ window.onscroll = function (event) {
         subHeading.style.color = "#ff5252"; //"white";
         subHeading.style.transition = "1.5s";
         subHeading.style.fontSize = "1.25rem";
-        
+
     } else
     {
         heading.style.color = "white";

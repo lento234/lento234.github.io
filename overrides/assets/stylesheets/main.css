@@ -41,7 +41,7 @@
     color:hsla(0, 0%, 0%, 1);
     font-family: 'Fira Code', monospace;
 }
-/* 
+/*
 .profile {
     transform: translateZ(-1px);
     z-index: -4;
@@ -51,12 +51,12 @@
     transform: translateZ(100px);
     z-index: 3;
 } */
-/* 
+/*
 .heading {
     transform: translateZ(20px);
     z-index: 2;
 } */
-/* 
+/*
 
  .home-text-heading {
     font-size: 2.5rem;
@@ -80,21 +80,21 @@
     transform: translateZ(-100px);
     z-index: 3;
   } */
-  
+
   @media (max-width: 1000px) {
     .home {
       display: flex;
       align-items: stretch;
       flex-direction: column;
     }
-  
+
     .heading {
       width: 100%;
       text-align: center;
       padding: 1rem;
       font-size: 2rem;
     }
-    
+
     .subheading {
       font-size: 1rem;
     }
