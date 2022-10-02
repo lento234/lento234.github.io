@@ -21,5 +21,7 @@ window.onscroll = function (event) {
     {
         heading.style.color = defaultHeadingColor;
         subHeading.style.fontSize = defaultSubheadingFontSize;
+        heading.style.transition = "0.5s";
+        subHeading.style.transition = "0.5s";
     }
 }
