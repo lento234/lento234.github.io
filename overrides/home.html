@@ -1,15 +1,66 @@
 {% extends "base.html" %}
 
-{% block content %}
-<div class="home">
-  <div class="home-text-container">
-    <div class="home-text-heading">Lento Manickathan</div>
-    <div class="home-text-subheading">
-      Aerospace Engineer & Postdoctoral researcher
+<!-- Custom front matter -->
+{% block extrahead %}
+  <!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/main.css' | url }}"/>
+{% endblock %}
+
+<!-- Render hero under tabs -->
+{% block tabs %}
+  {{ super() }}
+
+  <!-- Additional styles for landing page -->
+  <style>
+    .html {
+      background-color: black;
+    }
+    /* Application header should be static for the landing page */
+    .md-header {
+      position: initial;
+    }
+    .md-main {
+      display: none;
+    }
+    /* Remove spacing, as we cannot hide it completely */
+    .md-main__inner {
+      margin: 0;
+    }
+    /* Hide main content for now */
+    .md-content {
+      display: none;
+    }
+    /* Hide table of contents */
+    @media screen and (min-width: 60em) {
+      .md-sidebar--secondary {
+        display: none;
+      }
+    }
+    /* Hide navigation */
+    @media screen and (min-width: 76.25em) {
+      .md-sidebar--primary {
+        display: none;
+      }
+    }
+  </style>
+
+  <div class="home-container">
+    <div class="wrapper">
+      <div class="parallax-group">
+        <div class="parallax-layer heading">Lento Manickathan</div>
+        <div class="parallax-layer subheading">Aerospace Engineer & Postdoctoral researcher</div>
+        <!-- <div class="parallax-layer profile">
+          <img src="/assets/profile.png" alt="Profile" class="image profile"/>
+        </div> -->
+      </div>
     </div>
   </div>
-  <div class="home-profile-container">
-    <img src="/assets/profile.png" alt="Profile" class="image profile"/>
-  </div>
-</div>
+  <script src="assets/javascript/scroll.js"></script>
+{% endblock %}
+
+<!-- Content -->
+{% block content %}
 {% endblock %}
