@@ -26,7 +26,6 @@
     font-size: 4rem;
     width: 100%;
     padding-top: 10px;
-    /* padding-bottom: 10px; */
     transform: translateZ(-10px) scale(2);
     letter-spacing: -0.2rem;
     z-index: -2;
@@ -82,26 +81,21 @@
     z-index: 3;
   } */
   
-  /* @media (max-width: 1000px) {
+  @media (max-width: 1000px) {
     .home {
       display: flex;
       align-items: stretch;
       flex-direction: column;
     }
   
-    .home-text-container {
+    .heading {
       width: 100%;
       text-align: center;
       padding: 1rem;
-      font-family: "Barlow", sans-serif;
+      font-size: 2rem;
     }
-  
-    .home-profile-container {
-      text-align: center;
-      padding-top: 1rem;
-      width: 100%;
+    
+    .subheading {
+      font-size: 1rem;
     }
-    .profile {
-      width: 50%;
-    }
-  } */
+  }
