@@ -1,7 +1,6 @@
 var heading = document.getElementsByClassName("heading")[0]
 var subHeading = document.getElementsByClassName("subheading")[0]
 
-const defaultHeadingColor = heading.style.color;
 const defaultSubheadingFontSize = subHeading.style.fontSize;
 
 
@@ -19,7 +18,7 @@ window.onscroll = function (event) {
         
     } else
     {
-        heading.style.color = defaultHeadingColor;
+        heading.style.color = "white";
         subHeading.style.fontSize = defaultSubheadingFontSize;
         heading.style.transition = "0.5s";
         subHeading.style.transition = "0.5s";
