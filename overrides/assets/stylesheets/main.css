@@ -4,7 +4,6 @@
   text-align: center;
   width: 100%;
   padding-top: 5;
-  font-family: "Barlow", sans-serif;
 }
 
 .wrapper {
@@ -26,26 +25,28 @@
 .heading {
     font-size: 4rem;
     width: 100%;
-    padding-top: 10rem;
-    font-family: "Barlow", sans-serif;
-    padding-bottom: 20rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
     transform: translateZ(-10px) scale(2);
+    letter-spacing: -0.2rem;
     z-index: -2;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .subheading {
     font-size: 1rem;
-    padding-top: 10rem;
-    padding-bottom: 5rem;
-    transform: translateZ(-5px) scale(1.5);
+    letter-spacing: -0.05rem;
+    padding-top: 5rem;
+    transform: translateZ(-20px) scale (1.5);
     z-index: -3;
+    color:hsla(0, 0%, 0%, 1);
+    font-family: 'Fira Code', monospace;
 }
-
+/* 
 .profile {
     transform: translateZ(-1px);
     z-index: -4;
-}
-
+} */
 
 /* .profile {
     transform: translateZ(100px);

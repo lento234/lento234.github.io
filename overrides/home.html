@@ -3,6 +3,9 @@
 <!-- Custom front matter -->
 {% block extrahead %}
   <!-- Extra style sheets (can't be set in mkdocs.yml due to content hash) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Noto+Sans&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="{{ 'assets/stylesheets/main.css' | url }}"/>
 {% endblock %}
 
@@ -12,9 +15,15 @@
 
   <!-- Additional styles for landing page -->
   <style>
+    .html {
+      background-color: black;
+    }
     /* Application header should be static for the landing page */
     .md-header {
       position: initial;
+    }
+    .md-main {
+      display: none;
     }
     /* Remove spacing, as we cannot hide it completely */
     .md-main__inner {
@@ -43,13 +52,15 @@
       <div class="parallax-group">
         <div class="parallax-layer heading">Lento Manickathan</div>
         <div class="parallax-layer subheading">Aerospace Engineer & Postdoctoral researcher</div>
-        <div class="parallax-layer profile">
+        <!-- <div class="parallax-layer profile">
           <img src="/assets/profile.png" alt="Profile" class="image profile"/>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
+  <script src="assets/javascript/scroll.js"></script>
 {% endblock %}
 
 <!-- Content -->
-{% block content %}{% endblock %}
+{% block content %}
+{% endblock %}
