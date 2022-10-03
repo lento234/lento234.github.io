@@ -35,7 +35,7 @@
 .subheading {
     font-size: 1rem;
     letter-spacing: -0.05rem;
-    padding-top: 50px;
+    padding-top: 40px;
     transform: translateZ(-10px) scale(2);
     z-index: -3;
     color:hsla(0, 0%, 0%, 1);
