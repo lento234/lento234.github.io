@@ -7,6 +7,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Noto+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ 'assets/stylesheets/main.css' | url }}"/>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.2.0/lib/p5.js"></script>
+  <script src="assets/javascripts/canvas.js"></script>
+  <script src="assets/javascripts/point.js"></script>
 {% endblock %}
 
 <!-- Render hero under tabs -->
@@ -41,13 +44,9 @@
 
   <div class="home-container">
     <div class="wrapper">
-      <div class="parallax-group">
-        <div class="parallax-layer heading">Lento Manickathan</div>
-        <div class="parallax-layer subheading">Aerospace Engineer & Postdoctoral researcher</div>
-        <!-- <div class="parallax-layer profile">
-          <img src="/assets/profile.png" alt="Profile" class="image profile"/>
-        </div> -->
-      </div>
+      <div class="canvas" id="canvas"></div>
+      <div class="heading">Lento Manickathan</div>
+      <div class="subheading">Aerospace Engineer & Postdoctoral researcher</div>
     </div>
   </div>
   <script src="assets/javascripts/scroll.js"></script>
