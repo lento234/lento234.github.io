@@ -24,8 +24,8 @@ nav:
 theme:
   name: material
   custom_dir: overrides
-  logo: assets/logo.png
-  favicon: images/favicon.svg
+  logo: assets/images/logo.png
+  favicon: assets/images/favicon.svg
   font:
     text: Noto Sans
     code: Fira code
@@ -108,4 +108,4 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
-  - assets/extra.css
+  - assets/stylesheets/extra.css
