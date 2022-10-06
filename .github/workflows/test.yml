@@ -13,6 +13,10 @@ jobs:
     steps:
       - name: Checkout Master
         uses: actions/checkout@v3
+        with:
+          # Number of commits to fetch. 0 indicates all history.
+          # Default: 1
+          fetch-depth: 0
 
       - name: Set up Python 3
         uses: actions/setup-python@v4
