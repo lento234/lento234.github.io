@@ -1,0 +1,15 @@
+[data-md-color-scheme="slate"] {
+  --md-hue: 220;
+}
+
+[data-md-color-scheme="slate"][data-md-color-primary="black"][data-md-color-accent="red"] {
+  --md-typeset-a-color: #ff5252;
+}
+
+[data-md-color-scheme="default"][data-md-color-primary="black"][data-md-color-accent="light-blue"] {
+  --md-typeset-a-color: #0277bd;
+}
+
+.md-typeset pre {
+  background-color: var(--md-code-bg-color);
+}
