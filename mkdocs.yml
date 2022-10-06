@@ -52,7 +52,7 @@ theme:
 plugins:
   - search
   - mermaid2
-  # - git-revision-date
+  - git-revision-date-localized
   - macros
   - mkdocs-jupyter:
       include_source: True
