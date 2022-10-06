@@ -24,5 +24,7 @@ jobs:
 
       - name: Deploy
         run: |
+          git config --global user.name "Github Action"
+          git config --global user.email "githubaction@gmail.com"
           git pull
           mkdocs gh-deploy
