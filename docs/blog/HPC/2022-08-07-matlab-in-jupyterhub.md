@@ -28,5 +28,3 @@ References:
     pip install nb_black # linting
     pip install jupyterlab-code-formatter # formatting
     ```
-
-
