@@ -27,7 +27,4 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Deploy
-        run: |
-          git config --global user.name "Github Action"
-          git config --global user.email "githubaction@gmail.com"
-          mkdocs gh-deploy --force
+        run: mkdocs gh-deploy --force
