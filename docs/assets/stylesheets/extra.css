@@ -13,3 +13,13 @@
 .md-typeset pre {
   background-color: var(--md-code-bg-color);
 }
+
+img#card {
+  transform: scale(0.95);
+}
+
+img#card:hover {
+  transform: scale(1);
+  transition: .25s;
+  box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.8);
+}
