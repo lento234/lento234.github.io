@@ -5,8 +5,9 @@
 
 * [Archlinux wiki](https://wiki.archlinux.org/) - ArchWiki.
 * [Digital Ocean Tutorials](https://www.digitalocean.com/community/tutorials) - Development and sysadmin tutorials.
-* [Tanel Poder Consulting](https://tanelpoder.com/) - Blog by Tanel Pder
-* [Rocky Linux Documentation](https://docs.rockylinux.org/) - Rocky linux wiki
+* [Tanel Poder Consulting](https://tanelpoder.com/) - Blog by Tanel Pder.
+* [Rocky Linux Documentation](https://docs.rockylinux.org/) - Rocky linux wiki.
+* [RPM Fusion](https://rpmfusion.org/RPM%20Fusion) - RPM Fusion provides software that the Fedora Project or Red Hat doesn't want to ship.
 
 
 ## Embedded systems
