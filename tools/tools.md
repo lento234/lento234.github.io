@@ -1,13 +1,18 @@
 # Tools
 
 ## Alternative Front-Ends
+
 * [nitter](https://nitter.net/) - Twitter front-end
 * [invidious](https://invidious.io/) - YouTube front-end
 
 ## References
+
 * [devhints.io](https://devhints.io) - Devhints — TL;DR for developer documentation
 * [cpp Cheat Sheets](https://hackingcpp.com/cpp/cheat_sheets.html) - hackingcpp C++ cheat sheet
 
+## Search
+
+* [hn.algolia.com](https://hn.algolia.com/) - Search Hacker News
 
 ## Networking
 
