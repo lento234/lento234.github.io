@@ -12,7 +12,7 @@ hide:
 
 * [Awesome Fluid Dynamics](https://github.com/lento234/awesome-fluid-dynamics) - A curated list of repositories related to fluid dynamics.
 
-    [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://manickathan.ch/awesome-fluid-dynamics/)
+    [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://lento234.ch/awesome-fluid-dynamics/)
     ![Awesome](https://raw.githubusercontent.com/lento234/awesome-fluid-dynamics/main/logo/awesome.svg)
     ![Build](https://img.shields.io/github/workflow/status/lento234/awesome-fluid-dynamics/CI?label=Links&style=flat-square&labelColor=000000)
     ![License](https://img.shields.io/github/license/lento234/awesome-fluid-dynamics?style=flat-square&color=blue&labelColor=000000)
@@ -20,7 +20,7 @@ hide:
 
 * [lento234.github.io](https://github.com/lento234/lento234.github.io) - Personal website hosted at github
 
-    [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://manickathan.ch/)
+    [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://lento234.ch/)
     ![Build](https://img.shields.io/github/workflow/status/lento234/lento234.github.io/Build?style=flat-square&labelColor=000000)
     ![License](https://img.shields.io/github/license/lento234/lento234.github.io?style=flat-square&color=blue&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/lento234.github.io?style=flat-square&labelColor=000000)
@@ -64,7 +64,7 @@ hide:
 
 * [SensAI](https://github.com/lento234/sensai) - Sensor-based Atmospheric Intelligence
 
-    [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://sensai.manickathan.ch/)
+    [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://sensai.lento234.ch/)
     ![License](https://img.shields.io/github/license/lento234/sensai?style=flat-square&color=blue&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/sensai?style=flat-square&labelColor=000000)
 
