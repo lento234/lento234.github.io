@@ -12,14 +12,14 @@
         <meta name="author" content="Lento Manickathan">
       
       
-        <link rel="canonical" href="https://lento234.ch/blog/HPC/2022-08-07-matlab-in-jupyterhub/">
+        <link rel="canonical" href="https://lento234.ch/blog/HPC/2022-10-17-setup-jupyterhub/">
       
       <link rel="icon" href="../../../assets/images/favicon.svg">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.6">
     
     
       
-        <title>A guide to setup MATLAB kernel in jupyterhub - Lento Manickathan</title>
+        <title>A guide to setup jupyterhub - Lento Manickathan</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#a-guide-to-setup-matlab-kernel-in-jupyterhub" class="md-skip">
+        <a href="#a-guide-to-setup-jupyterhub" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              A guide to setup MATLAB kernel in jupyterhub
+              A guide to setup jupyterhub
             
           </span>
         </div>
@@ -526,9 +526,61 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          A guide to setup jupyterhub
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        A guide to setup MATLAB kernel in jupyterhub
+        A guide to setup jupyterhub
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-jupyterhub" class="md-nav__link">
+    Install jupyterhub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-startup-script-for-jupyterhub" class="md-nav__link">
+    Create a startup script for jupyterhub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-systemd-unit-for-jupyterhub" class="md-nav__link">
+    Create a systemd unit for jupyterhub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-reverse-proxy-using-nginx" class="md-nav__link">
+    Setup reverse-proxy using nginx
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -883,6 +935,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-jupyterhub" class="md-nav__link">
+    Install jupyterhub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-startup-script-for-jupyterhub" class="md-nav__link">
+    Create a startup script for jupyterhub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-systemd-unit-for-jupyterhub" class="md-nav__link">
+    Create a systemd unit for jupyterhub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-reverse-proxy-using-nginx" class="md-nav__link">
+    Setup reverse-proxy using nginx
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -895,49 +983,116 @@
                 
                   
 
-  <a href="https://github.com/lento234/lento234.github.io/edit/main/docs/blog/HPC/2022-08-07-matlab-in-jupyterhub.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/lento234/lento234.github.io/edit/main/docs/blog/HPC/2022-10-17-setup-jupyterhub.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="a-guide-to-setup-matlab-kernel-in-jupyterhub">A guide to setup MATLAB kernel in jupyterhub</h1>
+<h1 id="a-guide-to-setup-jupyterhub">A guide to setup jupyterhub</h1>
 <p>References:</p>
 <ul>
 <li><a href="https://jupyterhub.readthedocs.io/en/stable/quickstart.html#installation">https://jupyterhub.readthedocs.io/en/stable/quickstart.html#installation</a>.</li>
-<li><a href="https://github.com/mathworks/jupyter-matlab-proxy">https://github.com/mathworks/jupyter-matlab-proxy</a></li>
+<li><a href="https://github.com/markusschanta/awesome-jupyter#jupyterlab-extensions">https://github.com/markusschanta/awesome-jupyter#jupyterlab-extensions</a></li>
+</ul>
+<h2 id="install-jupyterhub">Install <code>jupyterhub</code></h2>
+<ol>
 <li>
-<p><a href="https://github.com/markusschanta/awesome-jupyter#jupyterlab-extensions">https://github.com/markusschanta/awesome-jupyter#jupyterlab-extensions</a></p>
-</li>
-<li>
-<p>Setup jupyterhub environment:</p>
+<p>Setup jupyterhub in conda environment. This is the simplest option from experience.</p>
 <div class="highlight"><pre><span></span><code>conda install -c conda-forge jupyterhub  <span class="c1"># installs jupyterhub and proxy</span>
 conda install jupyterlab notebook  <span class="c1"># needed if running the notebook servers in the same environmen</span>
 </code></pre></div>
 </li>
 <li>
-<p>Install MATLAB kernel:</p>
-<div class="highlight"><pre><span></span><code>python -m pip install jupyter-matlab-proxy
+<p>Install any additional libraries (eg.: <code>numpy</code>, <code>cudatoolkit</code>, <code>MATLAB</code>)</p>
+<div class="highlight"><pre><span></span><code>conda install -c nvidia cuda
+python -m pip install numpy scipy matplotlib <span class="c1"># basic numerical libraries</span>
+python -m pip install jupyter-matlab-proxy <span class="c1"># matlab (assuming matlab is available locally)</span>
 jupyter labextension install @jupyterlab/server-proxy
 </code></pre></div>
 </li>
 <li>
-<p>Install additional extensions:</p>
-<div class="highlight"><pre><span></span><code>jupyter labextension install @arbennett/base16-nord <span class="c1"># theme</span>
+<p>Install extensions for <code>jupyterlab</code>:</p>
+<div class="highlight"><pre><span></span><code>pip install JLDracula <span class="c1"># dracula theme</span>
 pip install jupyterlab_nvdashboard <span class="c1"># GPU dashboard</span>
 pip install jupyterlab-drawio <span class="c1"># drawing diagrams</span>
 pip install nb_black <span class="c1"># linting</span>
 pip install jupyterlab-code-formatter <span class="c1"># formatting</span>
 </code></pre></div>
 </li>
-</ul>
+</ol>
+<h2 id="create-a-startup-script-for-jupyterhub">Create a startup script for <code>jupyterhub</code></h2>
+<p>A nice startup script for starting jupyterhub:</p>
+<p>Contents of <code>/etc/jupyterhub/start_jupyterhub.sh</code>:
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/env bash</span>
+
+<span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span><span class="s1">&#39;&#39;</span>
+<span class="nb">eval</span> <span class="s2">&quot;</span><span class="k">$(</span>/opt/conda/condabin/conda shell.bash hook<span class="k">)</span><span class="s2">&quot;</span>
+
+conda activate jupyterhub
+
+jupyterhub -f jupyterhub_config.py
+</code></pre></div></p>
+<p>We can add additional bash config that might be needed for setting up the jupyter environment.</p>
+<h2 id="create-a-systemd-unit-for-jupyterhub">Create a <code>systemd</code> unit for jupyterhub</h2>
+<p>Now to ensure that jupyterhub is started as system boot, we can add it as a <code>systemd</code> unit which will call the bash script above.</p>
+<p>Contents of <code>/etc/systemd/system/jupyterhub.service</code>:
+<div class="highlight"><pre><span></span><code><span class="o">[</span>Unit<span class="o">]</span>
+<span class="nv">Description</span><span class="o">=</span>JupyterHub
+<span class="nv">After</span><span class="o">=</span>syslog.target network-online.target nginx.target sshd.target
+
+<span class="o">[</span>Service<span class="o">]</span>
+<span class="nv">User</span><span class="o">=</span>root
+<span class="nv">WorkingDirectory</span><span class="o">=</span>/etc/jupyterhub
+<span class="nv">Environment</span><span class="o">=</span><span class="s2">&quot;PATH=/opt/conda/condabin:</span><span class="nv">$PATH</span><span class="s2">&quot;</span>
+<span class="nv">ExecStart</span><span class="o">=</span>/etc/jupyterhub/start_jupyterhub.sh
+
+<span class="o">[</span>Install<span class="o">]</span>
+<span class="nv">WantedBy</span><span class="o">=</span>multi-user.target
+</code></pre></div></p>
+<p>We can enabled and start the following systemd unit by:
+<div class="highlight"><pre><span></span><code>systemctl daemon-reload
+systemctl <span class="nb">enable</span> jupyterhub.service
+systemctl start jupyterhub.service
+</code></pre></div></p>
+<p>Now, upon boot, a <code>jupyterhub</code> service will automatically started with jupyterhub served at default port (e.g.: <code>http://localhost:8880</code>).</p>
+<h2 id="setup-reverse-proxy-using-nginx">Setup reverse-proxy using <code>nginx</code></h2>
+<p>It is still inconvenient to remember the port number. So it would be nice to have <code>jupyterhub</code> accessible at some subdomain or subdirectory (e.g.: <code>http://localhost/jupyter</code>). We can achieve this by using a reverse-proxy such as <code>nginx</code>.</p>
+<p>Contents of <code>/etc/nginx/sites-available/default</code>:</p>
+<div class="highlight"><pre><span></span><code>server <span class="o">{</span>
+    ...
+
+    <span class="c1">## &gt;&gt;&gt; Append this below</span>
+
+    <span class="c1"># JupyterHub</span>
+    location /jupyter/ <span class="o">{</span>
+      <span class="c1"># NOTE important to also set base url of jupyterhub to /jupyter in its config</span>
+      proxy_pass http://127.0.0.1:8880<span class="p">;</span>
+
+      proxy_redirect   off<span class="p">;</span>
+      proxy_set_header X-Real-IP <span class="nv">$remote_addr</span><span class="p">;</span>
+      proxy_set_header Host <span class="nv">$host</span><span class="p">;</span>
+      proxy_set_header X-Forwarded-For <span class="nv">$proxy_add_x_forwarded_for</span><span class="p">;</span>
+      proxy_set_header X-Forwarded-Proto <span class="nv">$scheme</span><span class="p">;</span>
+
+      <span class="c1"># websocket headers</span>
+      proxy_set_header Upgrade <span class="nv">$http_upgrade</span><span class="p">;</span>
+      proxy_set_header Connection <span class="nv">$connection_upgrade</span><span class="p">;</span>
+
+<span class="o">}</span>
+</code></pre></div>
+<p>We can update the nginx using following commands:
+<div class="highlight"><pre><span></span><code>nginx -t <span class="c1"># Test the configuration</span>
+nginx -s reload <span class="c1"># Reload the configuration</span>
+</code></pre></div></p>
+<p>Now we should have jupyterhub served at: <code>http://localhost/jupyter</code>. If we have port exposed to outside, then <code>http://&lt;your_hostname&gt;/jupyter</code>.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 7, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 18, 2022</span>
       
     
   </small>
