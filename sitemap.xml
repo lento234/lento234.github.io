@@ -2,107 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lento234.ch/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/profile/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/projects/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/tools/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/wiki/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/art/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/CFD/2018-09-01-ragnarok/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/CFD/2022-03-03-random-irrotational-flow/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/HPC/2021-04-01-h5py-parallel/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/HPC/2021-10-27-slurm/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/HPC/2022-02-09-benchmarking/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/HPC/2022-06-01-blender/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/HPC/2022-10-17-setup-jupyterhub/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/ML/2020-12-01-linear-regression/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/linux/2021-05-01-arch-linux/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/linux/2021-07-01-gateway/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/linux/2021-10-20-systemd/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/linux/2022-02-10-homelab/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/linux/2022-03-01-changeid/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/linux/2022-03-04-wifi/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://lento234.ch/blog/linux/2022-03-08-systemd-timers/</loc>
-         <lastmod>2022-10-18</lastmod>
+         <lastmod>2022-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://lento234.ch/blog/linux/2022-10-26-snapshot-backups/</loc>
+         <lastmod>2022-10-26</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

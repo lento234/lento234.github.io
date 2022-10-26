@@ -12,14 +12,14 @@
         <meta name="author" content="Lento Manickathan">
       
       
-        <link rel="canonical" href="https://lento234.ch/blog/linux/2021-10-20-systemd/">
+        <link rel="canonical" href="https://lento234.ch/blog/linux/2022-10-26-snapshot-backups/">
       
       <link rel="icon" href="../../../assets/images/favicon.svg">
       <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
     
     
       
-        <title>How to make a custom systemd service - Lento Manickathan</title>
+        <title>Quick and simple snapshot backuping using rsync - Lento Manickathan</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-make-a-custom-systemd-service" class="md-skip">
+        <a href="#quick-and-simple-snapshot-backuping-using-rsync" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              How to make a custom systemd service
+              Quick and simple snapshot backuping using rsync
             
           </span>
         </div>
@@ -669,11 +669,59 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../2022-10-26-snapshot-backups/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Quick and simple snapshot backuping using rsync
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Quick and simple snapshot backuping using rsync
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-make-a-rsync-snapshot" class="md-nav__link">
+    Step 1: Make a rsync snapshot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-make-a-compressed-backup" class="md-nav__link">
+    Step 2: Make a compressed backup
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -739,52 +787,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          How to make a custom systemd service
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2021-10-20-systemd/" class="md-nav__link">
         How to make a custom systemd service
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#example-service-file" class="md-nav__link">
-    Example service file
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -935,8 +942,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#example-service-file" class="md-nav__link">
-    Example service file
+  <a href="#step-1-make-a-rsync-snapshot" class="md-nav__link">
+    Step 1: Make a rsync snapshot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-make-a-compressed-backup" class="md-nav__link">
+    Step 2: Make a compressed backup
   </a>
   
 </li>
@@ -955,63 +969,44 @@
                 
                   
 
-  <a href="https://github.com/lento234/lento234.github.io/edit/main/docs/blog/linux/2021-10-20-systemd.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/lento234/lento234.github.io/edit/main/docs/blog/linux/2022-10-26-snapshot-backups.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="how-to-make-a-custom-systemd-service">How to make a custom systemd service</h1>
-<p><strong>Last updated</strong>: October 20, 2021</p>
-<p>Basic systemd commands:</p>
+<h1 id="quick-and-simple-snapshot-backuping-using-rsync">Quick and simple snapshot backuping using rsync</h1>
+<pre><code>The 3-2-1 rule can aid in the backup process. It states that there should be at least 3 copies of the data, stored on 2 different types of storage media, and one copy should be kept offsite, in a remote location.
+
+- Wikipedia on Backup
+</code></pre>
+<p>References:</p>
 <ul>
-<li><code>systemctl status</code>: Show status of all systemd service</li>
-<li><code>systemctl daemon-reload</code>: Reload systemd if units are modified</li>
-<li><code>systemctl enable</code>: to enable a new service</li>
-<li><code>systemctl start</code>: to start a new service</li>
-<li><code>systemctl restart</code>: to restart a service</li>
+<li>https://en.wikipedia.org/wiki/Backup</li>
 </ul>
-<h2 id="example-service-file">Example service file</h2>
-<ol>
-<li>
-<p>Make new service unit file in <code>/etc/systemd/system/new-service.service</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="o">[</span>Unit<span class="o">]</span>
-<span class="nv">Description</span> <span class="o">=</span> Sensai background service
-<span class="nv">After</span> <span class="o">=</span> network.target
-
-<span class="o">[</span>Service<span class="o">]</span>
-<span class="nv">ExecStart</span> <span class="o">=</span> /usr/bin/python3 /home/lento/projects/sensai/log.py
-<span class="nv">User</span> <span class="o">=</span> lento
-<span class="nv">Group</span> <span class="o">=</span> lento
-
-<span class="o">[</span>Install<span class="o">]</span>
-<span class="nv">WantedBy</span> <span class="o">=</span> default.target
+<h2 id="step-1-make-a-rsync-snapshot">Step 1: Make a rsync snapshot</h2>
+<p>We first make a snapshot of whatever folder you are interested. In this example, we take a snapshot of the home directory (<code>/home/</code>) to a mounted external device mounted at <code>/mnt/backup</code>.</p>
+<div class="highlight"><pre><span></span><code>rsync -avhux --delete /home/ /mnt/backup/snap-latest/
 </code></pre></div>
-</li>
-<li>
-<p>Reload systemd and enable the service</p>
-<div class="highlight"><pre><span></span><code>systemctl daemon-reload
-systemctl enable new-service.service
+<p>The <code>--delete</code> option is used to ensure it's a literal snapshot and unwanted files are also removed. Ideally, we should periodically and <strong>automatically</strong> perform this command, e.g. using a <code>cron</code> job. Add the following line by editing the crontab, <code>crontab -e</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="m">0</span> <span class="m">12</span> * * <span class="m">6</span> rsync -avhux --delete --info<span class="o">=</span>stats2 /home/ /mnt/backup/snap-latest/ &gt;/mnt/backup/logs/snap-<span class="s2">&quot;</span><span class="k">$(</span>date +<span class="s1">&#39;\%Y\%m\%d&#39;</span><span class="k">)</span><span class="s2">&quot;</span>.log <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
 </code></pre></div>
-</li>
-<li>
-<p>Start the new service</p>
-<div class="highlight"><pre><span></span><code>systemctl start new-service.service
+<p>We now scheduled it for saturday (i.e., <code>6</code>) at noon and also log the transfer to a log file with a timestamp.</p>
+<h2 id="step-2-make-a-compressed-backup">Step 2: Make a compressed backup</h2>
+<p>Once, we have a snapshot clone of our <code>/home/</code> dir, we can also periodically make a compressed backup of the snapshot. All we need is to tar and compress the latest snapshot with the timestamp of the snapshot:</p>
+<div class="highlight"><pre><span></span><code>tar -cvzf /mnt/backup/snap-<span class="s2">&quot;</span><span class="k">$(</span>date +<span class="s1">&#39;\%Y\%m\%d&#39;</span><span class="k">)</span><span class="s2">&quot;</span>.tgz --directory<span class="o">=</span>/mnt/backup/snap-latest/ .
 </code></pre></div>
-</li>
-<li>
-<p>Inspect the status</p>
-<div class="highlight"><pre><span></span><code>systectl status new-service.service
+<p>Ideally, we can now make a backup of the compressed file to another backup device. Like with <code>rsync</code>, we can schedule the compressing and ideally we do it once a month:</p>
+<div class="highlight"><pre><span></span><code><span class="m">0</span> <span class="m">0</span> <span class="m">1</span> * * tar -cvzf /mnt/backup/snap-<span class="s2">&quot;</span><span class="k">$(</span>date +<span class="s1">&#39;\%Y\%m\%d&#39;</span><span class="k">)</span><span class="s2">&quot;</span>.tgz --directory<span class="o">=</span>/mnt/backup/snap-latest/ . &gt;/mnt/backup/logs/tar-<span class="s2">&quot;</span><span class="k">$(</span>date +<span class="s1">&#39;\%Y\%m\%d&#39;</span><span class="k">)</span><span class="s2">&quot;</span>.log <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
 </code></pre></div>
-</li>
-</ol>
+<p>We perfom the command again with <code>cron</code>, at first day of the month (<code>1</code>).</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 26, 2022</span>
       
     
   </small>
@@ -1043,7 +1038,7 @@ systemctl enable new-service.service
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../2022-02-10-homelab/" class="md-footer__link md-footer__link--prev" aria-label="Previous: A Raspberry PI homelab setup" rel="prev">
+        <a href="../../ML/2020-12-01-linear-regression/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Linear regression in PyTorch" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1052,20 +1047,20 @@ systemctl enable new-service.service
               <span class="md-footer__direction">
                 Previous
               </span>
-              A Raspberry PI homelab setup
+              Linear regression in PyTorch
             </div>
           </div>
         </a>
       
       
         
-        <a href="../2021-07-01-gateway/" class="md-footer__link md-footer__link--next" aria-label="Next: Using another computer as a gateway" rel="next">
+        <a href="../2022-03-08-systemd-timers/" class="md-footer__link md-footer__link--next" aria-label="Next: How to setup a systemd timer" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Using another computer as a gateway
+              How to setup a systemd timer
             </div>
           </div>
           <div class="md-footer__button md-icon">
