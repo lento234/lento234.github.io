@@ -1,21 +1,6 @@
-.PHONY: demo
-.DEFAULT_GOAL := help
-
-define PRINT_HELP_PYSCRIPT
-import re, sys
-
-for line in sys.stdin:
-	match = re.match(r'^([a-zA-Z_-]+):.*?## (.*)$$', line)
-	if match:
-		target, help = match.groups()
-		print("%-20s %s" % (target, help))
-endef
-export PRINT_HELP_PYSCRIPT
-
-BROWSER := python -c "$$BROWSER_PYSCRIPT"
-
+PHONY: help
 help:
-	@python -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
+	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
 debug: ## Run the builtin development server
 	mkdocs serve
