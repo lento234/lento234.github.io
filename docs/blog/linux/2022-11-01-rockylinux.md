@@ -105,13 +105,14 @@ sudo dnf install htop btop
 ```bash
 sudo dnf install libdrm-devel systemd-devel
 sudo dnf install cmake ncurses-devel git gcc-c++
+sudo dnf install qt5-qtdeclarative
 # gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig # programming
 ```
 
 3. Audio/Video dependencies
 
 ```bash
-sudo dnf install vlc ffmpeg ffmpeg-free-devel # audio/video
+sudo dnf install vlc ffmpeg ffmpeg-devel # audio/video
 ```
 
 ## Install popular (containerized) apps using Flatpak
@@ -132,6 +133,7 @@ flatpak install flathub com.spotify.Client
 flatpak install flathub com.slack.Slack
 flatpak install flathub us.zoom.Zoom
 ```
+
 
 ## Setup python environment
 
