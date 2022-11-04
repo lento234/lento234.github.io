@@ -39,12 +39,12 @@ sudo reboot
 Links:
 
 - https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
-- 
+-
 
 1. Install development tools, kernel, libraries
 
 ```bash
-sudo dnf config-manager --set-enabled crb # codeready-builder 
+sudo dnf config-manager --set-enabled crb # codeready-builder
 sudo dnf group install -y "Development tools"
 sudo dnf install epel-release rpmfusion-free-release # extra and free
 sudo dnf install -y kernel-devel kernel-headers
@@ -69,14 +69,14 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64\
                          ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
-4. Verify cuda environment, by compilation, and running `deviceQuery` from https://github.com/nvidia/cuda-samples. 
+4. Verify cuda environment, by compilation, and running `deviceQuery` from https://github.com/nvidia/cuda-samples.
 
 5. Install third-party libraries
 
 ```bash
 sudo dnf install libX11-devel libXi-devel libXmu-devel make mesa-libGLU-devel freeimage-devel
 sudo dnf --enablerepo=devel install freeglut-devel
-```                    
+```
 
 ## Setup terminal environment
 
@@ -89,7 +89,7 @@ sudo dnf install zsh
 
 - ohmyzsh: https://ohmyz.sh/
 - nordtheme: https://www.nordtheme.com/
-- Fira code fonts: https://github.com/tonsky/FiraCode 
+- Fira code fonts: https://github.com/tonsky/FiraCode
 
 
 ## Install libraries, apps, tools
@@ -150,4 +150,4 @@ flatpak install flathub us.zoom.Zoom
 - https://www.linuxcapable.com/how-to-install-ffmpeg-on-rocky-linux-9/
 - https://medium.com/@panda1100/setup-nvidia-gpu-driver-on-rocky-linux-9-0-166d7ce111b2A
 - https://darryldias.me/2021/nvidia-drivers-on-rocky-linux/
-- https://www.if-not-true-then-false.com/2021/install-nvidia-drivers-on-centos-rhel-rocky-linux/ 
+- https://www.if-not-true-then-false.com/2021/install-nvidia-drivers-on-centos-rhel-rocky-linux/
