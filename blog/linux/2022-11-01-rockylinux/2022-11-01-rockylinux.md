@@ -128,7 +128,7 @@ A detailed instruction is available at: [cuda-installation-guide-linux](https://
 
 ## Install popular apps using Flatpak
 
-1. Setup `FlatHub` repo: https://flathub.org/home
+1. Setup `FlatHub` repo: [flathub.org](https://flathub.org/home)
 
     ```bash
     sudo dnf install flatpak
@@ -146,7 +146,7 @@ A detailed instruction is available at: [cuda-installation-guide-linux](https://
 
 ## Setup python environment
 
-Install a conda environment using mambaforge: https://github.com/conda-forge/miniforge#mambaforge
+Install a conda environment using mambaforge: [github.com/conda-forge/miniforge](https://github.com/conda-forge/miniforge#mambaforge)
 
 
 ## More info
