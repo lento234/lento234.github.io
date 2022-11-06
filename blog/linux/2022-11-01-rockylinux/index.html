@@ -706,7 +706,7 @@
       
         <li class="md-nav__item">
   <a href="#download-and-verify-iso" class="md-nav__link">
-    Download and verify ISO:
+    Download and verify ISO
   </a>
   
 </li>
@@ -733,13 +733,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-httpsdocsnvidiacomcudacuda-installation-guide-linuxindexhtml" class="md-nav__link">
-    - https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#setup-terminal-environment" class="md-nav__link">
     Setup terminal environment
   </a>
@@ -754,8 +747,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-popular-containerized-apps-using-flatpak" class="md-nav__link">
-    Install popular (containerized) apps using Flatpak
+  <a href="#install-popular-apps-using-flatpak" class="md-nav__link">
+    Install popular apps using Flatpak
   </a>
   
 </li>
@@ -768,15 +761,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources:
+  <a href="#more-info" class="md-nav__link">
+    More info
   </a>
   
 </li>
@@ -1020,7 +1006,7 @@
       
         <li class="md-nav__item">
   <a href="#download-and-verify-iso" class="md-nav__link">
-    Download and verify ISO:
+    Download and verify ISO
   </a>
   
 </li>
@@ -1047,13 +1033,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#-httpsdocsnvidiacomcudacuda-installation-guide-linuxindexhtml" class="md-nav__link">
-    - https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#setup-terminal-environment" class="md-nav__link">
     Setup terminal environment
   </a>
@@ -1068,8 +1047,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#install-popular-containerized-apps-using-flatpak" class="md-nav__link">
-    Install popular (containerized) apps using Flatpak
+  <a href="#install-popular-apps-using-flatpak" class="md-nav__link">
+    Install popular apps using Flatpak
   </a>
   
 </li>
@@ -1082,15 +1061,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#notes" class="md-nav__link">
-    Notes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#resources" class="md-nav__link">
-    Resources:
+  <a href="#more-info" class="md-nav__link">
+    More info
   </a>
   
 </li>
@@ -1116,24 +1088,30 @@
 
 
 <h1 id="installing-rocky-linux-9">Installing Rocky Linux 9</h1>
-<h2 id="download-and-verify-iso">Download and verify ISO:</h2>
+<p>A detailed guide on installing rocky linux is available at: <a href="https://docs.rockylinux.org/guides/installation/">docs.rockylinux.org</a>.</p>
+<h2 id="download-and-verify-iso">Download and verify ISO</h2>
 <ol>
-<li>Download using <code>wget</code>:</li>
-</ol>
+<li>
+<p>Download using <code>wget</code>:</p>
 <div class="highlight"><pre><span></span><code>wget https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.0-20220808.0-x86_64-dvd.iso
 </code></pre></div>
-<ol>
-<li>Check validity of ISO</li>
-</ol>
+</li>
+<li>
+<p>Check validity of ISO</p>
 <div class="highlight"><pre><span></span><code>wget https://download.rockylinux.org/pub/rocky/9.0/isos/x86_64/CHECKSUM
 sha256sum -c CHECKSUM --ignore-missing
 </code></pre></div>
-<ol>
-<li>Make bootable USB</li>
-</ol>
+</li>
+<li>
+<p>Make bootable USB</p>
 <div class="highlight"><pre><span></span><code>sudo dd <span class="k">if</span><span class="o">=</span>/path/to/iso.iso <span class="nv">of</span><span class="o">=</span>/dev/sdX <span class="nv">status</span><span class="o">=</span>progress
 </code></pre></div>
+<p>Change <code>/path/to/iso</code> and <code>/dev/sdX</code> appropriately. Use <code>lsblk</code> or <code>diskutil list</code> (macos) to find available drives.</p>
+</li>
+</ol>
 <h2 id="install-os-using-anaconda">Install OS using anaconda</h2>
+<p>Follow the instructions shown. Setup keyboard, language, drive, softwares, network, hostname, time &amp; date, root password and default user. Make sure to give <code>administrator</code> privileges to default user.</p>
+<p>Drive</p>
 <h2 id="installing-graphical-environment-gnome">Installing Graphical environment (Gnome)</h2>
 <div class="highlight"><pre><span></span><code>sudo dnf group list
 sudo dnf groupinstall <span class="s2">&quot;Workstation&quot;</span>
@@ -1142,99 +1120,106 @@ sudo systemctl set-default graphical
 sudo reboot
 </code></pre></div>
 <h2 id="install-cuda-drivers-and-cudatoolkit">Install CUDA drivers and cudatoolkit</h2>
-<p>Links:</p>
-<h2 id="-httpsdocsnvidiacomcudacuda-installation-guide-linuxindexhtml">- https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html</h2>
+<p>A detailed instruction is available at: <a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html">cuda-installation-guide-linux</a>.</p>
 <ol>
-<li>Install development tools, kernel, libraries</li>
-</ol>
+<li>
+<p>Install development tools, kernel, libraries</p>
 <div class="highlight"><pre><span></span><code>sudo dnf config-manager --set-enabled crb <span class="c1"># codeready-builder</span>
 sudo dnf group install -y <span class="s2">&quot;Development tools&quot;</span>
 sudo dnf install epel-release rpmfusion-free-release <span class="c1"># extra and free</span>
 sudo dnf install -y kernel-devel kernel-headers
 </code></pre></div>
-<ol>
-<li>Instructions from Nvidia Cudatoolkit: https://developer.nvidia.com/cuda-downloads</li>
-</ol>
+</li>
+<li>
+<p>Instructions from Nvidia Cudatoolkit: <a href="https://developer.nvidia.com/cuda-downloads">developer.nvidia.com/cuda-downloads</a>.</p>
 <div class="highlight"><pre><span></span><code>sudo dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/rhel9/x86_64/cuda-rhel9.repo
 sudo dnf clean all
 sudo dnf -y module install nvidia-driver:latest-dkms
 sudo dnf -y install cuda
 </code></pre></div>
-<ol>
-<li>Post-installation setup</li>
-</ol>
+</li>
+<li>
+<p>Post-installation setup</p>
 <p>Append to bash environment:</p>
 <div class="highlight"><pre><span></span><code>export PATH=/usr/local/cuda-11.8/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64\
-                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+                        ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 </code></pre></div>
-<ol>
-<li>
-<p>Verify cuda environment, by compilation, and running <code>deviceQuery</code> from https://github.com/nvidia/cuda-samples.</p>
 </li>
 <li>
 <p>Install third-party libraries</p>
-</li>
-</ol>
 <div class="highlight"><pre><span></span><code>sudo dnf install libX11-devel libXi-devel libXmu-devel make mesa-libGLU-devel freeimage-devel
 sudo dnf --enablerepo<span class="o">=</span>devel install freeglut-devel
 </code></pre></div>
+</li>
+<li>
+<p>Verify cuda environment</p>
+<p>Download <a href="https://github.com/nvidia/cuda-samples">cuda samples</a>, compile and run <code>deviceQuery</code>.</p>
+</li>
+</ol>
 <h2 id="setup-terminal-environment">Setup terminal environment</h2>
 <ol>
-<li>Install zsh</li>
-</ol>
-<p><div class="highlight"><pre><span></span><code>sudo dnf install zsh
+<li>
+<p>Install zsh</p>
+<div class="highlight"><pre><span></span><code>sudo dnf install zsh
 </code></pre></div>
-2. (Optional) setup and customizations</p>
+</li>
+<li>
+<p>(Optional) setup and customizations</p>
 <ul>
 <li>ohmyzsh: https://ohmyz.sh/</li>
 <li>nordtheme: https://www.nordtheme.com/</li>
 <li>Fira code fonts: https://github.com/tonsky/FiraCode</li>
 </ul>
+</li>
+</ol>
 <h2 id="install-libraries-apps-tools">Install libraries, apps, tools</h2>
 <ol>
-<li>Monitoring apps</li>
-</ol>
-<div class="highlight"><pre><span></span><code>sudo dnf install htop btop
+<li>
+<p>Monitoring apps</p>
+<div class="highlight"><pre><span></span><code>sudo dnf install htop btop glances
 </code></pre></div>
-<ol>
-<li>Build tools</li>
-</ol>
+</li>
+<li>
+<p>Build tools</p>
 <div class="highlight"><pre><span></span><code>sudo dnf install libdrm-devel systemd-devel
 sudo dnf install cmake ncurses-devel git gcc-c++
 sudo dnf install qt5-qtdeclarative
-<span class="c1"># gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig # programming</span>
 </code></pre></div>
-<ol>
-<li>Audio/Video dependencies</li>
-</ol>
-<div class="highlight"><pre><span></span><code>sudo dnf install vlc ffmpeg ffmpeg-devel <span class="c1"># audio/video</span>
+<p>additional:
+<div class="highlight"><pre><span></span><code>sudo dnf install gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig <span class="c1"># programming</span>
+</code></pre></div></p>
+</li>
+<li>
+<p>Audio/Video dependencies</p>
+<div class="highlight"><pre><span></span><code>sudo dnf install vlc ffmpeg ffmpeg-devel
 </code></pre></div>
-<h2 id="install-popular-containerized-apps-using-flatpak">Install popular (containerized) apps using Flatpak</h2>
-<ol>
-<li>Setup <code>FlatHub</code> repo: https://flathub.org/home</li>
+</li>
 </ol>
+<h2 id="install-popular-apps-using-flatpak">Install popular apps using Flatpak</h2>
+<ol>
+<li>
+<p>Setup <code>FlatHub</code> repo: https://flathub.org/home</p>
 <div class="highlight"><pre><span></span><code>sudo dnf install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo reboot
 </code></pre></div>
-<ol>
-<li>Install vscode, spotify, etc.</li>
-</ol>
-<div class="highlight"><pre><span></span><code>flatpak install flathub com.visualstudio.code
-flatpak install flathub com.spotify.Client
+</li>
+<li>
+<p>Install vscode, spotify, etc.</p>
+<div class="highlight"><pre><span></span><code>flatpak install flathub com.spotify.Client
 flatpak install flathub com.slack.Slack
 flatpak install flathub us.zoom.Zoom
 </code></pre></div>
-<h2 id="setup-python-environment">Setup python environment</h2>
-<ol>
-<li>Install mambaforge: https://github.com/conda-forge/miniforge#mambaforge</li>
+</li>
 </ol>
-<h2 id="notes">Notes</h2>
+<h2 id="setup-python-environment">Setup python environment</h2>
+<p>Install a conda environment using mambaforge: https://github.com/conda-forge/miniforge#mambaforge</p>
+<h2 id="more-info">More info</h2>
 <ul>
 <li>CRB: (CRB is "Code Ready Builder" - PowerTools was a carryover from CentOS, which is still the equivalent of CRB in RHEL. crb will be the repository name going forward in Rocky Linux and other derivatives.) <a href="https://wiki.rockylinux.org/rocky/repo/#version-policy">More info</a></li>
 </ul>
-<h2 id="resources">Resources:</h2>
+<p>Additional resources:</p>
 <ul>
 <li>https://www.linuxcapable.com/how-to-install-ffmpeg-on-rocky-linux-9/</li>
 <li>https://medium.com/@panda1100/setup-nvidia-gpu-driver-on-rocky-linux-9-0-166d7ce111b2A</li>
@@ -1247,7 +1232,7 @@ flatpak install flathub us.zoom.Zoom
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 4, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 6, 2022</span>
       
     
   </small>
