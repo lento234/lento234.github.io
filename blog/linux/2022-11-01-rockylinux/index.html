@@ -12,14 +12,14 @@
         <meta name="author" content="Lento Manickathan">
       
       
-        <link rel="canonical" href="https://lento234.ch/blog/linux/2021-05-01-arch-linux/">
+        <link rel="canonical" href="https://lento234.ch/blog/linux/2022-11-01-rockylinux/">
       
       <link rel="icon" href="../../../assets/images/favicon.svg">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.8">
     
     
       
-        <title>Arch Linux installation guide - Lento Manickathan</title>
+        <title>Installing Rocky Linux 9 - Lento Manickathan</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#arch-linux-installation-guide" class="md-skip">
+        <a href="#installing-rocky-linux-9" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Arch Linux installation guide
+              Installing Rocky Linux 9
             
           </span>
         </div>
@@ -669,11 +669,122 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../2022-11-01-rockylinux/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Installing Rocky Linux 9
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Installing Rocky Linux 9
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#download-and-verify-iso" class="md-nav__link">
+    Download and verify ISO:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-os-using-anaconda" class="md-nav__link">
+    Install OS using anaconda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installing-graphical-environment-gnome" class="md-nav__link">
+    Installing Graphical environment (Gnome)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-cuda-drivers-and-cudatoolkit" class="md-nav__link">
+    Install CUDA drivers and cudatoolkit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-httpsdocsnvidiacomcudacuda-installation-guide-linuxindexhtml" class="md-nav__link">
+    - https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-terminal-environment" class="md-nav__link">
+    Setup terminal environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-libraries-apps-tools" class="md-nav__link">
+    Install libraries, apps, tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-popular-containerized-apps-using-flatpak" class="md-nav__link">
+    Install popular (containerized) apps using Flatpak
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-python-environment" class="md-nav__link">
+    Setup python environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -781,66 +892,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Arch Linux installation guide
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../2021-05-01-arch-linux/" class="md-nav__link">
         Arch Linux installation guide
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installing-basic-system" class="md-nav__link">
-    Installing basic system
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuring-system" class="md-nav__link">
-    Configuring system
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#additional-setup-for-a-complete-system" class="md-nav__link">
-    Additional setup for a complete system
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -963,22 +1019,78 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installing-basic-system" class="md-nav__link">
-    Installing basic system
+  <a href="#download-and-verify-iso" class="md-nav__link">
+    Download and verify ISO:
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring-system" class="md-nav__link">
-    Configuring system
+  <a href="#install-os-using-anaconda" class="md-nav__link">
+    Install OS using anaconda
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#additional-setup-for-a-complete-system" class="md-nav__link">
-    Additional setup for a complete system
+  <a href="#installing-graphical-environment-gnome" class="md-nav__link">
+    Installing Graphical environment (Gnome)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-cuda-drivers-and-cudatoolkit" class="md-nav__link">
+    Install CUDA drivers and cudatoolkit
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-httpsdocsnvidiacomcudacuda-installation-guide-linuxindexhtml" class="md-nav__link">
+    - https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-terminal-environment" class="md-nav__link">
+    Setup terminal environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-libraries-apps-tools" class="md-nav__link">
+    Install libraries, apps, tools
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-popular-containerized-apps-using-flatpak" class="md-nav__link">
+    Install popular (containerized) apps using Flatpak
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-python-environment" class="md-nav__link">
+    Setup python environment
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    Notes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#resources" class="md-nav__link">
+    Resources:
   </a>
   
 </li>
@@ -997,267 +1109,145 @@
                 
                   
 
-  <a href="https://github.com/lento234/lento234.github.io/edit/main/docs/blog/linux/2021-05-01-arch-linux.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/lento234/lento234.github.io/edit/main/docs/blog/linux/2022-11-01-rockylinux.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 id="arch-linux-installation-guide">Arch Linux installation guide</h1>
-<p><strong>Last updated</strong>: May 1, 2021</p>
-<p>The installation guide below is a summarized version of the official <a href="https://wiki.archlinux.org/title/Installation_guide">Installation Guide</a>.</p>
-<h2 id="installing-basic-system">Installing basic system</h2>
+<h1 id="installing-rocky-linux-9">Installing Rocky Linux 9</h1>
+<h2 id="download-and-verify-iso">Download and verify ISO:</h2>
+<ol>
+<li>Download using <code>wget</code>:</li>
+</ol>
+<div class="highlight"><pre><span></span><code>wget https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.0-20220808.0-x86_64-dvd.iso
+</code></pre></div>
+<ol>
+<li>Check validity of ISO</li>
+</ol>
+<div class="highlight"><pre><span></span><code>wget https://download.rockylinux.org/pub/rocky/9.0/isos/x86_64/CHECKSUM
+sha256sum -c CHECKSUM --ignore-missing
+</code></pre></div>
+<ol>
+<li>Make bootable USB</li>
+</ol>
+<div class="highlight"><pre><span></span><code>sudo dd <span class="k">if</span><span class="o">=</span>/path/to/iso.iso <span class="nv">of</span><span class="o">=</span>/dev/sdX <span class="nv">status</span><span class="o">=</span>progress
+</code></pre></div>
+<h2 id="install-os-using-anaconda">Install OS using anaconda</h2>
+<h2 id="installing-graphical-environment-gnome">Installing Graphical environment (Gnome)</h2>
+<div class="highlight"><pre><span></span><code>sudo dnf group list
+sudo dnf groupinstall <span class="s2">&quot;Workstation&quot;</span>
+sudo dnf groupinstall <span class="s2">&quot;Server with GUI&quot;</span>
+sudo systemctl set-default graphical
+sudo reboot
+</code></pre></div>
+<h2 id="install-cuda-drivers-and-cudatoolkit">Install CUDA drivers and cudatoolkit</h2>
+<p>Links:</p>
+<h2 id="-httpsdocsnvidiacomcudacuda-installation-guide-linuxindexhtml">- https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html</h2>
+<ol>
+<li>Install development tools, kernel, libraries</li>
+</ol>
+<div class="highlight"><pre><span></span><code>sudo dnf config-manager --set-enabled crb <span class="c1"># codeready-builder</span>
+sudo dnf group install -y <span class="s2">&quot;Development tools&quot;</span>
+sudo dnf install epel-release rpmfusion-free-release <span class="c1"># extra and free</span>
+sudo dnf install -y kernel-devel kernel-headers
+</code></pre></div>
+<ol>
+<li>Instructions from Nvidia Cudatoolkit: https://developer.nvidia.com/cuda-downloads</li>
+</ol>
+<div class="highlight"><pre><span></span><code>sudo dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/rhel9/x86_64/cuda-rhel9.repo
+sudo dnf clean all
+sudo dnf -y module install nvidia-driver:latest-dkms
+sudo dnf -y install cuda
+</code></pre></div>
+<ol>
+<li>Post-installation setup</li>
+</ol>
+<p>Append to bash environment:</p>
+<div class="highlight"><pre><span></span><code>export PATH=/usr/local/cuda-11.8/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64\
+                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+</code></pre></div>
 <ol>
 <li>
-<p>Choose correct keyboard keymaps</p>
-<div class="highlight"><pre><span></span><code>loadkeys keymap
-</code></pre></div>
+<p>Verify cuda environment, by compilation, and running <code>deviceQuery</code> from https://github.com/nvidia/cuda-samples.</p>
 </li>
 <li>
-<p>Assert boot mode</p>
-<div class="highlight"><pre><span></span><code>ls /sys/firmware/efi/efivars
-</code></pre></div>
+<p>Install third-party libraries</p>
 </li>
-<li>
-<p>Make sure internet connection is present</p>
-<div class="highlight"><pre><span></span><code>ping <span class="m">8</span>.8.8.8
+</ol>
+<div class="highlight"><pre><span></span><code>sudo dnf install libX11-devel libXi-devel libXmu-devel make mesa-libGLU-devel freeimage-devel
+sudo dnf --enablerepo<span class="o">=</span>devel install freeglut-devel
 </code></pre></div>
-</li>
-<li>
-<p>Set correct system time</p>
-<div class="highlight"><pre><span></span><code>timedatectl set-ntp <span class="nb">true</span>
-</code></pre></div>
-</li>
-<li>
-<p>Partition the disks</p>
+<h2 id="setup-terminal-environment">Setup terminal environment</h2>
 <ol>
-<li>
-<p>List disks using <code>fdisk</code></p>
-<div class="highlight"><pre><span></span><code>fdisk -l
-</code></pre></div>
-</li>
-<li>
-<p>If UEFI is present, use <code>GPT</code> and make <code>EFI</code> partition, <code>swap</code>, and root <code>/</code></p>
-<div class="highlight"><pre><span></span><code>cfdisk /dev/sdX <span class="c1"># or /dev/nvme0nX</span>
-</code></pre></div>
-</li>
-<li>
-<p>Set correct size, type and write partition table.</p>
-</li>
+<li>Install zsh</li>
 </ol>
-</li>
-<li>
-<p>Format the disks</p>
+<p><div class="highlight"><pre><span></span><code>sudo dnf install zsh
+</code></pre></div>
+2. (Optional) setup and customizations</p>
+<ul>
+<li>ohmyzsh: https://ohmyz.sh/</li>
+<li>nordtheme: https://www.nordtheme.com/</li>
+<li>Fira code fonts: https://github.com/tonsky/FiraCode</li>
+</ul>
+<h2 id="install-libraries-apps-tools">Install libraries, apps, tools</h2>
 <ol>
-<li>
-<p>Make <code>EFI</code> partition</p>
-<div class="highlight"><pre><span></span><code>mkfs.fat -F32 /dev/sdXA <span class="c1"># A is EFI partition</span>
-</code></pre></div>
-</li>
-<li>
-<p>Make swap</p>
-<div class="highlight"><pre><span></span><code>mkswap /dev/sdXB <span class="c1"># B is swap partition</span>
-</code></pre></div>
-</li>
-<li>
-<p>Turn swap on</p>
-<div class="highlight"><pre><span></span><code>swapon /dev/sdXB
-</code></pre></div>
-</li>
-<li>
-<p>Make root fs</p>
-<div class="highlight"><pre><span></span><code>mkfs.ext4 /dev/sdaXC <span class="c1"># C is root partition</span>
-</code></pre></div>
-</li>
+<li>Monitoring apps</li>
 </ol>
-</li>
-<li>
-<p>Mount root partition to <code>mnt</code></p>
-<div class="highlight"><pre><span></span><code>mount /dev/sdXC /mnt
+<div class="highlight"><pre><span></span><code>sudo dnf install htop btop
 </code></pre></div>
-</li>
-<li>
-<p>Install necessary packages</p>
-<div class="highlight"><pre><span></span><code>pacstrap /mnt base base-devel linux linux-firmware vim nano man zsh
-</code></pre></div>
-<h2 id="configuring-system">Configuring system</h2>
-</li>
-<li>
-<p>Write filesystem table</p>
-<div class="highlight"><pre><span></span><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
-</code></pre></div>
-</li>
-<li>
-<p>Change root to <code>/mnt</code></p>
-<div class="highlight"><pre><span></span><code>arch-chroot /mnt
-</code></pre></div>
-</li>
-<li>
-<p>Set correct time zone</p>
-<div class="highlight"><pre><span></span><code>ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime
-
-hwclock --systohc
-</code></pre></div>
-</li>
-<li>
-<p>Set locale</p>
 <ol>
-<li>
-<p>Uncomment the correct locale</p>
-<div class="highlight"><pre><span></span><code>vim /etc/locale.gen
-</code></pre></div>
-</li>
-<li>
-<p>Set locale</p>
-<div class="highlight"><pre><span></span><code>locale-gen
-</code></pre></div>
-</li>
+<li>Build tools</li>
 </ol>
-</li>
-<li>
-<p>Set hostname and hosts</p>
+<div class="highlight"><pre><span></span><code>sudo dnf install libdrm-devel systemd-devel
+sudo dnf install cmake ncurses-devel git gcc-c++
+sudo dnf install qt5-qtdeclarative
+<span class="c1"># gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig # programming</span>
+</code></pre></div>
 <ol>
-<li>
-<p>Add your hostname <code>yourhostname</code></p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;yourhostname&quot;</span> &gt;&gt; /etc/hostname
-</code></pre></div>
-</li>
-<li>
-<p>Append the following to <code>/etc/hosts</code></p>
-<div class="highlight"><pre><span></span><code>127.0.0.1   localhost
-::1         localhost
-127.0.1.1   yourhostname.localdomain    yourhostname
-</code></pre></div>
-</li>
+<li>Audio/Video dependencies</li>
 </ol>
-</li>
-<li>
-<p>Setup root password using <code>passwd</code></p>
-<div class="highlight"><pre><span></span><code>passwd
+<div class="highlight"><pre><span></span><code>sudo dnf install vlc ffmpeg ffmpeg-devel <span class="c1"># audio/video</span>
 </code></pre></div>
-</li>
-<li>
-<p>Add default users</p>
+<h2 id="install-popular-containerized-apps-using-flatpak">Install popular (containerized) apps using Flatpak</h2>
 <ol>
-<li>
-<p>Add new user</p>
-<div class="highlight"><pre><span></span><code>useradd -m -s /bin/zsh newuser
-</code></pre></div>
-</li>
-<li>
-<p>Give new user a password with <code>passwd</code></p>
-<div class="highlight"><pre><span></span><code>passwd newuser
-</code></pre></div>
-</li>
-<li>
-<p>Add new user to the <code>wheel</code></p>
-<div class="highlight"><pre><span></span><code>usermod -aG wheel,audio,video,optical,storage newuser
-</code></pre></div>
-</li>
-<li>
-<p>Setup <code>sudo</code></p>
-<div class="highlight"><pre><span></span><code>pacman -S sudo
-</code></pre></div>
-</li>
-<li>
-<p>Enable <code>wheel</code> with <code>visudo</code></p>
-<div class="highlight"><pre><span></span><code>visudo
-</code></pre></div>
-</li>
+<li>Setup <code>FlatHub</code> repo: https://flathub.org/home</li>
 </ol>
-</li>
-<li>
-<p>Setup grub</p>
+<div class="highlight"><pre><span></span><code>sudo dnf install flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo reboot
+</code></pre></div>
 <ol>
-<li>
-<p>Install grub and efi-tools</p>
-<div class="highlight"><pre><span></span><code>pacman -S grub efibootmgr dosfstoosl os-prober mtools
-</code></pre></div>
-</li>
-<li>
-<p>Make efi boot directory</p>
-<div class="highlight"><pre><span></span><code>mkdir /boot/EFI
-</code></pre></div>
-</li>
-<li>
-<p>Mount efi partition</p>
-<div class="highlight"><pre><span></span><code>mount /dev/sdXA /boot/EFI
-</code></pre></div>
-</li>
-<li>
-<p>Install grub (efi) for x86-64</p>
-<div class="highlight"><pre><span></span><code>grub-install --target<span class="o">=</span>x86_64-efi --bootloader-id<span class="o">=</span>grub_uefi --recheck
-</code></pre></div>
-</li>
-<li>
-<p>Make grub config file</p>
-<div class="highlight"><pre><span></span><code>grub-mkconfig -o /boot/grub/grub.cfg
-</code></pre></div>
-</li>
+<li>Install vscode, spotify, etc.</li>
 </ol>
-</li>
-<li>
-<p>Network manager for internet connectivity</p>
-<div class="highlight"><pre><span></span><code>pacman -S networkmanager
-
-systectl <span class="nb">enable</span> NetworkManager <span class="c1"># enable network manager</span>
+<div class="highlight"><pre><span></span><code>flatpak install flathub com.visualstudio.code
+flatpak install flathub com.spotify.Client
+flatpak install flathub com.slack.Slack
+flatpak install flathub us.zoom.Zoom
 </code></pre></div>
-</li>
-<li>
-<p><code>Optional</code>: Reboot to conclude with bare system setup.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">exit</span> <span class="c1"># now back to iso image</span>
-umount -R /mnt
-shutdown now <span class="c1"># or reboot</span>
-</code></pre></div>
-</li>
-</ol>
-<h2 id="additional-setup-for-a-complete-system">Additional setup for a complete system</h2>
+<h2 id="setup-python-environment">Setup python environment</h2>
 <ol>
-<li>
-<p>Install audio</p>
-<div class="highlight"><pre><span></span><code>pacman -S pulseaudio pulseaudio-alsa
-</code></pre></div>
-</li>
-<li>
-<p>Install a Graphical user interface; Display server (<code>xorg</code>), display driver (<code>nvidia</code>), desktop environment (<code>gnome</code>), window manager, display manager (<code>gdm</code>).</p>
-<ol>
-<li>
-<p>Install packages</p>
-<div class="highlight"><pre><span></span><code>pacman -S gnome nvidia <span class="c1"># gnome-extra for further applications</span>
-</code></pre></div>
-</li>
-<li>
-<p>Enable display manager for next reboot</p>
-<div class="highlight"><pre><span></span><code>systemctl <span class="nb">enable</span> gdm.service
-</code></pre></div>
-</li>
+<li>Install mambaforge: https://github.com/conda-forge/miniforge#mambaforge</li>
 </ol>
-</li>
-<li>
-<p>Additional network tools</p>
-<div class="highlight"><pre><span></span><code>pacman -S openssh rsync
-</code></pre></div>
-</li>
-<li>
-<p>Development tools: <code>git</code>, <code>htop</code></p>
-<div class="highlight"><pre><span></span><code>pacman -S git htop
-</code></pre></div>
-</li>
-<li>
-<p>Reboot</p>
-<div class="highlight"><pre><span></span><code><span class="nb">exit</span> <span class="c1"># now back to iso image</span>
-umount -R /mnt
-shutdown now <span class="c1"># or reboot</span>
-</code></pre></div>
-</li>
-</ol>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>CRB: (CRB is "Code Ready Builder" - PowerTools was a carryover from CentOS, which is still the equivalent of CRB in RHEL. crb will be the repository name going forward in Rocky Linux and other derivatives.) <a href="https://wiki.rockylinux.org/rocky/repo/#version-policy">More info</a></li>
+</ul>
+<h2 id="resources">Resources:</h2>
+<ul>
+<li>https://www.linuxcapable.com/how-to-install-ffmpeg-on-rocky-linux-9/</li>
+<li>https://medium.com/@panda1100/setup-nvidia-gpu-driver-on-rocky-linux-9-0-166d7ce111b2A</li>
+<li>https://darryldias.me/2021/nvidia-drivers-on-rocky-linux/</li>
+<li>https://www.if-not-true-then-false.com/2021/install-nvidia-drivers-on-centos-rhel-rocky-linux/</li>
+</ul>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 9, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 4, 2022</span>
       
     
   </small>
@@ -1289,7 +1279,7 @@ shutdown now <span class="c1"># or reboot</span>
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../2021-07-01-gateway/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Using another computer as a gateway" rel="prev">
+        <a href="../../ML/2020-12-01-linear-regression/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Linear regression in PyTorch" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -1298,20 +1288,20 @@ shutdown now <span class="c1"># or reboot</span>
               <span class="md-footer__direction">
                 Previous
               </span>
-              Using another computer as a gateway
+              Linear regression in PyTorch
             </div>
           </div>
         </a>
       
       
         
-        <a href="../../../tools/" class="md-footer__link md-footer__link--next" aria-label="Next: Tools" rel="next">
+        <a href="../2022-10-26-snapshot-backups/" class="md-footer__link md-footer__link--next" aria-label="Next: Quick and simple snapshot backuping using rsync" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Tools
+              Quick and simple snapshot backuping using rsync
             </div>
           </div>
           <div class="md-footer__button md-icon">
