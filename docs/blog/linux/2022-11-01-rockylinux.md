@@ -29,7 +29,6 @@ A detailed guide on installing rocky linux is available at: [docs.rockylinux.org
 
 Follow the instructions shown. Setup keyboard, language, drive, softwares, network, hostname, time & date, root password and default user. Make sure to give `administrator` privileges to default user.
 
-Drive
 
 ## Installing Graphical environment (Gnome)
 
