@@ -8,7 +8,7 @@
 * [Tanel Poder Consulting](https://tanelpoder.com/) - Blog by Tanel Pder.
 * [Rocky Linux Documentation](https://docs.rockylinux.org/) - Rocky linux wiki.
 * [RPM Fusion](https://rpmfusion.org/RPM%20Fusion) - RPM Fusion provides software that the Fedora Project or Red Hat doesn't want to ship.
-
+* [Configuring LUKS](https://www.redhat.com/sysadmin/disk-encryption-luks) - Configuring LUKS: Linux Unified Key Setup.
 
 ## Embedded systems
 
