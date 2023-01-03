@@ -2,7 +2,7 @@
 
 # [https://lento234.ch](https://lento234.ch)
 
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/lento234/lento234.github.io/Build?style=flat-square&labelColor=black)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/lento234/lento234.github.io/main.yml?style=flat-square&labelColor=black)
 ![CC BY 4.0](https://img.shields.io/github/license/lento234/lento234.github.io?style=flat-square&color=blue&labelColor=black)
 
 ***Personal website hosted at `github`***
