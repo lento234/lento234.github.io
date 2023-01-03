@@ -407,12 +407,12 @@ A --&gt;|eth1| B[Node B]
 <li><code>eth1</code>: LAN (private) (e.g., <code>bond0</code>)</li>
 </ul>
 <p><strong>Setup for gateway node:</strong></p>
-<div class="highlight"><pre><span></span><code>$ iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE <span class="c1"># enable NAT on eth0</span>
-$ iptables -A FORWARD -i eth1 -o eth0 -j ACCEPT <span class="c1"># allow packets from eth1 to go out of eth0</span>
-$ iptables -A FORWARD -i eth0 -o eth1 -m state --state RELATED,ESTABLISHED -j ACCEPT <span class="c1"># sent the packets to eth1</span>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>iptables<span class="w"> </span>-t<span class="w"> </span>nat<span class="w"> </span>-A<span class="w"> </span>POSTROUTING<span class="w"> </span>-o<span class="w"> </span>eth0<span class="w"> </span>-j<span class="w"> </span>MASQUERADE<span class="w"> </span><span class="c1"># enable NAT on eth0</span>
+$<span class="w"> </span>iptables<span class="w"> </span>-A<span class="w"> </span>FORWARD<span class="w"> </span>-i<span class="w"> </span>eth1<span class="w"> </span>-o<span class="w"> </span>eth0<span class="w"> </span>-j<span class="w"> </span>ACCEPT<span class="w"> </span><span class="c1"># allow packets from eth1 to go out of eth0</span>
+$<span class="w"> </span>iptables<span class="w"> </span>-A<span class="w"> </span>FORWARD<span class="w"> </span>-i<span class="w"> </span>eth0<span class="w"> </span>-o<span class="w"> </span>eth1<span class="w"> </span>-m<span class="w"> </span>state<span class="w"> </span>--state<span class="w"> </span>RELATED,ESTABLISHED<span class="w"> </span>-j<span class="w"> </span>ACCEPT<span class="w"> </span><span class="c1"># sent the packets to eth1</span>
 </code></pre></div>
 <p><strong>On LAN nodes:</strong></p>
-<div class="highlight"><pre><span></span><code>route add default gw &lt;ip_of_gateway&gt;
+<div class="highlight"><pre><span></span><code>route<span class="w"> </span>add<span class="w"> </span>default<span class="w"> </span>gw<span class="w"> </span>&lt;ip_of_gateway&gt;
 </code></pre></div>
 <hr/>
 <div class="md-source-file">
@@ -463,7 +463,7 @@ $ iptables -A FORWARD -i eth0 -o eth1 -m state --state RELATED,ESTABLISHED -j AC
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">
 <div class="md-copyright__highlight">
-      Copyright © 2021 - 2022 Lento Manickathan
+      Copyright © 2021 - 2023 Lento Manickathan
     </div>
   
   

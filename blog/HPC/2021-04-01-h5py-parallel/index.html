@@ -938,32 +938,32 @@
 <ol>
 <li>
 <p>Load the current latest parallel <code>HDF5</code> module (e.g. <code>HDF5/1.10.6-CrayGNU-20.11-parallel</code>).</p>
-<div class="highlight"><pre><span></span><code>module load HDF5/1.10.6-CrayGNU-20.11-parallel
+<div class="highlight"><pre><span></span><code>module<span class="w"> </span>load<span class="w"> </span>HDF5/1.10.6-CrayGNU-20.11-parallel
 </code></pre></div>
 </li>
 <li>
 <p>Update environment variables</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">MPI_DIR</span><span class="o">=</span><span class="nv">$MPICH_DIR</span>
-<span class="nb">export</span> <span class="nv">MPI_INCLUDE</span><span class="o">=</span><span class="nv">$MPICH_DIR</span>/include
-<span class="nb">export</span> <span class="nv">MPI_LIB</span><span class="o">=</span><span class="nv">$MPICH_DIR</span>/lib
-<span class="nb">export</span> <span class="nv">LB_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$MPI_DIR</span>/lib:<span class="nv">$LD_LIBRARY_PATH</span>
-<span class="nb">export</span> <span class="nv">MPICC</span><span class="o">=</span>CC
-<span class="nb">export</span> <span class="nv">mpicc</span><span class="o">=</span>CC
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">MPI_DIR</span><span class="o">=</span><span class="nv">$MPICH_DIR</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">MPI_INCLUDE</span><span class="o">=</span><span class="nv">$MPICH_DIR</span>/include
+<span class="nb">export</span><span class="w"> </span><span class="nv">MPI_LIB</span><span class="o">=</span><span class="nv">$MPICH_DIR</span>/lib
+<span class="nb">export</span><span class="w"> </span><span class="nv">LB_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$MPI_DIR</span>/lib:<span class="nv">$LD_LIBRARY_PATH</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">MPICC</span><span class="o">=</span>CC
+<span class="nb">export</span><span class="w"> </span><span class="nv">mpicc</span><span class="o">=</span>CC
 
-<span class="nb">export</span> <span class="nv">HDF5_MPI</span><span class="o">=</span><span class="s2">&quot;ON&quot;</span>
-<span class="nb">export</span> <span class="nv">HDF5_DIR</span><span class="o">=</span>/apps/daint/UES/jenkins/7.0.UP02-20.11/gpu/easybuild/software/HDF5/1.10.6-CrayGNU-20.11-parallel
+<span class="nb">export</span><span class="w"> </span><span class="nv">HDF5_MPI</span><span class="o">=</span><span class="s2">&quot;ON&quot;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">HDF5_DIR</span><span class="o">=</span>/apps/daint/UES/jenkins/7.0.UP02-20.11/gpu/easybuild/software/HDF5/1.10.6-CrayGNU-20.11-parallel
 </code></pre></div>
 </li>
 <li>
 <p>Install h5py from <a href="https://github.com/h5py/h5py">source</a>.</p>
 <p>a. Clone repo locally:</p>
-<div class="highlight"><pre><span></span><code>git clone https://github.com/h5py/h5py
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/h5py/h5py
 </code></pre></div>
 <p>b. Update the <code>setup_build.py</code> file with the additional following <code>include_dirs</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="n">settings</span><span class="p">[</span><span class="s1">&#39;include_dirs&#39;</span><span class="p">]</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">&#39;/opt/cray/pe/mpt/7.7.16/gni/mpich-gnu/8.2/include/&#39;</span><span class="p">]</span>
 </code></pre></div>
 <p>c. Install from locally using <code>pip</code>:</p>
-<div class="highlight"><pre><span></span><code>pip install .
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>.
 </code></pre></div>
 </li>
 </ol>
@@ -986,12 +986,12 @@
 <ol>
 <li>
 <p>Load system <code>HDF5/xxx-parallel</code> and your custom python environment with <code>h5py</code> and <code>mpi4py</code>. Run <code>parallel_h5py.py</code> script:</p>
-<div class="highlight"><pre><span></span><code>srun python parallel_h5py.py
+<div class="highlight"><pre><span></span><code>srun<span class="w"> </span>python<span class="w"> </span>parallel_h5py.py
 </code></pre></div>
 </li>
 <li>
 <p>Inspect output:</p>
-<div class="highlight"><pre><span></span><code>h5dump parallel_test.h5
+<div class="highlight"><pre><span></span><code>h5dump<span class="w"> </span>parallel_test.h5
 </code></pre></div>
 </li>
 </ol>
@@ -1070,7 +1070,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 - 2022 Lento Manickathan
+      Copyright &copy; 2021 - 2023 Lento Manickathan
     </div>
   
   

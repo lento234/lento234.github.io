@@ -986,67 +986,67 @@
 </li>
 <li>
 <p>Display wireless devices using <code>iwconfig</code>:</p>
-<div class="highlight"><pre><span></span><code>$ iwconfig
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>iwconfig
 
-lo        no wireless extensions.
+lo<span class="w">        </span>no<span class="w"> </span>wireless<span class="w"> </span>extensions.
 
-eth0      no wireless extensions.
+eth0<span class="w">      </span>no<span class="w"> </span>wireless<span class="w"> </span>extensions.
 
-wlan0     IEEE <span class="m">802</span>.11  ESSID:off/any
-          Mode:Managed  Access Point: Not-Associated
-          Retry short limit:7   RTS thr:off   Fragment thr:off
-          Power Management:on
+wlan0<span class="w">     </span>IEEE<span class="w"> </span><span class="m">802</span>.11<span class="w">  </span>ESSID:off/any
+<span class="w">          </span>Mode:Managed<span class="w">  </span>Access<span class="w"> </span>Point:<span class="w"> </span>Not-Associated
+<span class="w">          </span>Retry<span class="w"> </span>short<span class="w"> </span>limit:7<span class="w">   </span>RTS<span class="w"> </span>thr:off<span class="w">   </span>Fragment<span class="w"> </span>thr:off
+<span class="w">          </span>Power<span class="w"> </span>Management:on
 </code></pre></div>
 </li>
 <li>
 <p>Check status of device using <code>ip</code>:</p>
-<div class="highlight"><pre><span></span><code>$ ip a
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>ip<span class="w"> </span>a
 
-<span class="m">1</span>: lo: &lt;LOOPBACK,UP,LOWER_UP&gt; mtu <span class="m">65536</span> qdisc noqueue state UNKNOWN group default qlen <span class="m">1000</span>
-link/loopback <span class="m">00</span>:00:00:00:00:00 brd <span class="m">00</span>:00:00:00:00:00
-inet <span class="m">127</span>.0.0.1/8 scope host lo
-   valid_lft forever preferred_lft forever
-inet6 ::1/128 scope host
-   valid_lft forever preferred_lft forever
-<span class="m">2</span>: eth0: &lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt; mtu <span class="m">1500</span> qdisc fq_codel state UP group default qlen <span class="m">1000</span>
-    link/ether b8:27:eb:0d:38:af brd ff:ff:ff:ff:ff:ff
-    inet <span class="m">192</span>.168.2.126/24 brd <span class="m">192</span>.168.2.255 scope global dynamic eth0
-       valid_lft 85767sec preferred_lft 85767sec
-    inet6 fe80::ba27:ebff:fe0d:38af/64 scope link
-       valid_lft forever preferred_lft forever
-<span class="m">3</span>: wlan0: &lt;BROADCAST,MULTICAST&gt; mtu <span class="m">1500</span> qdisc noop state DOWN group default qlen <span class="m">1000</span>
-    link/ether b8:27:eb:58:6d:fa brd ff:ff:ff:ff:ff:ff
+<span class="m">1</span>:<span class="w"> </span>lo:<span class="w"> </span>&lt;LOOPBACK,UP,LOWER_UP&gt;<span class="w"> </span>mtu<span class="w"> </span><span class="m">65536</span><span class="w"> </span>qdisc<span class="w"> </span>noqueue<span class="w"> </span>state<span class="w"> </span>UNKNOWN<span class="w"> </span>group<span class="w"> </span>default<span class="w"> </span>qlen<span class="w"> </span><span class="m">1000</span>
+link/loopback<span class="w"> </span><span class="m">00</span>:00:00:00:00:00<span class="w"> </span>brd<span class="w"> </span><span class="m">00</span>:00:00:00:00:00
+inet<span class="w"> </span><span class="m">127</span>.0.0.1/8<span class="w"> </span>scope<span class="w"> </span>host<span class="w"> </span>lo
+<span class="w">   </span>valid_lft<span class="w"> </span>forever<span class="w"> </span>preferred_lft<span class="w"> </span>forever
+inet6<span class="w"> </span>::1/128<span class="w"> </span>scope<span class="w"> </span>host
+<span class="w">   </span>valid_lft<span class="w"> </span>forever<span class="w"> </span>preferred_lft<span class="w"> </span>forever
+<span class="m">2</span>:<span class="w"> </span>eth0:<span class="w"> </span>&lt;BROADCAST,MULTICAST,UP,LOWER_UP&gt;<span class="w"> </span>mtu<span class="w"> </span><span class="m">1500</span><span class="w"> </span>qdisc<span class="w"> </span>fq_codel<span class="w"> </span>state<span class="w"> </span>UP<span class="w"> </span>group<span class="w"> </span>default<span class="w"> </span>qlen<span class="w"> </span><span class="m">1000</span>
+<span class="w">    </span>link/ether<span class="w"> </span>b8:27:eb:0d:38:af<span class="w"> </span>brd<span class="w"> </span>ff:ff:ff:ff:ff:ff
+<span class="w">    </span>inet<span class="w"> </span><span class="m">192</span>.168.2.126/24<span class="w"> </span>brd<span class="w"> </span><span class="m">192</span>.168.2.255<span class="w"> </span>scope<span class="w"> </span>global<span class="w"> </span>dynamic<span class="w"> </span>eth0
+<span class="w">       </span>valid_lft<span class="w"> </span>85767sec<span class="w"> </span>preferred_lft<span class="w"> </span>85767sec
+<span class="w">    </span>inet6<span class="w"> </span>fe80::ba27:ebff:fe0d:38af/64<span class="w"> </span>scope<span class="w"> </span>link
+<span class="w">       </span>valid_lft<span class="w"> </span>forever<span class="w"> </span>preferred_lft<span class="w"> </span>forever
+<span class="m">3</span>:<span class="w"> </span>wlan0:<span class="w"> </span>&lt;BROADCAST,MULTICAST&gt;<span class="w"> </span>mtu<span class="w"> </span><span class="m">1500</span><span class="w"> </span>qdisc<span class="w"> </span>noop<span class="w"> </span>state<span class="w"> </span>DOWN<span class="w"> </span>group<span class="w"> </span>default<span class="w"> </span>qlen<span class="w"> </span><span class="m">1000</span>
+<span class="w">    </span>link/ether<span class="w"> </span>b8:27:eb:58:6d:fa<span class="w"> </span>brd<span class="w"> </span>ff:ff:ff:ff:ff:ff
 </code></pre></div>
 </li>
 <li>
 <p>Set <code>wlan0</code> up using <code>nmcli</code>:</p>
-<div class="highlight"><pre><span></span><code>$ sudo nmcli radio wifi on
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>nmcli<span class="w"> </span>radio<span class="w"> </span>wifi<span class="w"> </span>on
 </code></pre></div>
 </li>
 <li>
 <p>Check status of wifi:</p>
-<div class="highlight"><pre><span></span><code>$ nmcli radio wifi
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>nmcli<span class="w"> </span>radio<span class="w"> </span>wifi
 </code></pre></div>
 <p>and</p>
-<div class="highlight"><pre><span></span><code>$ nmcli dev status
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>nmcli<span class="w"> </span>dev<span class="w"> </span>status
 </code></pre></div>
 </li>
 <li>
 <p>Scan for wifi:</p>
-<div class="highlight"><pre><span></span><code>$ nmcli dev wifi list
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>nmcli<span class="w"> </span>dev<span class="w"> </span>wifi<span class="w"> </span>list
 
-IN-USE  BSSID              SSID                           MODE   CHAN  RATE        SIGNAL  BARS  SECURITY
-    F0:F7:F9:F7:F3:FC  home_wifi                      Infra  <span class="m">3</span>     <span class="m">270</span> Mbit/s  <span class="m">100</span>     ▂▄▆█  WPA2
-    <span class="m">10</span>:C2:5A:0B:74:70  Fuen6Kli007                    Infra  <span class="m">1</span>     <span class="m">130</span> Mbit/s  <span class="m">60</span>      ▂▄▆_  WPA1 WPA3
-    <span class="m">58</span>:90:43:A5:B9:24  Sunrise_2.4GHz_A5B920          Infra  <span class="m">1</span>     <span class="m">195</span> Mbit/s  <span class="m">57</span>      ▂▄▆_  WPA1 WPA2
+IN-USE<span class="w">  </span>BSSID<span class="w">              </span>SSID<span class="w">                           </span>MODE<span class="w">   </span>CHAN<span class="w">  </span>RATE<span class="w">        </span>SIGNAL<span class="w">  </span>BARS<span class="w">  </span>SECURITY
+<span class="w">    </span>F0:F7:F9:F7:F3:FC<span class="w">  </span>home_wifi<span class="w">                      </span>Infra<span class="w">  </span><span class="m">3</span><span class="w">     </span><span class="m">270</span><span class="w"> </span>Mbit/s<span class="w">  </span><span class="m">100</span><span class="w">     </span>▂▄▆█<span class="w">  </span>WPA2
+<span class="w">    </span><span class="m">10</span>:C2:5A:0B:74:70<span class="w">  </span>Fuen6Kli007<span class="w">                    </span>Infra<span class="w">  </span><span class="m">1</span><span class="w">     </span><span class="m">130</span><span class="w"> </span>Mbit/s<span class="w">  </span><span class="m">60</span><span class="w">      </span>▂▄▆_<span class="w">  </span>WPA1<span class="w"> </span>WPA3
+<span class="w">    </span><span class="m">58</span>:90:43:A5:B9:24<span class="w">  </span>Sunrise_2.4GHz_A5B920<span class="w">          </span>Infra<span class="w">  </span><span class="m">1</span><span class="w">     </span><span class="m">195</span><span class="w"> </span>Mbit/s<span class="w">  </span><span class="m">57</span><span class="w">      </span>▂▄▆_<span class="w">  </span>WPA1<span class="w"> </span>WPA2
 </code></pre></div>
 </li>
 <li>
 <p>Connect to the wifi network (<code>SSID=home_wifi</code>):</p>
-<div class="highlight"><pre><span></span><code>$ sudo nmcli --ask dev wifi connect home_wifi
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>nmcli<span class="w"> </span>--ask<span class="w"> </span>dev<span class="w"> </span>wifi<span class="w"> </span>connect<span class="w"> </span>home_wifi
 
-Password: ••••••••••••••••••••••••••••••••••••
-Device <span class="s1">&#39;wlan0&#39;</span> successfully activated with <span class="s1">&#39;ffffa3ff-ffc0-44ff-9792-2ff39f2affe28&#39;</span>.
+Password:<span class="w"> </span>••••••••••••••••••••••••••••••••••••
+Device<span class="w"> </span><span class="s1">&#39;wlan0&#39;</span><span class="w"> </span>successfully<span class="w"> </span>activated<span class="w"> </span>with<span class="w"> </span><span class="s1">&#39;ffffa3ff-ffc0-44ff-9792-2ff39f2affe28&#39;</span>.
 </code></pre></div>
 </li>
 </ol>
@@ -1125,7 +1125,7 @@ Device <span class="s1">&#39;wlan0&#39;</span> successfully activated with <span
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 - 2022 Lento Manickathan
+      Copyright &copy; 2021 - 2023 Lento Manickathan
     </div>
   
   

@@ -987,27 +987,27 @@
 </li>
 <li>
 <p>Kill all the process of <code>user</code>. Find all process belonging to <code>&lt;user&gt;</code> using <code>ps</code>:</p>
-<div class="highlight"><pre><span></span><code>ps aux <span class="p">|</span> grep &lt;user&gt;
+<div class="highlight"><pre><span></span><code>ps<span class="w"> </span>aux<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span>&lt;user&gt;
 </code></pre></div>
 </li>
 <li>
 <p>Change <code>uid</code> of <code>&lt;user&gt;</code>:</p>
-<div class="highlight"><pre><span></span><code>usermod -u &lt;new_uid&gt; &lt;user&gt;
+<div class="highlight"><pre><span></span><code>usermod<span class="w"> </span>-u<span class="w"> </span>&lt;new_uid&gt;<span class="w"> </span>&lt;user&gt;
 </code></pre></div>
 </li>
 <li>
 <p>Change <code>gid</code> of <code>user</code>:</p>
-<div class="highlight"><pre><span></span><code>groupmod -g &lt;new_gid&gt; &lt;user&gt;
+<div class="highlight"><pre><span></span><code>groupmod<span class="w"> </span>-g<span class="w"> </span>&lt;new_gid&gt;<span class="w"> </span>&lt;user&gt;
 </code></pre></div>
 </li>
 <li>
 <p>Change ownership of all files from <code>&lt;old_uid&gt;:&lt;old_gid&gt;</code> to <code>&lt;new_uid&gt;:&lt;new_gid&gt;</code>:</p>
-<div class="highlight"><pre><span></span><code>find /parent/path/ <span class="se">\(</span> -uid &lt;old_uid&gt; -o -gid &lt;old_gid&gt; <span class="se">\)</span> <span class="se">\</span>
-  -exec chown &lt;new_uid&gt;:&lt;new_gid&gt; <span class="o">{}</span> <span class="se">\;</span>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>/parent/path/<span class="w"> </span><span class="se">\(</span><span class="w"> </span>-uid<span class="w"> </span>&lt;old_uid&gt;<span class="w"> </span>-o<span class="w"> </span>-gid<span class="w"> </span>&lt;old_gid&gt;<span class="w"> </span><span class="se">\)</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-exec<span class="w"> </span>chown<span class="w"> </span>&lt;new_uid&gt;:&lt;new_gid&gt;<span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
 </code></pre></div>
 <p>Example:</p>
-<div class="highlight"><pre><span></span><code>find /home/lento <span class="se">\(</span> -uid <span class="m">1001</span> -o -gid <span class="m">1001</span> <span class="se">\)</span> <span class="se">\</span>
-  -exec chown <span class="m">1000</span>:1000 <span class="o">{}</span> <span class="se">\;</span>
+<div class="highlight"><pre><span></span><code>find<span class="w"> </span>/home/lento<span class="w"> </span><span class="se">\(</span><span class="w"> </span>-uid<span class="w"> </span><span class="m">1001</span><span class="w"> </span>-o<span class="w"> </span>-gid<span class="w"> </span><span class="m">1001</span><span class="w"> </span><span class="se">\)</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-exec<span class="w"> </span>chown<span class="w"> </span><span class="m">1000</span>:1000<span class="w"> </span><span class="o">{}</span><span class="w"> </span><span class="se">\;</span>
 </code></pre></div>
 </li>
 </ol>
@@ -1086,7 +1086,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 - 2022 Lento Manickathan
+      Copyright &copy; 2021 - 2023 Lento Manickathan
     </div>
   
   

@@ -1016,15 +1016,15 @@
 
 <span class="n">HEADER</span><span class="o">=</span>\
 <span class="sa">f</span><span class="s2">&quot;&quot;&quot;#!/bin/bash -l</span>
-<span class="s2">#SBATCH --time=</span><span class="si">{</span><span class="n">time</span><span class="si">}</span><span class="s2"></span>
+<span class="s2">#SBATCH --time=</span><span class="si">{</span><span class="n">time</span><span class="si">}</span>
 <span class="s2">#SBATCH --nodes=1</span>
 <span class="s2">#SBATCH --ntasks-per-core=2</span>
 <span class="s2">#SBATCH --ntasks-per-node=1</span>
 <span class="s2">#SBATCH --cpus-per-task=24</span>
 <span class="s2">#SBATCH --constraint=gpu</span>
 <span class="s2">#SBATCH --hint=multithread</span>
-<span class="s2">#SBATCH --account=</span><span class="si">{</span><span class="n">account</span><span class="si">}</span><span class="s2"></span>
-<span class="s2">#SBATCH --partition=</span><span class="si">{</span><span class="n">partition</span><span class="si">}</span><span class="s2"></span>
+<span class="s2">#SBATCH --account=</span><span class="si">{</span><span class="n">account</span><span class="si">}</span>
+<span class="s2">#SBATCH --partition=</span><span class="si">{</span><span class="n">partition</span><span class="si">}</span>
 
 <span class="s2">module load daint-gpu</span>
 <span class="s2">module load cudatoolkit</span>
@@ -1034,7 +1034,7 @@
 <span class="s2">export PYTHONFAULTHANDLER=1</span>
 
 <span class="s2">BLENDER_PATH=/store/empa/em13/apps/blender</span>
-<span class="s2">BACKGROUND=</span><span class="si">{</span><span class="n">background</span><span class="si">}</span><span class="s2"></span>
+<span class="s2">BACKGROUND=</span><span class="si">{</span><span class="n">background</span><span class="si">}</span>
 <span class="s2">&quot;&quot;&quot;</span>
 
 <span class="c1"># Batch split</span>
@@ -1163,7 +1163,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 - 2022 Lento Manickathan
+      Copyright &copy; 2021 - 2023 Lento Manickathan
     </div>
   
   

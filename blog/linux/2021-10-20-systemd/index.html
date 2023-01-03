@@ -992,16 +992,16 @@
 <li>
 <p>Make new service unit file in <code>/etc/systemd/system/new-service.service</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="o">[</span>Unit<span class="o">]</span>
-<span class="nv">Description</span> <span class="o">=</span> Sensai background service
-<span class="nv">After</span> <span class="o">=</span> network.target
+<span class="nv">Description</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>Sensai<span class="w"> </span>background<span class="w"> </span>service
+<span class="nv">After</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>network.target
 
 <span class="o">[</span>Service<span class="o">]</span>
-<span class="nv">ExecStart</span> <span class="o">=</span> /usr/bin/python3 /home/lento/projects/sensai/log.py
-<span class="nv">User</span> <span class="o">=</span> lento
-<span class="nv">Group</span> <span class="o">=</span> lento
+<span class="nv">ExecStart</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>/usr/bin/python3<span class="w"> </span>/home/lento/projects/sensai/log.py
+<span class="nv">User</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>lento
+<span class="nv">Group</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>lento
 
 <span class="o">[</span>Install<span class="o">]</span>
-<span class="nv">WantedBy</span> <span class="o">=</span> default.target
+<span class="nv">WantedBy</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>default.target
 </code></pre></div>
 </li>
 <li>
@@ -1096,7 +1096,7 @@ systemctl enable new-service.service
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 - 2022 Lento Manickathan
+      Copyright &copy; 2021 - 2023 Lento Manickathan
     </div>
   
   

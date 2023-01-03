@@ -1002,18 +1002,18 @@
 </ul>
 <h2 id="step-1-make-a-rsync-snapshot">Step 1: Make a rsync snapshot</h2>
 <p>We first make a snapshot of whatever folder you are interested. In this example, we take a snapshot of the home directory (<code>/home/</code>) to a mounted external device mounted at <code>/mnt/backup</code>.</p>
-<div class="highlight"><pre><span></span><code>rsync -avhux --delete /home/ /mnt/backup/snap-latest/
+<div class="highlight"><pre><span></span><code>rsync<span class="w"> </span>-avhux<span class="w"> </span>--delete<span class="w"> </span>/home/<span class="w"> </span>/mnt/backup/snap-latest/
 </code></pre></div>
 <p>The <code>--delete</code> option is used to ensure it's a literal snapshot and unwanted files are also removed. Ideally, we should periodically and <strong>automatically</strong> perform this command, e.g. using a <code>cron</code> job. Add the following line by editing the crontab, <code>crontab -e</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="m">0</span> <span class="m">12</span> * * <span class="m">6</span> rsync -avhux --delete --info<span class="o">=</span>stats2 /home/ /mnt/backup/snap-latest/ &gt;/mnt/backup/logs/snap-<span class="s2">&quot;</span><span class="k">$(</span>date +<span class="s1">&#39;\%Y\%m\%d&#39;</span><span class="k">)</span><span class="s2">&quot;</span>.log <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+<div class="highlight"><pre><span></span><code><span class="m">0</span><span class="w"> </span><span class="m">12</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span><span class="m">6</span><span class="w"> </span>rsync<span class="w"> </span>-avhux<span class="w"> </span>--delete<span class="w"> </span>--info<span class="o">=</span>stats2<span class="w"> </span>/home/<span class="w"> </span>/mnt/backup/snap-latest/<span class="w"> </span>&gt;/mnt/backup/logs/snap-<span class="s2">&quot;</span><span class="k">$(</span>date<span class="w"> </span>+<span class="s1">&#39;\%Y\%m\%d&#39;</span><span class="k">)</span><span class="s2">&quot;</span>.log<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
 </code></pre></div>
 <p>We now scheduled it for saturday (i.e., <code>6</code>) at noon and also log the transfer to a log file with a timestamp.</p>
 <h2 id="step-2-make-a-compressed-backup">Step 2: Make a compressed backup</h2>
 <p>Once, we have a snapshot clone of our <code>/home/</code> dir, we can also periodically make a compressed backup of the snapshot. All we need is to tar and compress the latest snapshot with the timestamp of the snapshot:</p>
-<div class="highlight"><pre><span></span><code>tar -cvzf /mnt/backup/snap-<span class="s2">&quot;</span><span class="k">$(</span>date +<span class="s1">&#39;\%Y\%m\%d&#39;</span><span class="k">)</span><span class="s2">&quot;</span>.tgz --directory<span class="o">=</span>/mnt/backup/snap-latest/ .
+<div class="highlight"><pre><span></span><code>tar<span class="w"> </span>-cvzf<span class="w"> </span>/mnt/backup/snap-<span class="s2">&quot;</span><span class="k">$(</span>date<span class="w"> </span>+<span class="s1">&#39;\%Y\%m\%d&#39;</span><span class="k">)</span><span class="s2">&quot;</span>.tgz<span class="w"> </span>--directory<span class="o">=</span>/mnt/backup/snap-latest/<span class="w"> </span>.
 </code></pre></div>
 <p>Ideally, we can now make a backup of the compressed file to another backup device. Like with <code>rsync</code>, we can schedule the compressing and ideally we do it once a month:</p>
-<div class="highlight"><pre><span></span><code><span class="m">0</span> <span class="m">0</span> <span class="m">1</span> * * tar -cvzf /mnt/backup/snap-<span class="s2">&quot;</span><span class="k">$(</span>date +<span class="s1">&#39;\%Y\%m\%d&#39;</span><span class="k">)</span><span class="s2">&quot;</span>.tgz --directory<span class="o">=</span>/mnt/backup/snap-latest/ . &gt;/mnt/backup/logs/tar-<span class="s2">&quot;</span><span class="k">$(</span>date +<span class="s1">&#39;\%Y\%m\%d&#39;</span><span class="k">)</span><span class="s2">&quot;</span>.log <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
+<div class="highlight"><pre><span></span><code><span class="m">0</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="m">1</span><span class="w"> </span>*<span class="w"> </span>*<span class="w"> </span>tar<span class="w"> </span>-cvzf<span class="w"> </span>/mnt/backup/snap-<span class="s2">&quot;</span><span class="k">$(</span>date<span class="w"> </span>+<span class="s1">&#39;\%Y\%m\%d&#39;</span><span class="k">)</span><span class="s2">&quot;</span>.tgz<span class="w"> </span>--directory<span class="o">=</span>/mnt/backup/snap-latest/<span class="w"> </span>.<span class="w"> </span>&gt;/mnt/backup/logs/tar-<span class="s2">&quot;</span><span class="k">$(</span>date<span class="w"> </span>+<span class="s1">&#39;\%Y\%m\%d&#39;</span><span class="k">)</span><span class="s2">&quot;</span>.log<span class="w"> </span><span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span>
 </code></pre></div>
 <p>We perfom the command again with <code>cron</code>, at first day of the month (<code>1</code>).</p>
 
@@ -1091,7 +1091,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 - 2022 Lento Manickathan
+      Copyright &copy; 2021 - 2023 Lento Manickathan
     </div>
   
   

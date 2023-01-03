@@ -997,17 +997,17 @@
 <ul>
 <li>
 <p>Perform timings of device/cache reads on device (<code>sda</code>):</p>
-<div class="highlight"><pre><span></span><code>hparm -tT /dev/sda
+<div class="highlight"><pre><span></span><code>hparm<span class="w"> </span>-tT<span class="w"> </span>/dev/sda
 </code></pre></div>
 </li>
 <li>
 <p>Measure the write performance of a disk</p>
-<div class="highlight"><pre><span></span><code>dd <span class="k">if</span><span class="o">=</span>/dev/zero <span class="nv">of</span><span class="o">=</span>file_1GB <span class="nv">bs</span><span class="o">=</span><span class="m">1024</span> <span class="nv">count</span><span class="o">=</span><span class="m">1000000</span> <span class="nv">conv</span><span class="o">=</span>fdatasync
+<div class="highlight"><pre><span></span><code>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/dev/zero<span class="w"> </span><span class="nv">of</span><span class="o">=</span>file_1GB<span class="w"> </span><span class="nv">bs</span><span class="o">=</span><span class="m">1024</span><span class="w"> </span><span class="nv">count</span><span class="o">=</span><span class="m">1000000</span><span class="w"> </span><span class="nv">conv</span><span class="o">=</span>fdatasync
 </code></pre></div>
 </li>
 <li>
 <p>Benchmark with <a href="http://www.iozone.org/">IOzone</a> filesystem benchmarking tool and export to <code>xls</code></p>
-<div class="highlight"><pre><span></span><code>iozone -a /dev/sdb1 -b results.xls
+<div class="highlight"><pre><span></span><code>iozone<span class="w"> </span>-a<span class="w"> </span>/dev/sdb1<span class="w"> </span>-b<span class="w"> </span>results.xls
 </code></pre></div>
 </li>
 </ul>
@@ -1023,12 +1023,12 @@
 <ul>
 <li>
 <p>Server-side (default port: <code>5001</code>):</p>
-<div class="highlight"><pre><span></span><code>iperf -s
+<div class="highlight"><pre><span></span><code>iperf<span class="w"> </span>-s
 </code></pre></div>
 </li>
 <li>
 <p>Client-side:</p>
-<div class="highlight"><pre><span></span><code>iperf -c server_ip
+<div class="highlight"><pre><span></span><code>iperf<span class="w"> </span>-c<span class="w"> </span>server_ip
 </code></pre></div>
 </li>
 </ul>
@@ -1109,7 +1109,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 - 2022 Lento Manickathan
+      Copyright &copy; 2021 - 2023 Lento Manickathan
     </div>
   
   

@@ -1011,32 +1011,32 @@
 <ol>
 <li>
 <p>Download <code>RockyPi</code> Rocky Linux OS from <a href="https://download.rockylinux.org/pub/rocky/8/rockyrpi/aarch64/images/">Official Repo</a></p>
-<div class="highlight"><pre><span></span><code>wget https://download.rockylinux.org/pub/rocky/8/rockyrpi/aarch64/images/RockyRpi_x.x_xxxxxxxx.img.xz
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://download.rockylinux.org/pub/rocky/8/rockyrpi/aarch64/images/RockyRpi_x.x_xxxxxxxx.img.xz
 </code></pre></div>
 </li>
 <li>
 <p>Verify checksum of the <code>img.xz</code> with <code>`RockyRpi_x.x_xxxxxxxx.sha256sum</code>:</p>
-<div class="highlight"><pre><span></span><code>xzcat RockyRpi_x.x_xxxxxxxx.img.xz <span class="p">|</span> sha256sum
+<div class="highlight"><pre><span></span><code>xzcat<span class="w"> </span>RockyRpi_x.x_xxxxxxxx.img.xz<span class="w"> </span><span class="p">|</span><span class="w"> </span>sha256sum
 </code></pre></div>
 </li>
 <li>
 <p>Write image to SD card mounted at <code>/dev/sdX</code>:</p>
-<div class="highlight"><pre><span></span><code>sudo bash -c <span class="s2">&quot;xzcat RockyRpi_x.x_xxxxxxxx.img.xz &gt; /dev/sdX&quot;</span>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>bash<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;xzcat RockyRpi_x.x_xxxxxxxx.img.xz &gt; /dev/sdX&quot;</span>
 </code></pre></div>
 </li>
 <li>
 <p>Initial login to raspberry pi with password <code>rockylinux</code>:</p>
-<div class="highlight"><pre><span></span><code>ssh rocky@rockypi
+<div class="highlight"><pre><span></span><code>ssh<span class="w"> </span>rocky@rockypi
 </code></pre></div>
 </li>
 <li>
 <p>Grow the SD card partition to max (where <code>/</code> is the <code>3</code>rd partition)</p>
-<div class="highlight"><pre><span></span><code>growpart /dev/sdX <span class="m">3</span>
+<div class="highlight"><pre><span></span><code>growpart<span class="w"> </span>/dev/sdX<span class="w"> </span><span class="m">3</span>
 </code></pre></div>
 </li>
 <li>
 <p>Resize the fs to max</p>
-<div class="highlight"><pre><span></span><code>resize2fs /dev/sdX3
+<div class="highlight"><pre><span></span><code>resize2fs<span class="w"> </span>/dev/sdX3
 </code></pre></div>
 </li>
 </ol>
@@ -1044,12 +1044,12 @@
 <ol>
 <li>
 <p><strong>Important:</strong> Make sure to run <code>init</code> first separately, where it will create a default user with <code>sudo</code> privileges. Edit <code>playbook-setup.yml</code> appropriately and use <code>just</code> to run the playbook</p>
-<div class="highlight"><pre><span></span><code>ansible-playbook --diff -K --vault-password-file pass.key playbook-setup.yml <span class="c1"># or: just run</span>
+<div class="highlight"><pre><span></span><code>ansible-playbook<span class="w"> </span>--diff<span class="w"> </span>-K<span class="w"> </span>--vault-password-file<span class="w"> </span>pass.key<span class="w"> </span>playbook-setup.yml<span class="w"> </span><span class="c1"># or: just run</span>
 </code></pre></div>
 </li>
 <li>
 <p>Run additional setup roles: <code>ssh</code>, <code>timezone</code>, <code>packages</code>, <code>upgrade</code>, <code>dnfautomatic</code>, <code>firewalld</code>:</p>
-<div class="highlight"><pre><span></span><code>just run
+<div class="highlight"><pre><span></span><code>just<span class="w"> </span>run
 </code></pre></div>
 </li>
 </ol>
@@ -1143,7 +1143,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 - 2022 Lento Manickathan
+      Copyright &copy; 2021 - 2023 Lento Manickathan
     </div>
   
   

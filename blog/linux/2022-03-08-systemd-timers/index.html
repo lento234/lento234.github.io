@@ -989,7 +989,7 @@
 
 <span class="nv">WEBHOOK_URL</span><span class="o">=</span>https://mattermost.myserver.ch/hooks/hookurl
 
-curl -i -X POST -H <span class="s1">&#39;Content-Type: application/json&#39;</span> -d <span class="s1">&#39;{&quot;text&quot;: &quot;:sparkles: **I am back online** :sparkles: :sunglasses::+1:&quot;}&#39;</span> <span class="nv">$WEBHOOK_URL</span> &gt; /dev/null
+curl<span class="w"> </span>-i<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;text&quot;: &quot;:sparkles: **I am back online** :sparkles: :sunglasses::+1:&quot;}&#39;</span><span class="w"> </span><span class="nv">$WEBHOOK_URL</span><span class="w"> </span>&gt;<span class="w"> </span>/dev/null
 </code></pre></div></p>
 </li>
 <li>
@@ -1031,25 +1031,25 @@ systemctl start notify_up.timer
 </li>
 <li>
 <p>Show list of timers:</p>
-<div class="highlight"><pre><span></span><code>$ systemctl list-timers --all
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>systemctl<span class="w"> </span>list-timers<span class="w"> </span>--all
 
-NEXT                        LEFT          LAST                        PASSED       UNIT                         ACTIVATES
-Thu <span class="m">2022</span>-03-10 <span class="m">15</span>:33:45 CET 30min left    Thu <span class="m">2022</span>-03-10 <span class="m">14</span>:30:30 CET 32min ago    anacron.timer                anacron.service
-Thu <span class="m">2022</span>-03-10 <span class="m">17</span>:38:57 CET 2h 36min left Wed <span class="m">2022</span>-03-09 <span class="m">22</span>:18:37 CET 16h ago      apt-daily.timer              apt-daily.service
-Thu <span class="m">2022</span>-03-10 <span class="m">19</span>:00:23 CET 3h 57min left Thu <span class="m">2022</span>-03-10 <span class="m">09</span>:02:59 CET 5h 59min ago fwupd-refresh.timer          fwupd-refresh.service
-Thu <span class="m">2022</span>-03-10 <span class="m">19</span>:02:13 CET 3h 59min left Thu <span class="m">2022</span>-03-10 <span class="m">12</span>:39:48 CET 2h 23min ago ua-timer.timer               ua-timer.service
-Thu <span class="m">2022</span>-03-10 <span class="m">23</span>:56:18 CET 8h left       Thu <span class="m">2022</span>-03-10 <span class="m">06</span>:50:02 CET 8h ago       motd-news.timer              motd-news.service
-Fri <span class="m">2022</span>-03-11 <span class="m">00</span>:00:00 CET 8h left       Thu <span class="m">2022</span>-03-10 <span class="m">00</span>:00:02 CET 15h ago      logrotate.timer              logrotate.service
-Fri <span class="m">2022</span>-03-11 <span class="m">00</span>:00:00 CET 8h left       Thu <span class="m">2022</span>-03-10 <span class="m">00</span>:00:02 CET 15h ago      man-db.timer                 man-db.service
-Fri <span class="m">2022</span>-03-11 <span class="m">06</span>:58:28 CET 15h left      Thu <span class="m">2022</span>-03-10 <span class="m">06</span>:50:38 CET 8h ago       apt-daily-upgrade.timer      apt-daily-upgrade.service
-Fri <span class="m">2022</span>-03-11 <span class="m">10</span>:06:01 CET 19h left      Thu <span class="m">2022</span>-03-10 <span class="m">10</span>:06:01 CET 4h 56min ago systemd-tmpfiles-clean.timer systemd-tmpfiles-clean.service
-Sun <span class="m">2022</span>-03-13 <span class="m">03</span>:10:30 CET <span class="m">2</span> days left   Sun <span class="m">2022</span>-03-06 <span class="m">03</span>:10:13 CET <span class="m">4</span> days ago   e2scrub_all.timer            e2scrub_all.service
-Mon <span class="m">2022</span>-03-14 <span class="m">00</span>:00:00 CET <span class="m">3</span> days left   Mon <span class="m">2022</span>-03-07 <span class="m">00</span>:00:22 CET <span class="m">3</span> days ago   fstrim.timer                 fstrim.service
-n/a                         n/a           Wed <span class="m">2022</span>-03-09 <span class="m">09</span>:55:24 CET <span class="m">1</span> day 5h ago notify_up.timer              notify_up.service
-n/a                         n/a           n/a                         n/a          snapd.snap-repair.timer      snapd.snap-repair.service
-n/a                         n/a           n/a                         n/a          ua-license-check.timer       ua-license-check.service
+NEXT<span class="w">                        </span>LEFT<span class="w">          </span>LAST<span class="w">                        </span>PASSED<span class="w">       </span>UNIT<span class="w">                         </span>ACTIVATES
+Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">15</span>:33:45<span class="w"> </span>CET<span class="w"> </span>30min<span class="w"> </span>left<span class="w">    </span>Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">14</span>:30:30<span class="w"> </span>CET<span class="w"> </span>32min<span class="w"> </span>ago<span class="w">    </span>anacron.timer<span class="w">                </span>anacron.service
+Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">17</span>:38:57<span class="w"> </span>CET<span class="w"> </span>2h<span class="w"> </span>36min<span class="w"> </span>left<span class="w"> </span>Wed<span class="w"> </span><span class="m">2022</span>-03-09<span class="w"> </span><span class="m">22</span>:18:37<span class="w"> </span>CET<span class="w"> </span>16h<span class="w"> </span>ago<span class="w">      </span>apt-daily.timer<span class="w">              </span>apt-daily.service
+Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">19</span>:00:23<span class="w"> </span>CET<span class="w"> </span>3h<span class="w"> </span>57min<span class="w"> </span>left<span class="w"> </span>Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">09</span>:02:59<span class="w"> </span>CET<span class="w"> </span>5h<span class="w"> </span>59min<span class="w"> </span>ago<span class="w"> </span>fwupd-refresh.timer<span class="w">          </span>fwupd-refresh.service
+Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">19</span>:02:13<span class="w"> </span>CET<span class="w"> </span>3h<span class="w"> </span>59min<span class="w"> </span>left<span class="w"> </span>Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">12</span>:39:48<span class="w"> </span>CET<span class="w"> </span>2h<span class="w"> </span>23min<span class="w"> </span>ago<span class="w"> </span>ua-timer.timer<span class="w">               </span>ua-timer.service
+Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">23</span>:56:18<span class="w"> </span>CET<span class="w"> </span>8h<span class="w"> </span>left<span class="w">       </span>Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">06</span>:50:02<span class="w"> </span>CET<span class="w"> </span>8h<span class="w"> </span>ago<span class="w">       </span>motd-news.timer<span class="w">              </span>motd-news.service
+Fri<span class="w"> </span><span class="m">2022</span>-03-11<span class="w"> </span><span class="m">00</span>:00:00<span class="w"> </span>CET<span class="w"> </span>8h<span class="w"> </span>left<span class="w">       </span>Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">00</span>:00:02<span class="w"> </span>CET<span class="w"> </span>15h<span class="w"> </span>ago<span class="w">      </span>logrotate.timer<span class="w">              </span>logrotate.service
+Fri<span class="w"> </span><span class="m">2022</span>-03-11<span class="w"> </span><span class="m">00</span>:00:00<span class="w"> </span>CET<span class="w"> </span>8h<span class="w"> </span>left<span class="w">       </span>Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">00</span>:00:02<span class="w"> </span>CET<span class="w"> </span>15h<span class="w"> </span>ago<span class="w">      </span>man-db.timer<span class="w">                 </span>man-db.service
+Fri<span class="w"> </span><span class="m">2022</span>-03-11<span class="w"> </span><span class="m">06</span>:58:28<span class="w"> </span>CET<span class="w"> </span>15h<span class="w"> </span>left<span class="w">      </span>Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">06</span>:50:38<span class="w"> </span>CET<span class="w"> </span>8h<span class="w"> </span>ago<span class="w">       </span>apt-daily-upgrade.timer<span class="w">      </span>apt-daily-upgrade.service
+Fri<span class="w"> </span><span class="m">2022</span>-03-11<span class="w"> </span><span class="m">10</span>:06:01<span class="w"> </span>CET<span class="w"> </span>19h<span class="w"> </span>left<span class="w">      </span>Thu<span class="w"> </span><span class="m">2022</span>-03-10<span class="w"> </span><span class="m">10</span>:06:01<span class="w"> </span>CET<span class="w"> </span>4h<span class="w"> </span>56min<span class="w"> </span>ago<span class="w"> </span>systemd-tmpfiles-clean.timer<span class="w"> </span>systemd-tmpfiles-clean.service
+Sun<span class="w"> </span><span class="m">2022</span>-03-13<span class="w"> </span><span class="m">03</span>:10:30<span class="w"> </span>CET<span class="w"> </span><span class="m">2</span><span class="w"> </span>days<span class="w"> </span>left<span class="w">   </span>Sun<span class="w"> </span><span class="m">2022</span>-03-06<span class="w"> </span><span class="m">03</span>:10:13<span class="w"> </span>CET<span class="w"> </span><span class="m">4</span><span class="w"> </span>days<span class="w"> </span>ago<span class="w">   </span>e2scrub_all.timer<span class="w">            </span>e2scrub_all.service
+Mon<span class="w"> </span><span class="m">2022</span>-03-14<span class="w"> </span><span class="m">00</span>:00:00<span class="w"> </span>CET<span class="w"> </span><span class="m">3</span><span class="w"> </span>days<span class="w"> </span>left<span class="w">   </span>Mon<span class="w"> </span><span class="m">2022</span>-03-07<span class="w"> </span><span class="m">00</span>:00:22<span class="w"> </span>CET<span class="w"> </span><span class="m">3</span><span class="w"> </span>days<span class="w"> </span>ago<span class="w">   </span>fstrim.timer<span class="w">                 </span>fstrim.service
+n/a<span class="w">                         </span>n/a<span class="w">           </span>Wed<span class="w"> </span><span class="m">2022</span>-03-09<span class="w"> </span><span class="m">09</span>:55:24<span class="w"> </span>CET<span class="w"> </span><span class="m">1</span><span class="w"> </span>day<span class="w"> </span>5h<span class="w"> </span>ago<span class="w"> </span>notify_up.timer<span class="w">              </span>notify_up.service
+n/a<span class="w">                         </span>n/a<span class="w">           </span>n/a<span class="w">                         </span>n/a<span class="w">          </span>snapd.snap-repair.timer<span class="w">      </span>snapd.snap-repair.service
+n/a<span class="w">                         </span>n/a<span class="w">           </span>n/a<span class="w">                         </span>n/a<span class="w">          </span>ua-license-check.timer<span class="w">       </span>ua-license-check.service
 
-<span class="m">14</span> timers listed.
+<span class="m">14</span><span class="w"> </span>timers<span class="w"> </span>listed.
 </code></pre></div>
 </li>
 </ol>
@@ -1128,7 +1128,7 @@ n/a                         n/a           n/a                         n/a       
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 - 2022 Lento Manickathan
+      Copyright &copy; 2021 - 2023 Lento Manickathan
     </div>
   
   

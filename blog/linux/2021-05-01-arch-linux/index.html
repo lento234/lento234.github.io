@@ -1012,22 +1012,22 @@
 <ol>
 <li>
 <p>Choose correct keyboard keymaps</p>
-<div class="highlight"><pre><span></span><code>loadkeys keymap
+<div class="highlight"><pre><span></span><code>loadkeys<span class="w"> </span>keymap
 </code></pre></div>
 </li>
 <li>
 <p>Assert boot mode</p>
-<div class="highlight"><pre><span></span><code>ls /sys/firmware/efi/efivars
+<div class="highlight"><pre><span></span><code>ls<span class="w"> </span>/sys/firmware/efi/efivars
 </code></pre></div>
 </li>
 <li>
 <p>Make sure internet connection is present</p>
-<div class="highlight"><pre><span></span><code>ping <span class="m">8</span>.8.8.8
+<div class="highlight"><pre><span></span><code>ping<span class="w"> </span><span class="m">8</span>.8.8.8
 </code></pre></div>
 </li>
 <li>
 <p>Set correct system time</p>
-<div class="highlight"><pre><span></span><code>timedatectl set-ntp <span class="nb">true</span>
+<div class="highlight"><pre><span></span><code>timedatectl<span class="w"> </span>set-ntp<span class="w"> </span><span class="nb">true</span>
 </code></pre></div>
 </li>
 <li>
@@ -1035,12 +1035,12 @@
 <ol>
 <li>
 <p>List disks using <code>fdisk</code></p>
-<div class="highlight"><pre><span></span><code>fdisk -l
+<div class="highlight"><pre><span></span><code>fdisk<span class="w"> </span>-l
 </code></pre></div>
 </li>
 <li>
 <p>If UEFI is present, use <code>GPT</code> and make <code>EFI</code> partition, <code>swap</code>, and root <code>/</code></p>
-<div class="highlight"><pre><span></span><code>cfdisk /dev/sdX <span class="c1"># or /dev/nvme0nX</span>
+<div class="highlight"><pre><span></span><code>cfdisk<span class="w"> </span>/dev/sdX<span class="w"> </span><span class="c1"># or /dev/nvme0nX</span>
 </code></pre></div>
 </li>
 <li>
@@ -1053,52 +1053,52 @@
 <ol>
 <li>
 <p>Make <code>EFI</code> partition</p>
-<div class="highlight"><pre><span></span><code>mkfs.fat -F32 /dev/sdXA <span class="c1"># A is EFI partition</span>
+<div class="highlight"><pre><span></span><code>mkfs.fat<span class="w"> </span>-F32<span class="w"> </span>/dev/sdXA<span class="w"> </span><span class="c1"># A is EFI partition</span>
 </code></pre></div>
 </li>
 <li>
 <p>Make swap</p>
-<div class="highlight"><pre><span></span><code>mkswap /dev/sdXB <span class="c1"># B is swap partition</span>
+<div class="highlight"><pre><span></span><code>mkswap<span class="w"> </span>/dev/sdXB<span class="w"> </span><span class="c1"># B is swap partition</span>
 </code></pre></div>
 </li>
 <li>
 <p>Turn swap on</p>
-<div class="highlight"><pre><span></span><code>swapon /dev/sdXB
+<div class="highlight"><pre><span></span><code>swapon<span class="w"> </span>/dev/sdXB
 </code></pre></div>
 </li>
 <li>
 <p>Make root fs</p>
-<div class="highlight"><pre><span></span><code>mkfs.ext4 /dev/sdaXC <span class="c1"># C is root partition</span>
+<div class="highlight"><pre><span></span><code>mkfs.ext4<span class="w"> </span>/dev/sdaXC<span class="w"> </span><span class="c1"># C is root partition</span>
 </code></pre></div>
 </li>
 </ol>
 </li>
 <li>
 <p>Mount root partition to <code>mnt</code></p>
-<div class="highlight"><pre><span></span><code>mount /dev/sdXC /mnt
+<div class="highlight"><pre><span></span><code>mount<span class="w"> </span>/dev/sdXC<span class="w"> </span>/mnt
 </code></pre></div>
 </li>
 <li>
 <p>Install necessary packages</p>
-<div class="highlight"><pre><span></span><code>pacstrap /mnt base base-devel linux linux-firmware vim nano man zsh
+<div class="highlight"><pre><span></span><code>pacstrap<span class="w"> </span>/mnt<span class="w"> </span>base<span class="w"> </span>base-devel<span class="w"> </span>linux<span class="w"> </span>linux-firmware<span class="w"> </span>vim<span class="w"> </span>nano<span class="w"> </span>man<span class="w"> </span>zsh
 </code></pre></div>
 <h2 id="configuring-system">Configuring system</h2>
 </li>
 <li>
 <p>Write filesystem table</p>
-<div class="highlight"><pre><span></span><code>genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+<div class="highlight"><pre><span></span><code>genfstab<span class="w"> </span>-U<span class="w"> </span>/mnt<span class="w"> </span>&gt;&gt;<span class="w"> </span>/mnt/etc/fstab
 </code></pre></div>
 </li>
 <li>
 <p>Change root to <code>/mnt</code></p>
-<div class="highlight"><pre><span></span><code>arch-chroot /mnt
+<div class="highlight"><pre><span></span><code>arch-chroot<span class="w"> </span>/mnt
 </code></pre></div>
 </li>
 <li>
 <p>Set correct time zone</p>
-<div class="highlight"><pre><span></span><code>ln -sf /usr/share/zoneinfo/Europe/Zurich /etc/localtime
+<div class="highlight"><pre><span></span><code>ln<span class="w"> </span>-sf<span class="w"> </span>/usr/share/zoneinfo/Europe/Zurich<span class="w"> </span>/etc/localtime
 
-hwclock --systohc
+hwclock<span class="w"> </span>--systohc
 </code></pre></div>
 </li>
 <li>
@@ -1106,7 +1106,7 @@ hwclock --systohc
 <ol>
 <li>
 <p>Uncomment the correct locale</p>
-<div class="highlight"><pre><span></span><code>vim /etc/locale.gen
+<div class="highlight"><pre><span></span><code>vim<span class="w"> </span>/etc/locale.gen
 </code></pre></div>
 </li>
 <li>
@@ -1121,7 +1121,7 @@ hwclock --systohc
 <ol>
 <li>
 <p>Add your hostname <code>yourhostname</code></p>
-<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;yourhostname&quot;</span> &gt;&gt; /etc/hostname
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;yourhostname&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/hostname
 </code></pre></div>
 </li>
 <li>
@@ -1143,22 +1143,22 @@ hwclock --systohc
 <ol>
 <li>
 <p>Add new user</p>
-<div class="highlight"><pre><span></span><code>useradd -m -s /bin/zsh newuser
+<div class="highlight"><pre><span></span><code>useradd<span class="w"> </span>-m<span class="w"> </span>-s<span class="w"> </span>/bin/zsh<span class="w"> </span>newuser
 </code></pre></div>
 </li>
 <li>
 <p>Give new user a password with <code>passwd</code></p>
-<div class="highlight"><pre><span></span><code>passwd newuser
+<div class="highlight"><pre><span></span><code>passwd<span class="w"> </span>newuser
 </code></pre></div>
 </li>
 <li>
 <p>Add new user to the <code>wheel</code></p>
-<div class="highlight"><pre><span></span><code>usermod -aG wheel,audio,video,optical,storage newuser
+<div class="highlight"><pre><span></span><code>usermod<span class="w"> </span>-aG<span class="w"> </span>wheel,audio,video,optical,storage<span class="w"> </span>newuser
 </code></pre></div>
 </li>
 <li>
 <p>Setup <code>sudo</code></p>
-<div class="highlight"><pre><span></span><code>pacman -S sudo
+<div class="highlight"><pre><span></span><code>pacman<span class="w"> </span>-S<span class="w"> </span>sudo
 </code></pre></div>
 </li>
 <li>
@@ -1173,43 +1173,43 @@ hwclock --systohc
 <ol>
 <li>
 <p>Install grub and efi-tools</p>
-<div class="highlight"><pre><span></span><code>pacman -S grub efibootmgr dosfstoosl os-prober mtools
+<div class="highlight"><pre><span></span><code>pacman<span class="w"> </span>-S<span class="w"> </span>grub<span class="w"> </span>efibootmgr<span class="w"> </span>dosfstoosl<span class="w"> </span>os-prober<span class="w"> </span>mtools
 </code></pre></div>
 </li>
 <li>
 <p>Make efi boot directory</p>
-<div class="highlight"><pre><span></span><code>mkdir /boot/EFI
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>/boot/EFI
 </code></pre></div>
 </li>
 <li>
 <p>Mount efi partition</p>
-<div class="highlight"><pre><span></span><code>mount /dev/sdXA /boot/EFI
+<div class="highlight"><pre><span></span><code>mount<span class="w"> </span>/dev/sdXA<span class="w"> </span>/boot/EFI
 </code></pre></div>
 </li>
 <li>
 <p>Install grub (efi) for x86-64</p>
-<div class="highlight"><pre><span></span><code>grub-install --target<span class="o">=</span>x86_64-efi --bootloader-id<span class="o">=</span>grub_uefi --recheck
+<div class="highlight"><pre><span></span><code>grub-install<span class="w"> </span>--target<span class="o">=</span>x86_64-efi<span class="w"> </span>--bootloader-id<span class="o">=</span>grub_uefi<span class="w"> </span>--recheck
 </code></pre></div>
 </li>
 <li>
 <p>Make grub config file</p>
-<div class="highlight"><pre><span></span><code>grub-mkconfig -o /boot/grub/grub.cfg
+<div class="highlight"><pre><span></span><code>grub-mkconfig<span class="w"> </span>-o<span class="w"> </span>/boot/grub/grub.cfg
 </code></pre></div>
 </li>
 </ol>
 </li>
 <li>
 <p>Network manager for internet connectivity</p>
-<div class="highlight"><pre><span></span><code>pacman -S networkmanager
+<div class="highlight"><pre><span></span><code>pacman<span class="w"> </span>-S<span class="w"> </span>networkmanager
 
-systectl <span class="nb">enable</span> NetworkManager <span class="c1"># enable network manager</span>
+systectl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>NetworkManager<span class="w"> </span><span class="c1"># enable network manager</span>
 </code></pre></div>
 </li>
 <li>
 <p><code>Optional</code>: Reboot to conclude with bare system setup.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">exit</span> <span class="c1"># now back to iso image</span>
-umount -R /mnt
-shutdown now <span class="c1"># or reboot</span>
+<div class="highlight"><pre><span></span><code><span class="nb">exit</span><span class="w"> </span><span class="c1"># now back to iso image</span>
+umount<span class="w"> </span>-R<span class="w"> </span>/mnt
+shutdown<span class="w"> </span>now<span class="w"> </span><span class="c1"># or reboot</span>
 </code></pre></div>
 </li>
 </ol>
@@ -1217,7 +1217,7 @@ shutdown now <span class="c1"># or reboot</span>
 <ol>
 <li>
 <p>Install audio</p>
-<div class="highlight"><pre><span></span><code>pacman -S pulseaudio pulseaudio-alsa
+<div class="highlight"><pre><span></span><code>pacman<span class="w"> </span>-S<span class="w"> </span>pulseaudio<span class="w"> </span>pulseaudio-alsa
 </code></pre></div>
 </li>
 <li>
@@ -1225,31 +1225,31 @@ shutdown now <span class="c1"># or reboot</span>
 <ol>
 <li>
 <p>Install packages</p>
-<div class="highlight"><pre><span></span><code>pacman -S gnome nvidia <span class="c1"># gnome-extra for further applications</span>
+<div class="highlight"><pre><span></span><code>pacman<span class="w"> </span>-S<span class="w"> </span>gnome<span class="w"> </span>nvidia<span class="w"> </span><span class="c1"># gnome-extra for further applications</span>
 </code></pre></div>
 </li>
 <li>
 <p>Enable display manager for next reboot</p>
-<div class="highlight"><pre><span></span><code>systemctl <span class="nb">enable</span> gdm.service
+<div class="highlight"><pre><span></span><code>systemctl<span class="w"> </span><span class="nb">enable</span><span class="w"> </span>gdm.service
 </code></pre></div>
 </li>
 </ol>
 </li>
 <li>
 <p>Additional network tools</p>
-<div class="highlight"><pre><span></span><code>pacman -S openssh rsync
+<div class="highlight"><pre><span></span><code>pacman<span class="w"> </span>-S<span class="w"> </span>openssh<span class="w"> </span>rsync
 </code></pre></div>
 </li>
 <li>
 <p>Development tools: <code>git</code>, <code>htop</code></p>
-<div class="highlight"><pre><span></span><code>pacman -S git htop
+<div class="highlight"><pre><span></span><code>pacman<span class="w"> </span>-S<span class="w"> </span>git<span class="w"> </span>htop
 </code></pre></div>
 </li>
 <li>
 <p>Reboot</p>
-<div class="highlight"><pre><span></span><code><span class="nb">exit</span> <span class="c1"># now back to iso image</span>
-umount -R /mnt
-shutdown now <span class="c1"># or reboot</span>
+<div class="highlight"><pre><span></span><code><span class="nb">exit</span><span class="w"> </span><span class="c1"># now back to iso image</span>
+umount<span class="w"> </span>-R<span class="w"> </span>/mnt
+shutdown<span class="w"> </span>now<span class="w"> </span><span class="c1"># or reboot</span>
 </code></pre></div>
 </li>
 </ol>
@@ -1328,7 +1328,7 @@ shutdown now <span class="c1"># or reboot</span>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 - 2022 Lento Manickathan
+      Copyright &copy; 2021 - 2023 Lento Manickathan
     </div>
   
   

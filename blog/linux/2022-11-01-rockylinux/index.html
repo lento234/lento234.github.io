@@ -1095,18 +1095,18 @@
 <ol>
 <li>
 <p>Download using <code>wget</code>:</p>
-<div class="highlight"><pre><span></span><code>wget https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.0-20220808.0-x86_64-dvd.iso
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://download.rockylinux.org/pub/rocky/9/isos/x86_64/Rocky-9.0-20220808.0-x86_64-dvd.iso
 </code></pre></div>
 </li>
 <li>
 <p>Check validity of ISO</p>
-<div class="highlight"><pre><span></span><code>wget https://download.rockylinux.org/pub/rocky/9.0/isos/x86_64/CHECKSUM
-sha256sum -c CHECKSUM --ignore-missing
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://download.rockylinux.org/pub/rocky/9.0/isos/x86_64/CHECKSUM
+sha256sum<span class="w"> </span>-c<span class="w"> </span>CHECKSUM<span class="w"> </span>--ignore-missing
 </code></pre></div>
 </li>
 <li>
 <p>Make bootable USB</p>
-<div class="highlight"><pre><span></span><code>sudo dd <span class="k">if</span><span class="o">=</span>/path/to/iso.iso <span class="nv">of</span><span class="o">=</span>/dev/sdX <span class="nv">status</span><span class="o">=</span>progress
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dd<span class="w"> </span><span class="k">if</span><span class="o">=</span>/path/to/iso.iso<span class="w"> </span><span class="nv">of</span><span class="o">=</span>/dev/sdX<span class="w"> </span><span class="nv">status</span><span class="o">=</span>progress
 </code></pre></div>
 <p>Change <code>/path/to/iso</code> and <code>/dev/sdX</code> appropriately. Use <code>lsblk</code> or <code>diskutil list</code> (macos) to find available drives.</p>
 </li>
@@ -1114,29 +1114,29 @@ sha256sum -c CHECKSUM --ignore-missing
 <h2 id="install-os-using-anaconda">Install OS using anaconda</h2>
 <p>Follow the instructions shown. Setup keyboard, language, drive, softwares, network, hostname, time &amp; date, root password and default user. Make sure to give <code>administrator</code> privileges to default user.</p>
 <h2 id="installing-graphical-environment-gnome">Installing Graphical environment (Gnome)</h2>
-<div class="highlight"><pre><span></span><code>sudo dnf group list
-sudo dnf groupinstall <span class="s2">&quot;Workstation&quot;</span>
-sudo dnf groupinstall <span class="s2">&quot;Server with GUI&quot;</span>
-sudo systemctl set-default graphical
-sudo reboot
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>group<span class="w"> </span>list
+sudo<span class="w"> </span>dnf<span class="w"> </span>groupinstall<span class="w"> </span><span class="s2">&quot;Workstation&quot;</span>
+sudo<span class="w"> </span>dnf<span class="w"> </span>groupinstall<span class="w"> </span><span class="s2">&quot;Server with GUI&quot;</span>
+sudo<span class="w"> </span>systemctl<span class="w"> </span>set-default<span class="w"> </span>graphical
+sudo<span class="w"> </span>reboot
 </code></pre></div>
 <h2 id="install-cuda-drivers-and-cudatoolkit">Install CUDA drivers and cudatoolkit</h2>
 <p>A detailed instruction is available at: <a href="https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html">cuda-installation-guide-linux</a>.</p>
 <ol>
 <li>
 <p>Install development tools, kernel, libraries</p>
-<div class="highlight"><pre><span></span><code>sudo dnf config-manager --set-enabled crb <span class="c1"># codeready-builder</span>
-sudo dnf group install -y <span class="s2">&quot;Development tools&quot;</span>
-sudo dnf install epel-release rpmfusion-free-release <span class="c1"># extra and free</span>
-sudo dnf install -y kernel-devel kernel-headers
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>config-manager<span class="w"> </span>--set-enabled<span class="w"> </span>crb<span class="w"> </span><span class="c1"># codeready-builder</span>
+sudo<span class="w"> </span>dnf<span class="w"> </span>group<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span><span class="s2">&quot;Development tools&quot;</span>
+sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>epel-release<span class="w"> </span>rpmfusion-free-release<span class="w"> </span><span class="c1"># extra and free</span>
+sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>kernel-devel<span class="w"> </span>kernel-headers
 </code></pre></div>
 </li>
 <li>
 <p>Instructions from Nvidia Cudatoolkit: <a href="https://developer.nvidia.com/cuda-downloads">developer.nvidia.com/cuda-downloads</a>.</p>
-<div class="highlight"><pre><span></span><code>sudo dnf config-manager --add-repo https://developer.download.nvidia.com/compute/cuda/repos/rhel9/x86_64/cuda-rhel9.repo
-sudo dnf clean all
-sudo dnf -y module install nvidia-driver:latest-dkms
-sudo dnf -y install cuda
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>config-manager<span class="w"> </span>--add-repo<span class="w"> </span>https://developer.download.nvidia.com/compute/cuda/repos/rhel9/x86_64/cuda-rhel9.repo
+sudo<span class="w"> </span>dnf<span class="w"> </span>clean<span class="w"> </span>all
+sudo<span class="w"> </span>dnf<span class="w"> </span>-y<span class="w"> </span>module<span class="w"> </span>install<span class="w"> </span>nvidia-driver:latest-dkms
+sudo<span class="w"> </span>dnf<span class="w"> </span>-y<span class="w"> </span>install<span class="w"> </span>cuda
 </code></pre></div>
 </li>
 <li>
@@ -1149,8 +1149,8 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib64\
 </li>
 <li>
 <p>Install third-party libraries</p>
-<div class="highlight"><pre><span></span><code>sudo dnf install libX11-devel libXi-devel libXmu-devel make mesa-libGLU-devel freeimage-devel
-sudo dnf --enablerepo<span class="o">=</span>devel install freeglut-devel
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>libX11-devel<span class="w"> </span>libXi-devel<span class="w"> </span>libXmu-devel<span class="w"> </span>make<span class="w"> </span>mesa-libGLU-devel<span class="w"> </span>freeimage-devel
+sudo<span class="w"> </span>dnf<span class="w"> </span>--enablerepo<span class="o">=</span>devel<span class="w"> </span>install<span class="w"> </span>freeglut-devel
 </code></pre></div>
 </li>
 <li>
@@ -1162,7 +1162,7 @@ sudo dnf --enablerepo<span class="o">=</span>devel install freeglut-devel
 <ol>
 <li>
 <p>Install zsh</p>
-<div class="highlight"><pre><span></span><code>sudo dnf install zsh
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>zsh
 </code></pre></div>
 </li>
 <li>
@@ -1178,22 +1178,22 @@ sudo dnf --enablerepo<span class="o">=</span>devel install freeglut-devel
 <ol>
 <li>
 <p>Monitoring apps</p>
-<div class="highlight"><pre><span></span><code>sudo dnf install htop btop glances
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>htop<span class="w"> </span>btop<span class="w"> </span>glances
 </code></pre></div>
 </li>
 <li>
 <p>Build tools</p>
-<div class="highlight"><pre><span></span><code>sudo dnf install libdrm-devel systemd-devel
-sudo dnf install cmake ncurses-devel git gcc-c++
-sudo dnf install qt5-qtdeclarative
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>libdrm-devel<span class="w"> </span>systemd-devel
+sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>cmake<span class="w"> </span>ncurses-devel<span class="w"> </span>git<span class="w"> </span>gcc-c++
+sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>qt5-qtdeclarative
 </code></pre></div>
 <p>additional:
-<div class="highlight"><pre><span></span><code>sudo dnf install gcc make dkms acpid libglvnd-glx libglvnd-opengl libglvnd-devel pkgconfig <span class="c1"># programming</span>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>gcc<span class="w"> </span>make<span class="w"> </span>dkms<span class="w"> </span>acpid<span class="w"> </span>libglvnd-glx<span class="w"> </span>libglvnd-opengl<span class="w"> </span>libglvnd-devel<span class="w"> </span>pkgconfig<span class="w"> </span><span class="c1"># programming</span>
 </code></pre></div></p>
 </li>
 <li>
 <p>Audio/Video dependencies</p>
-<div class="highlight"><pre><span></span><code>sudo dnf install vlc ffmpeg ffmpeg-devel
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>vlc<span class="w"> </span>ffmpeg<span class="w"> </span>ffmpeg-devel
 </code></pre></div>
 </li>
 </ol>
@@ -1201,16 +1201,16 @@ sudo dnf install qt5-qtdeclarative
 <ol>
 <li>
 <p>Setup <code>FlatHub</code> repo: <a href="https://flathub.org/home">flathub.org</a></p>
-<div class="highlight"><pre><span></span><code>sudo dnf install flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-sudo reboot
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>flatpak
+flatpak<span class="w"> </span>remote-add<span class="w"> </span>--if-not-exists<span class="w"> </span>flathub<span class="w"> </span>https://flathub.org/repo/flathub.flatpakrepo
+sudo<span class="w"> </span>reboot
 </code></pre></div>
 </li>
 <li>
 <p>Install vscode, spotify, etc.</p>
-<div class="highlight"><pre><span></span><code>flatpak install flathub com.spotify.Client
-flatpak install flathub com.slack.Slack
-flatpak install flathub us.zoom.Zoom
+<div class="highlight"><pre><span></span><code>flatpak<span class="w"> </span>install<span class="w"> </span>flathub<span class="w"> </span>com.spotify.Client
+flatpak<span class="w"> </span>install<span class="w"> </span>flathub<span class="w"> </span>com.slack.Slack
+flatpak<span class="w"> </span>install<span class="w"> </span>flathub<span class="w"> </span>us.zoom.Zoom
 </code></pre></div>
 </li>
 </ol>
@@ -1302,7 +1302,7 @@ flatpak install flathub us.zoom.Zoom
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright &copy; 2021 - 2022 Lento Manickathan
+      Copyright &copy; 2021 - 2023 Lento Manickathan
     </div>
   
   
