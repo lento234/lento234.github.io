@@ -14,14 +14,14 @@ hide:
 
     [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://lento234.ch/awesome-fluid-dynamics/)
     ![Awesome](https://raw.githubusercontent.com/lento234/awesome-fluid-dynamics/main/logo/awesome.svg)
-    ![Build](https://img.shields.io/github/workflow/status/lento234/awesome-fluid-dynamics/CI?label=Links&style=flat-square&labelColor=000000)
+    ![Build](https://img.shields.io/github/actions/workflow/status/lento234/awesome-fluid-dynamics/check_links.yml?label=Links&style=flat-square&labelColor=000000)
     ![License](https://img.shields.io/github/license/lento234/awesome-fluid-dynamics?style=flat-square&color=blue&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/awesome-fluid-dynamics?style=flat-square&labelColor=000000)
 
 * [lento234.github.io](https://github.com/lento234/lento234.github.io) - Personal website hosted at github
 
     [![Website](https://img.shields.io/badge/-Website-blue?style=flat-square)](https://lento234.ch/)
-    ![Build](https://img.shields.io/github/workflow/status/lento234/lento234.github.io/Build?style=flat-square&labelColor=000000)
+    ![Build](https://img.shields.io/github/actions/workflow/status/lento234/lento234.github.io/main.yml?style=flat-square&labelColor=000000)
     ![License](https://img.shields.io/github/license/lento234/lento234.github.io?style=flat-square&color=blue&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/lento234.github.io?style=flat-square&labelColor=000000)
 
@@ -39,7 +39,7 @@ hide:
 
 * [Homelab](https://github.com/lento234/homelab) - Personal homelab setup
 
-    ![Build](https://img.shields.io/github/workflow/status/lento234/homelab/CI?style=flat-square&labelColor=000000)
+    ![Build](https://img.shields.io/github/actions/workflow/status/lento234/homelab/ci.yml?style=flat-square&labelColor=000000)
     ![License](https://img.shields.io/github/license/lento234/homelab?style=flat-square&color=blue&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/homelab?style=flat-square&labelColor=000000)
 
@@ -85,7 +85,7 @@ hide:
 
 * [Advent of Code 2021](https://github.com/lento234/advent2021) - Advent-of-Code: 2021 Edition
 
-    ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/lento234/advent2021/CMake?style=flat-square&labelColor=000000)
+    ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/lento234/advent2021/cmake.yml?style=flat-square&labelColor=000000)
     ![License](https://img.shields.io/github/license/lento234/advent2021?style=flat-square&color=blue&labelColor=000000)
     ![Last commit](https://img.shields.io/github/last-commit/lento234/advent2021?style=flat-square&labelColor=000000)
 
