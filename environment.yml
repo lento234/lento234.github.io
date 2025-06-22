@@ -1,6 +1,0 @@
-name: website
-dependencies:
-  - pip
-  - python=3.10
-  - pip:
-      - -r requirements.txt

@@ -1,27 +1,39 @@
-<div align="center">
+# lento234.github.io
 
-# [https://lento234.ch](https://lento234.ch)
+This template should help get you started developing with Vue 3 in Vite.
 
-![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/lento234/lento234.github.io/main.yml?style=flat-square&labelColor=black)
-![CC BY 4.0](https://img.shields.io/github/license/lento234/lento234.github.io?style=flat-square&color=blue&labelColor=black)
+## Recommended IDE Setup
 
-***Personal website hosted at `github`***
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-</div>
+## Type Support for `.vue` Imports in TS
 
-## Description
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
 
-Made with :heart: using [mkdocs](https://www.mkdocs.org/) and [materials for mkdocs](https://squidfunk.github.io/mkdocs-material/) theme.
+## Customize configuration
 
-[cc-by]: http://creativecommons.org/licenses/by/4.0/
-[cc-by-image]: https://i.creativecommons.org/l/by/4.0/80x15.png
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-## Development guide
+## Project Setup
 
-1. Install [dependencies](requirements.txt) inside conda environment:
+```sh
+bun install
+```
 
-        conda env create -f environment.yml
+### Compile and Hot-Reload for Development
 
-2. Run the builtin development server ([`http://localhost:8000/`](http://localhost:8000/)):
+```sh
+bun dev
+```
 
-        mkdocs serve
+### Type-Check, Compile and Minify for Production
+
+```sh
+bun run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+bun lint
+```
