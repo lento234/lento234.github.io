@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     name: Build and Deploy Documentation
-    runs-on: oven/bun:latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
@@ -19,12 +19,13 @@ jobs:
           fetch-depth: 0
 
       - name: build
+        uses: oven-sh/setup-bun@v2
         run:
           - bun install
           - bun run build
 
       - name: Upload static files as artifact
-        uses: actions/uplaod-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist/
 
