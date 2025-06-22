@@ -20,9 +20,8 @@ jobs:
 
       - name: build
         uses: oven-sh/setup-bun@v2
-        run:
-          - bun install
-          - bun run build
+        run: bun install
+        run: bun run build
 
       - name: Upload static files as artifact
         uses: actions/upload-pages-artifact@v3
