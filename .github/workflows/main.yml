@@ -9,22 +9,34 @@ on:
 jobs:
   build:
     name: Build and Deploy Documentation
-    runs-on: ubuntu-latest
+    runs-on: oven/bun:latest
     steps:
-      - name: Checkout Master
-        uses: actions/checkout@v3
+      - name: Checkout main
+        uses: actions/checkout@v4
         with:
           # Number of commits to fetch. 0 indicates all history.
           # Default: 1
           fetch-depth: 0
 
-      - name: Set up Python 3
-        uses: actions/setup-python@v4
+      - name: build
+        run:
+          - bun install
+          - bun run build
+
+      - name: Upload static files as artifact
+        uses: actions/uplaod-pages-artifact@v3
         with:
-          python-version: '3.10'
+          path: dist/
 
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+  # deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: deploy to github pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
-      - name: Deploy
-        run: mkdocs gh-deploy --force
