@@ -6,22 +6,19 @@
   </head>
   <style>
     * {
-      background: #303446;
+      background: #11111b;
       font-family: monospace;
       font-weight: 500;
-      color: #c6d0f5;
+      color: #cba6f7;
     }
     body {
       min-height: 95vh;
       padding: 1rem;
       display: flex;
       flex-direction: column;
-      font-size: 1rem;
-    }
-    @media (min-width: 600px) {
-      body {
-        font-size: 1.25rem;
-      }
+      justify-content: center;
+      align-items: center;
+      font-size: 5rem;
     }
   </style>
   <body>
@@ -35,8 +32,8 @@
           el.textContent = "now";
           return;
         }
-        el.textContent = `${Math.floor(diff / 1000)}`;
-        setTimeout(tick, 1000);
+        el.textContent = `${Math.floor(diff / 100)}`;
+        setTimeout(tick, 100);
       }
       tick();
     </script>
