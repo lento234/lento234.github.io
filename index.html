@@ -2,12 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lento Manickathan</title>
   </head>
+  <style>
+    * {
+      background: #303446;
+      font-family: monospace;
+      font-weight: 500;
+      color: #c6d0f5;
+    }
+    body {
+      min-height: 95vh;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+    }
+    @media (min-width: 600px) {
+      body {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <div><span id="countdown"></span></div>
+    <script>
+      const el = document.getElementById("countdown");
+      const target = new Date("2027-03-29T00:00:00");
+      function tick() {
+        let diff = target - new Date();
+        if (diff <= 0) {
+          el.textContent = "now";
+          return;
+        }
+        el.textContent = `${Math.floor(diff / 1000)}`;
+        setTimeout(tick, 1000);
+      }
+      tick();
+    </script>
   </body>
 </html>
