@@ -20,9 +20,22 @@
       align-items: center;
       font-size: 5rem;
     }
+
+    .status {
+      animation: pulse 20s infinite;
+    }
+
+    @keyframes pulse {
+      50% {
+        text-shadow:
+          0 0 10px #555,
+          0 0 20px #555,
+          0 0 30px #555;
+      }
+    }
   </style>
   <body>
-    <div><span id="countdown"></span></div>
+    <div><span id="countdown" class="status"></span></div>
     <script>
       const el = document.getElementById("countdown");
       const target = new Date("2027-03-29T00:00:00");
